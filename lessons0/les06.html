@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="HTML / CSS уроки для начинающих. Урок №6. Основы HTML. Элементы, атрибуты, заголовки, параграфы, стили, форматирование, цитаты, комментарии">
+    <meta name="keywords" content="html,css,html5,css3,язык,разметки,основы,элементы,атрибуты,заголовки,параграфы,абзацы,стили,форматирование,цитаты,комментарии,веб-страницы,контент,содержание,из чего,состоит,уроки,видеоуроки,курсы,веб,дизайн,программирование,создание,сайтов,страницы,хтмл,спецификация,обучение,бесплатные,персональные,сайты,стандарты">
+    <meta name="robots" content="all" />
+    <title>Урок №6. Основные примеры. DOCTYPE, head, paragraphs, links, images. HTML5 / CSS3. Уроки для начинающих. Основы HTML. Элементы, атрибуты, тип документа, заголовок, параграфы, ссылки, изображения. Версии html. Редакторы кода. Веб-браузеры. Что такое тэги? Видеоурок. Новый стандарт HTML++</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<menu class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> </a>
+  <li><a href="les09.html"><b>Урок №9.</b> </a>
+  <li><a href="les10.html"><b>Урок №10.</b> </a>
+  <li><a href="les11.html"><b>Урок №11.</b> </a>
+  <li><a href="les12.html"><b>Урок №12.</b> </a>
+  <li><a href="les13.html"><b>Урок №13.</b> </a>
+  <li><a href="les14.html"><b>Урок №14.</b> </a>
+  <li><a href="les15.html"><b>Урок №15.</b> </a>
+		</menu>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 6. Основные примеры в HTML.</h2>
+<div class="quot" title="Умная мысль"><q>Если мы перестали делать глупости<br>— значит, мы состарились.</q><br>(Эрих Мария Ремарк)</div>
+<ul class="plan">
+  <li>HTML. Что это?
+  <li>HTML. Версии
+  <li>HTML. Редакторы
+  <li>HTML. Веб-браузеры
+  <li><details><summary>Основные примеры в HTML</summary>
+    <ul class="list2">
+      <li>doctype (html5)
+      <li>lang (ru)
+      <li>heading (h1-h6)
+      <li>paragraph (p)
+      <li>links (a href)
+      <li>images (img)
+    </ul></details>
+</ul>
+
+<p>Приветствую вас на шестом уроке по <abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих, на котором вы узнаете об использовании основных HTML-элементов и примеры их использования на веб-странице. Если вы только начинаете изучать <abbr>HTML</abbr>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+<p>Начиная с этого урока я буду частично использовать темы из сайта <a href="https://www.w3.org/" target="_blank">www.w3.org</a> (Консорциума Всемирной Паутины) и уроки по HTML с сайта <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>.</p> Я считаю, что лучше всё-таки пользоваться официальными сайтами и получать всю необходимую информацию из первоисточников, в т.ч. из сайтов специализирующихся сообществ <a href="https://www.w3.org/" target="_blank">www.w3.org</a> и <a href="https://whatwg.org/" target="_blank">whatwg.org</a>, т.к. именно они содержат наиболее достоверную и самую новую информацию по стандартизации языка <abbr>HTML</abbr>.
+<p>Уроки по HTML на сайте <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a> на английском языке, но даже пользуясь <a href="https://translate.google.com" target="_blank">онлайн-переводчиком от Google</a>, можно во всём легко разобраться, т.к. сами уроки написаны максимально кратко и понятно. Я рекомендую пользоваться именно <strong>официальными сайтами</strong> для изучения языка <strong>HTML</strong>.</p>
+<p>Итак, давайте ещё раз кратко повторим темы из предыдущих уроков, чтобы далее было всё просто и понятно.</p>
+<h3>Что такое <abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML?</abbr></h3>
+<ul class="list1">
+<li><abbr><strong>HTML</strong></abbr> - это стандартный язык разметки для создания веб-страниц.
+<li><abbr><strong>HTML</strong></abbr> обозначает язык разметки гипертекста;
+<li><abbr><strong>HTML</strong></abbr> описывает структуру веб-страниц с использованием разметки;
+<li><abbr><strong>HTML</strong></abbr>-элементы являются строительными блоками <abbr>HTML</abbr>-страниц;
+<li><abbr><strong>HTML</strong></abbr>-элементы представлены тегами;
+<li><abbr><strong>HTML</strong></abbr>-теги обозначают фрагменты контента, такие как «заголовок», «параграф», «таблица», «изображение» и т.д.;
+<li>Браузеры не отображают теги <abbr><strong>HTML</strong></abbr>, но используют их для отображения содержимого страницы.
+</ul>
+<h3>Версии HTML</h3>
+<p>С первых дней существования Интернета было много версий HTML. Кому интересна история появления и развития языка HTML, можете почитать об этом на <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">Википедии</a> или других тематических ресурсах.</p>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Версия</th>
+    <th>Год</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>HTML</td>
+    <td>1991</td>
+  </tr>
+  <tr>
+    <td>HTML 2.0</td>
+    <td>1995</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>HTML 3.2</td>
+    <td>1997</td>
+  </tr>
+  <tr>
+    <td>HTML 4.01</td>
+    <td>1999</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>XHTML</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>HTML5.1</td>
+    <td>2014</td>
+  </tr>
+</tbody>
+</table>
+<p>По состоянию на конец 2017 года актуальной версией является <strong>HTML5.1</strong></p>
+<h2>HTML редакторы</h2>
+<p>Для написания HTML кода используются различные текстовые редакторы. В <a href="les02.html">предыдущих уроках</a> я приводил примеры редакторов. Это может быть даже стандартная программа <b>Блокнот</b> в операционной системе <b>Windows</b>. Но лучше пользоваться более продвинутыми редакторами, которые имеют дополнительную подсветку кода и установленные все необходимые для вёрстки плагины. Каждый может выбрать себе редактор по вкусу. Я рекомендую пользоваться любым из этих редакторов:</p>
+<ul class="list1">
+  <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> (самый простой);
+  <li><a href="https://atom.io/" target="_blank">Atom</a> (самый быстрый);
+  <li><a href="http://brackets.io/" target="_blank">Brackets</a> (самый стандартный);
+  <li><a href="https://www.sublimetext.com/" target="_blank">SublimeText3</a> (самый удобный);
+  <li><a href="https://www.jetbrains.com/phpstorm/" target="_blank">PHPStorm</a> (самый сложный, рекомендуется для веб-программистов).
+</ul>
+<h3>Веб-браузеры</h3>
+<p>Задача веб-браузера - считывать <abbr>HTML</abbr>-документы и отображать их.</p>
+<p>Наиболее популярные браузеры: (<a href="https://www.google.ru/chrome/browser/desktop/index.html" target="_blank" title="Скачать Chrome">Chrome</a>, <a href="https://www.mozilla.org/ru/firefox/" target="_blank">Firefox</a>, <a href="http://www.opera.com/" target="_blank">Opera</a>, <a href="https://www.apple.com/ru/safari/" target="_blank">Safari</a>).</p>
+<p>Браузер не отображает теги <abbr>HTML</abbr>, он использует их для определения способа отображения документа:</p>
+<div class="imgcenter"><a href="https://www.w3schools.com/html/img_chrome.png" target="_blank"><img src="https://www.w3schools.com/html/img_chrome.png" alt="Отображение HTML-страницы в браузере" class="flexible-image"></a><br><div class="signature">Отображение HTML-страницы в браузере</div></div>
+<h3>Структура страницы <abbr>HTML</abbr></h3>
+<p>Ниже представлена визуализация структуры <abbr>HTML</abbr>-страницы:</p>
+<p class="uvaga2">Примечание. Обратите внимание, что в браузере отображается только контент внутри раздела <b>&lt;body&gt;</b>.</p>
+<br>
+<div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#44B4F9;">&lt;html&gt;
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#44EEF9;">&lt;head&gt;
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#FF74A3;">&lt;title&gt;Название страницы&lt;/title&gt;</div>
+&lt;/head&gt;</div>
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#ddd;">&lt;body&gt;
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#fff;">
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0A79A;">&lt;h1&gt;Это заголовок&lt;/h1&gt;</div>
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0F59A;">&lt;p&gt;Это параграф.&lt;/p&gt;</div>
+<div style="width:95%;border:1px solid grey;padding:3px;margin:10px;background-color:#F0F59A;">&lt;p&gt;Это другой параграф.&lt;/p&gt;</div>
+</div>
+&lt;/body&gt;
+</div>
+&lt;/html&gt;
+</div>
+<br>
+<p>HTML документ обычно состоит из следующих <b>элементов</b>:</p>
+<ul class="list1">
+<li>Объявление <mark><b>&lt;!DOCTYPE html&gt;</b></mark> определяет документ как <abbr>HTML5</abbr>;
+<li>Элемент <mark><b>&lt;html&gt;</b></mark> является корневым элементом <abbr>HTML</abbr>-страницы;
+<li>Элемент <mark><b>&lt;head&gt;</b></mark> содержит метаинформацию о документе;
+<li>Элемент <mark><b>&lt;title&gt;</b></mark> указывает заголовок документа;
+<li>Элемент <mark><b>&lt;body&gt;</b></mark> содержит видимое содержимое страницы;
+<li>Элемент <mark><b>&lt;h1&gt;</b></mark> определяет большой заголовок;
+<li>Элемент <mark><b>&lt;p&gt;</b></mark> определяет параграф (абзац);
+</ul>
+<p>Это минимальный набор элементов для веб-страницы.</p>
+<h4><abbr>HTML</abbr>-теги</h4>
+<p><abbr>HTML</abbr>-теги - это имена элементов, окруженные угловыми скобками:</p>
+<p class="uvaga1"><i>&lt;имя тега&gt;Содержание здесь...&lt;/имя тега&gt;</i></p>
+<p><abbr>HTML</abbr>-теги обычно парные, как, например, теги параграфа <b>&lt;p&gt;</b> и <b>&lt;/p&gt;</b>.</p>
+<p>Первый тег в паре - это <strong>начальный тег</strong>, второй тег - <strong>конечный тег</strong>. Конечный тег написан как начальный тег, но с косой чертой (слешем), вставленной перед именем тега.</p>
+<p class="uvaga2">Начальный тег также называется <strong>открывающий тег</strong>, а конечный тег - <strong>закрывающий тег</strong>.</p>
+
+<h2 class="head2">Основные примеры</h2>
+<h5>Простой <abbr>HTML</abbr>-документ</h5>
+<p>Пример 6.1:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="utf-8"&gt;<br>
+&lt;title&gt;Название страницы&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Первый заголовок&lt;/h1&gt;<br>
+&lt;p&gt;Первый параграф.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.1.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Это простой веб-документ. Сохраните его в редакторе и откройте в браузере. Вы увидите, что в браузере отображается только та информация, которая находится в теле документа между тегами &lt;body&gt;&lt;/body&gt;.
+<h4>Тип документа &lt;! DOCTYPE&gt;</h4>
+<p>Любая HTML-страница начинается с объявления &lt;!DOCTYPE&gt; (типа документа). Объявление &lt;!DOCTYPE&gt; позволяет браузерам правильно отображать веб-страницы.</p><p>Он должен появляться только один раз, в верхней части страницы (перед любыми тегами HTML).</p><p>Объявление &lt;!DOCTYPE&gt; не чувствительно к регистру.</p><p>Объявление &lt;!DOCTYPE&gt; в спецификации HTML5 выглядит так:</p>
+<div class="w3-code">&lt;!DOCTYPE html&gt;</div>
+<p>После определения типа документа в начальном (открывающем) теге &lt;html&gt; необходимо указать язык, на котором преимущественно написано содержание страницы, например, русский (ru).</p>
+<div class="w3-code">&lt;html lang="ru"&gt;</div>
+<p>Это необходимо для поисковых роботов и различных веб-приложений, использующих информацию на данной странице.</p>
+
+<h3>Элемент HTML &lt;head&gt;</h3>
+<p>Элемент HTML <strong>&lt;head&gt;</strong> (голова или заголовок) не имеет ничего общего с заголовками на странице (тегами <b>h1 - h6</b>). Элемент <strong>&lt;head&gt;</strong> - это контейнер для метаданных. Метаданные <abbr>HTML</abbr> - это данные о документе <abbr>HTML</abbr>. Метаданные не отображаются на странице. Элемент <strong>&lt;head&gt;</strong> помещается между тегом <strong>&lt;html&gt;</strong> и тегом <strong>&lt;body&gt;</strong>:</p>
+<p>Пример 6.2:</p>
+<div class="w3-code">
+&lt;DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Моя первая HTML-страница&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Элемент head содержит метаданные&lt;/p&gt;<br>
+&lt;p&gt;Метаданные - это данные о документе HTML&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.2.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p class="uvaga2">Примечание. Метаданные обычно определяют заголовок документа (title), набор символов (кодировка), стили (CSS), ссылки (link), скрипты (JavaScript) и другую метаинформацию.</p>
+<p>Во всех предыдущих примерах мы использовали минимальный набор метаданных на веб-странице: <b>&lt;title&gt;</b> (обязательный тег согласно спецификации HTML5), и <b>&lt;meta charset-"utf-8"&gt;</b> (универсальная кодировка, которая используется для распознавания кириллицы).</p>
+<p>Раздел <b>head</b> обычно содержит следующие элементы <b>meta</b> <abbr title="Метатеги (англ. meta tags) — (X)HTML-теги, предназначенные для предоставления структурированных метаданных (дополнительных, сопроводительных) о веб-странице.">(метатеги)</abbr>:</p>
+<div class="w3-code">&lt;meta charset="utf-8"&gt;</div> - указывает кодировку страницы utf-8, обычно данный метатег пишется самым первым;
+<div class="w3-code">&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</div> - адаптивный метатег для правильного отображения касаний и масштабирования для различных устройств: смартфонов, планшетов и прочих гаджетов с различным разрешением дисплеев;
+<div class="w3-code">&lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;</div> - метатег управляет режимом отображения страниц в браузерах IE8+. Тег должен находиться в секции <b>head</b> страницы перед всеми остальными элементами, за исключением <b>&lt;title&gt;</b> и других мета-элементов. В противном случае он игнорируется браузерами!
+<p class="uvaga2">Эти три метатега рекомендуется использовать на всех веб-страницах!</p>
+<p>Следующие метатеги являются <b>не обязательными</b>, но <i>желательными</i> и <i>рекомендуются</i> для <abbr title="Поиско́вая оптимиза́ция (англ. search engine optimization, SEO)">SEO</abbr> (продвижения и раскрутки сайта в сети). Хотя жесткого требования их использовать на странице нет! Их отсутствие никак не влияет на валидность веб-страницы и соответствие стандарту HTML5.</p>
+<div class="w3-code">&lt;meta name="description" content="описание содержания страницы"&gt;</div> - содержание данного тега может использоваться в сниппетах (описаниях сайтов на странице результатов поиска). Когда-то информация из этого метатега обязательно отображалась в поисковой выдаче и имела особый вес при индексации, однако, в связи со злоупотреблениями, различные поисковые системы используют разные алгоритмы для оценки релевантности указанного в теге описания и содержимого страницы, на основании чего могут игнорировать содержимое тега. Несмотря на это, предпочтительно все же заполнять этот тег, но учитывать, что эффективная длина текста, который можно поместить в этот тег различными поисковиками устанавливается по своему усмотрению и на текущий момент рекомендуемый размер составляет от 70 до 140 символов, а максимально обрабатываемый не превышает 400 символов.
+<div class="w3-code">&lt;meta name="keywords" content="ключевые,слова,через,запятую"&gt;</div> - используются слова (обычно до 10), которые встречаются на самой странице. Если в этот тег добавить слова, которые на странице отсутствуют, то такие ключевые слова будут игнорироваться браузерами.
+<p>Также можно использовать и другие (менее важные) метатеги, например:</p>
+<div class="w3-code">&lt;meta name="copyright" lang="ru" content="Петренко Иван Кузьмич"&gt;</div> - указывает автора или кому принадлежит документ. В настоящий момент имеет крайне низкую актуальность.
+<div class="w3-code">&lt;meta name="robots" content="all"&gt;</div> - разрешает индексирование страницы и использование размещённых на ней ссылок для последующей индексации поисковыми роботами.
+<div class="w3-code">&lt;meta http-equiv="refresh" content="5; url=http://www.example.com/"&gt;</div> - указывает браузеру автоматически перейти на другой url-адрес через указанное количество секунд. Если параметр <strong>url</strong> не указан, обновит страницу без использования кэша. Часто недобросовестные веб-разработчики используют данную функцию на некоторых сайтах, чтобы перенаправить пользователей на другой, более нужный ресурс, тем самым накручивая <abbr title="Сетево́й тра́фик или интерне́т-тра́фик - объём информации, передаваемой через компьютерную сеть за определённый период времени.">сетевой трафик</abbr> и увеличивая посещаемость нужного сайта. Поэтому многие поисковики, обнаружив такой метатег на веб-странице, просто игнорируют её, выбрасывая из результатов поиска! <b>Не рекомендуется использовать на сайтах, если хотите, чтобы их видели поисковики!</b>
+<p>В связи с тем, что метатеги несут чисто служебную функцию, и, кроме того, значительно увеличивают размер гипертекстового документа, начинающие web-разработчики зачастую игнорируют их, либо используют шаблонные значения, предоставляемые инструментами разработки. Однако грамотное предоставление служебной информации, которую одинаково легко могут обработать и браузеры, и поисковые системы, и стороннее программное обеспечение помогает более успешной индексации страницы в поисковых системах и более тонко управлять поведением браузеров.</p>
+<h3>Элемент &lt;body&gt;</h3>
+<p>Информация, которая отображается на странице, находится в теле документа между тегами <b>&lt;body&gt;&lt;/body&gt;</b>. Семантически основное содержимое страницы обычно заключается в тег <b>&lt;main&gt;</b> (главный, основной). К основному содержимому относятся тексты (заключенные в параграфы), заголовки к текстам, изображения, видео, навигация по странице (сайту) и др. Хотя тег <b>&lt;main&gt;</b> не является обязательным и многие веб-верстальщики его не используют.</p>
+
+<h4>Заголовки h1 - h6</h4>
+<p>Обычно для каждой статьи или раздела используются заголовки, которые определяются тегами от <b>&lt;h1&gt; до &lt;h6&gt;</b>. Тег <b>&lt;h1&gt;</b> определяет наиболее важный заголовок. Тег <b>&lt;h6&gt;</b> определяет наименее важный заголовок:</p>
+<p>Пример 6.3:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="utf-8"&gt;<br>
+&lt;title&gt;Заголовки в HTML&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Это заголовок h1&lt;/h1&gt;<br>
+&lt;h2&gt;Это заголовок h2&lt;/h2&gt;<br>
+&lt;h3&gt;Это заголовок h3&lt;/h3&gt;<br>
+&lt;h4&gt;Это заголовок h4&lt;/h4&gt;<br>
+&lt;h5&gt;Это заголовок h5&lt;/h5&gt;<br>
+&lt;h6&gt;Это заголовок h6&lt;/h6&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.3.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Результат:</p>
+<h1>Это заголовок h1</h1>
+<h2>Это заголовок h2</h2>
+<h3>Это заголовок h3</h3>
+<h4>Это заголовок h4</h4>
+<h5>Это заголовок h5</h5>
+<h6>Это заголовок h6</h6>
+<br>
+<p>При этом согласно спецификации <abbr>HTML5</abbr> заголовок первого уровня <b>&lt;h1&gt;</b> может использоваться на странице <u>только один раз</u>! Иногда в него заключают название сайта (вместе с логотипом), либо название основной статьи на данной странице. Именно этот заголовок лучше всего ищут поисковые системы (Google, Yandex). Всё, что в него заключено, играет важную роль для нахождения сайта и отображения в результатах поиска. Все остальные заголовки (h2-h6) могут использоваться на странице множество раз.</p>
+<h4>HTML-параграфы (абзацы) &lt;p&gt;</h4>
+<p>Обычно любой текст на веб-странице, который пишется с новой строки, заключается в отдельный параграф. HTML-параграфы (или абзацы) определяются тегом <b>&lt;p&gt;</b> (от слова paragraph):</p>
+<p class="uvaga2">Сразу хочу обратить ваше внимание на то, что в литературе слово <b>paragraph</b> обычно переводится как <b>абзац</b> и на веб-странице отображается, как начало текста с новой строки. Но в среде веб-разработчиков принято больше использовать именно оригинальное название - paragraph, отсуда и тег <b>&lt;p&gt;</b>. Чтобы не было путаницы, я также буду использовать название "параграф", а не абзац.</p>
+<p>Пример 6.4:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Параграфы в HTML&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Это параграф.&lt;/p&gt;<br>
+&lt;p&gt;Это другой параграф.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.4.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Текст на странице может выравниваться по левому краю (по умолчанию), по правому краю, по центру, по ширине. Практически всё также, как в текстовом редакторе Word. Раньше в старом стандарте HTML для выравнивания текста на странице использовали атрибут выравнивания <b>align</b> с необходимым значением (left, right, center, justify). Кроме того, в качестве параграфа можно использовать блочный элемент &lt;div&gt; также как и элемент &lt;p&gt;. Разница между ними в том, что в начале и в конце параграфа (тег &lt;p&gt;) появляется вертикальный отступ (по умолчанию), которого нет при использовании элемента &lt;div&gt;. В разных браузерах этот отступ может отличаться, если вы специально не зададите его в своей каскадной таблице стилей (<abbr>CSS</abbr>).</p>
+<p>Пример 6.5:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Выравнивание текста в HTML&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p align="justify"&gt; Этот текст выравнивается по ширине с помощью значения <b>justify</b>. Но его должно быть много, чтобы увидеть эффект выравнивания. Если текста мало, т.е. если он будет помещаться в одну строку, то выравнивание будет по левому краю.&lt;/p&gt;<br>
+&lt;div align="right"&gt;Этот текст выравнивается по правому краю с помощью значения <b>right</b>.&lt;/div&gt;<br>
+&lt;p align="center"&gt;Этот текст выравнивается по центру с помощью значения <b>center</b>.&lt;/p&gt;<br>
+&lt;div&gt;Этот текст выравнивается по левому краю (по умолчанию - без указания значения).&lt;/div&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.5.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Но выравнивание с помощью атрибута <b>align</b> непосредственно в HTML-коде страницы сейчас уже не используется и не соответствует спецификации HTML5. Если вы будете использовать такое выравнивание текста на странице, то ваш HTML-код не пройдёт проверку на валидность. Валидатор будет отображать такие атрибуты как ошибку. Согласно спецификации HTML5 всё оформление текста производится в каскадной таблице стилей (CSS), в том числе и выравнивание текста на странице. Точно также выравнивание задаётся и заголовкам (h1-h6). Но про стили мы поговорим подробнее в следующих уроках.</p>
+
+<h4>HTML ссылки</h4>
+<p>Ссылки HTML определяются с помощью тега <b>&lt;a&gt;</b>:</p>
+<p>Пример 6.6:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Ссылки в HTML&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Это ссылка на сайт &lt;a href="https://www.w3schools.com"&gt;w3schools.com&lt;/a&gt;&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.6.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Пункт назначения ссылки указан в атрибуте <b>href</b>. Атрибуты используются для предоставления дополнительной информации об элементах HTML.</p>
+<h4>HTML изображения</h4>
+<p>Изображения HTML определяются тегом <b>&lt;img&gt;</b>.</p>
+<p>Исходный файл (src), альтернативный текст (alt), ширина и высота предоставляются в качестве атрибутов:</p>
+<p>Пример 6.7:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ru"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Изображения в HTML&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;img src="https://www.w3schools.com/html/w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/6.7.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p class="uvaga2">Согласно спецификации HTML5 атрибут <b>alt</b> является ОБЯЗАТЕЛЬНЫМ для любого изображения на веб-странице!</p>
+
+<!--
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/II8LJz9zmKE" frameborder="0" gesture="media" allowfullscreen></iframe></div></div> -->
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les05.html">&lt;&lt; Перейти на Урок №5 Семантическая разметка </a></div>
+<div class="les-next"><a href="les07.html">Перейти на урок №7. Основные элементы и атрибуты &gt;&gt;</a></div>
+</div>
+		</article>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://www.w3.org/" target="_blank">W3C</a>
+        <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a>          
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+</body>
+</html>
