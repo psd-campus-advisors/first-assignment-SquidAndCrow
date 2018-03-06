@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Урок №8. Стили и форматирование текста. Основы HTML. HTML5 / CSS3. Уроки для начинающих. Видеоурок. Цвет фона страницы, цвет текста, семейство шрифтов, размер, выравнивание текста. Форматирование текста, визуальное оформление страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Урок №8. Основы HTML. Стили и форматирование текста. HTML / CSS уроки для начинающих. Цвет фона страницы, шрифты, цвет, размер и выравнивание текста. Форматирование в HTML. Теги b, strong, i, em, small, mark, del, ins, sub, sup">
+    <meta name="keywords" content="html,css,html5,css3,стили,форматирование,фон страницы,цвет,семейство шрифтов, размер, выравнивание текста,теги,выделенный,текст,жирным,курсивом,желтым,цветом">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<ul class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> Стили и форматирование</a>
+  <li><a href="les09.html"><b>Урок №9.</b> Цитаты и комментарии</a>
+  <li><a href="les10.html"><b>Урок №10.</b> Цвета в HTML</a>
+  <li><a href="les11.html"><b>Урок №11.</b> HTML-стили - CSS</a>
+  <li><a href="les12.html"><b>Урок №12.</b> Гиперссылки в HTML</a>
+  <li><a href="les13.html"><b>Урок №13.</b> Изображения в HTML</a>
+  <li><a href="les14.html"><b>Урок №14.</b> Таблицы в HTML</a>
+  <li><a href="les15.html"><b>Урок №15.</b> Списки в HTML</a>
+		</ul>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 8. Стили и форматирование.</h2>
+<div class="quot" title="Умная мысль"><q>Наслаждайтесь тем, что вы делаете<br> и вы никогда в своей жизни не будете работать.</q><br>(Билл Гейтс)</div>
+<ul class="plan">
+  <li><details><summary>Стили в HTML</summary>
+    <ul class="list2">
+      <li>цвет фона страницы
+      <li>цвет текста
+      <li>шрифты
+      <li>размер текста
+      <li>выравнивание текста
+    </ul>
+      </details>
+    <li><details><summary>Форматирование в HTML</summary>
+      <ul class="list2">
+        <li>Элементы <b>b</b> и <b>strong</b>
+        <li>Элементы <b>i</b> и <b>em</b>
+        <li>Элемент <b>small</b>
+        <li>Элемент <b>mark</b>
+        <li>Элемент <b>del</b>
+        <li>Элемент <b>ins</b>
+        <li>Элементы <b>sub</b> и <b>sup</b>
+      </ul></details>
+    </ul>
+
+<p>Приветствую вас на восьмом уроке по <abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих, на котором вы узнаете о стилях и форматировании текста в <abbr>HTML</abbr>. Если вы только начинаете изучать <abbr>HTML</abbr>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+
+<h2>Стили в <abbr>HTML</abbr></h2>
+<p>HTML-теги - это контейнеры для текста или других элементов на веб-странице. Но сами теги служат для выводы информации и, как правило, не имеют визуального оформления. Если бы все веб-страницы были написаны только лишь с помощью одних HTML-тегов, то они были бы слишком однообразны и выглядели бы практически одинаково - с одним и тем же шрифтом, отступами, линиями и т.д. И, вообщем-то так раньше и было, когда веб-разметка только зарождалась. Но с развитием веб-технологий всё изменялось и усовершенствовалось. Однообразные текстовые веб-страницы стали приобретать более красочный вид с различным визуальным оформлением. С каждой новой спецификацией (стандартом) HTML-разметки визуальных эффектов становилось всё больше. К HTML-тегам стали применять уже и стилевое оформление, которое постепенно сформировалось в каскадные таблицы стилей - CSS, со своим собственным синтаксисом.</p>
+<p>Если в первых ранних спецификациях HTML стилевое оформление прописывалось непосредственно в самом HTML-коде, то уже позже описание стилей стали выносить в отдельный файл, который подключается к HTML-документу с помощью определённого тега.</p>
+<p>Сейчас используется три разновидности использования стилей в HTML-документе:</p>
+<ol class="list3">
+  <li>Встроенный - с помощью атрибута <b>style</b> в элементах HTML;
+  <li>Внутренний - с помощью элемента <b>&lt;style&gt;</b> в разделе головы страницы <b>&lt;head&gt;</b> (встроенная таблица стилей);
+  <li>Внешний - с помощью подключения внешнего файла каскадной таблицы стилей (CSS).
+</ol>
+<p>Подробнее о каскадной таблице стилей я расскажу в следующих уроках. А пока в качестве примеров будем использовать встроенные стили с помощью атрибута <strong>style</strong>.</p>
+
+<h3>HTML атрибут style</h3>
+<p>Настройка стиля элемента <abbr>HTML</abbr> может быть выполнена с помощью атрибута <strong>style</strong>. Атрибут <strong>style</strong> имеет следующий синтаксис:</p>
+<div class="w3-code">
+&lt;tagname style="property:value;"&gt;
+</div>
+<p>где<br>
+<i>tagname</i> - название тега,<br>
+<i>property</i> - свойство CSS,<br>
+<i>value</i> - значение CSS.</p>
+<p>Пример 8.1: Использование стилей для каждого параграфа</p>
+<div class="w3-code">
+&lt;p style="font-size:1.9em; color:red"&gt;Я красный большой текст&lt;/p&gt;<br>
+&lt;p style="font-size:1.5em; color:blue"&gt;Я синий средний текст&lt;/p&gt;<br>
+&lt;p style="font-size:.9em; color:green"&gt;Я зелёный маленький текст&lt;/p&gt;
+<div class="result"><a href="../ex/8.1.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+
+<h3>Цвет фона страницы</h3>
+<p>Свойство <strong>background-color</strong> определяет цвет фона для элемента HTML.</p>
+<p>В этом примере задается <strong>цвет фона</strong> для страницы:</p>
+<p>Пример 8.2:</p>
+<div class="w3-code">
+&lt;body style="background-color:powderblue;"&gt;<br>
+&lt;h1&gt;Это заголовок&lt;/h1&gt;<br>
+&lt;p&gt;Это параграф.&lt;/p&gt;<br>
+&lt;/body&gt;
+<div class="result"><a href="../ex/8.2.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Цвет фона страницы в этом примере будет голубым.</p>
+<h3>Цвет текста</h3>
+<p>Свойство <strong>color</strong> определяет <strong>цвет текста</strong> для двух элементов HTML - заголовка и параграфа:</p>
+<p>Пример 8.3:</p>
+<div class="w3-code">
+&lt;h1 style="color:blue;"&gt;Это заголовок синего цвета&lt;/h1&gt;<br>
+&lt;p style="color:red;"&gt;Это параграф красного цвета.&lt;/p&gt;
+<div class="result"><a href="../ex/8.3.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>HTML-шрифты</h3>
+<p>Свойство <strong>font-family</strong> определяет <strong>семейство шрифта</strong>, который будет использоваться для элементов <abbr>HTML</abbr> - заголовка и параграфа:</p>
+<p>Пример 8.4:</p>
+<div class="w3-code">
+&lt;h1 style="font-family:verdana;"&gt;Это заголовок&lt;/h1&gt;<br>
+&lt;p style="font-family:courier;"&gt;Это параграф.&lt;/p&gt;<br>
+&lt;p style="font-family:comic sans ms;"&gt;Это параграф.&lt;/p&gt;
+<div class="result"><a href="../ex/8.4.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Размер текста (шрифта) <abbr>HTML</abbr></h3>
+<p>Свойство <strong>font-size</strong> определяет <strong>размер текста</strong> (шрифта) для элементов <abbr>HTML</abbr> - заголовка и параграфа:</p>
+<p>Пример 8.5:</p>
+<div class="w3-code">
+&lt;h1 style="font-size:200%;"&gt;Это заголовок&lt;/h1&gt;<br>
+&lt;p style="font-size:160%;"&gt;Это параграф.&lt;/p&gt;<br>
+&lt;p style="font-size:18px;"&gt;Это параграф.&lt;/p&gt;<br>
+&lt;p style="font-size:2em;"&gt;Это параграф.&lt;/p&gt;
+<div class="result"><a href="../ex/8.5.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>При этом размер текста можно задавать различными способами: с помощью пикселей, процентов и масштабируемой единицы (em).</p>
+<h3>Выравнивание текста <abbr>HTML</abbr></h3>
+<p>Свойство <strong>text-align</strong> определяет горизонтальное выравнивание текста для элемента <abbr>HTML</abbr>:</p>
+<p>Пример 8.6:</p>
+<div class="w3-code">
+&lt;h1 style="text-align:center;"&gt;Центрированный заголовок&lt;/h1&gt;<br>
+&lt;p style="text-align:center;"&gt;Центрированный параграф.&lt;/p&gt;<br>
+&lt;p style="text-align:left;"&gt;Выровненный по левому краю (по умолчанию).&lt;/p&gt;<br>
+&lt;p style="text-align:right;"&gt;Выровненный по правому краю.&lt;/p&gt;<br>
+&lt;p style="text-align:justify;"&gt;Выровненный по ширине (нужно много текста).&lt;/p&gt;
+<div class="result"><a href="../ex/8.6.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Задавать стиль элементу также можно, перечислив различные свойства через точку с запятой.</p>
+<p>Пример 8.7:</p>
+<div class="w3-code">
+&lt;body style="background-color:yellow;"&gt;<br>
+&lt;h1 style="text-align:center; color:blue;"&gt;Главный заголовок&lt;/h1&gt;<br>
+&lt;p style="text-align:right; color:green; font-family:gabriola; font-size:20px;"&gt;Работа - не волк, в лес не убежит!&lt;br&gt;(русская народная мудрость)&lt;/p&gt;<br>
+&lt;p style="text-align:justify; color:indigo; font-family:calibri; font-size:1.5em;"&gt;А здесь много-много всякого текста первого параграфа...&lt;/p&gt;<br>
+&lt;/body&gt;
+<div class="result"><a href="../ex/8.7.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Проверьте себя с помощью <a href="https://www.w3schools.com/html/exercise.asp" target="_blank">упражнений!</a></p>
+<h4>Создание стиля веб-страниц</h4>
+<p>В данной таблице приведены основные свойства, используемые при создании стиля HTML-элементов.</p>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Атрибут, свойства</th>
+    <th>Описание</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>style</td>
+    <td>для стилизации HTML-элементов</td>
+  </tr>
+  <tr>
+    <td>background-color</td>
+    <td>для  цвета фона</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>color</td>
+    <td>для цвета текста</td>
+  </tr>
+  <tr>
+    <td>font-family</td>
+    <td>для названия (семьи) шрифта</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>font-size</td>
+    <td>для размера шрифта</td>
+  </tr>
+  <tr>
+    <td>text-align</td>
+    <td>для выравнивания текста</td>
+  </tr>
+</tbody>
+</table>
+
+<h2>Форматирование текста в HTML</h2>
+<p>Форматирование текста - это средства его изменения. Например, изменение начертания шрифта (жирный, курсивом, подчеркнутый и т.д.) и использование различных эффектов, позволяющих менять вид текста.</p>
+<p>Пример 8.8:</p>
+<div class="w3-code">
+&lt;p&gt;&lt;b&gt;Этот текст полужирный&lt;/b&gt;&lt;/p&gt;<br>
+&lt;p&gt;&lt;i&gt;Этот текст написан курсивом&lt;/i&gt;&lt;/p&gt;<br>
+&lt;p&gt;Это &lt;sub&gt;подстрочный индекс&lt;/sub&gt; и &lt;sup&gt;надстрочный индекс&lt;/sup&gt;&lt;/p&gt;
+<div class="result"><a href="../ex/8.8.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Результат:</p>
+<div class="w3-code">
+<p><b>Этот текст полужирный</b></p>
+<p><i>Этот текст написан курсивом</i></p>
+<p>Это <sub>подстрочный индекс</sub> и <sup>надстрочный индекс</sup></p>
+</div>
+<h3>Элементы форматирования HTML</h3>
+<p>HTML также определяет специальные элементы для определения текста со специальным значением.
+<p>Элементы форматирования текста в HTML постоянно меняются. В каждой новой спецификации HTML некоторые теги для форматирования текста удаляются, а новые появляются. Хотя в самих браузерах старые (удалённые из спецификации) теги обычно продолжают работать. Но при этом не рекомендуются для использования (например, тег <b>&lt;u&gt;</b>). На данный момент актуальными являются следующие теги:</p>
+<ul class="list1">
+<li>&lt;b&gt; - полужирный текст
+<li>&lt;strong&gt; - полужирный (логически выделенный) текст
+<li>&lt;i&gt; - курсивный текст
+<li>&lt;em&gt; - курсивный (логически выделенный) текст
+<li>&lt;mark&gt; - маркированный (выделенный цветом) текст
+<li>&lt;small&gt; - маленький текст (меньший на единицу от обычного текста)
+<li>&lt;del&gt; - удаленный текст (перечёркивается)
+<li>&lt;ins&gt; - вставленный текст (выделенный подчеркиванием)
+<li>&lt;sub&gt; - текст подстрочный
+<li>&lt;sup&gt; - текст надстрочный
+</ul>
+<h3>Элементы &lt;b&gt; и &lt;strong&gt;</h3>
+<p>Элемент HTML <b>&lt;b&gt;</b> определяет <strong>полужирный текст</strong> без лишней важности.</p>
+<div class="w3-code">
+&lt;b&gt;Этот текст полужирный&lt;/b&gt;
+</div>
+<p>Результат:</p>
+<p><b>Этот текст полужирный</b></p><br>
+<p>Элемент <abbr>HTML</abbr> <strong>&lt;strong&gt;</strong> также делает текст полужирным, но при этом добавляет тексту <b>«сильной»</b> смысловой значимости. Относится к тегам логической разметки.</p>
+<div class="w3-code">
+&lt;strong&gt;Этот текст выделен strong&lt;/strong&gt;
+</div>
+<p>Результат:</p>
+<p><strong>Этот текст выделен strong</strong></p><br>
+<h3>Элементы HTML &lt;i&gt; и &lt;em&gt;</h3>
+<p>Элемент HTML &lt;i&gt; определяет курсивный текст без особого значения.</p>
+<div class="w3-code">
+&lt;i&gt;Этот текст написан курсивом&lt;/i&gt;
+</div>
+<p>Результат:</p>
+<p><i>Этот текст написан курсивом</i></p><br>
+<p>Элемент HTML &lt;em&gt; определяет выделенный курсивом текст с добавленной смысловой значимостью. Относится к тегам логической разметки.</p>
+<div class="w3-code">
+&lt;em&gt;Этот текст выделяется курсивом (имеет бОльшую значимость)&lt;/em&gt;
+</div>
+<p>Результат:</p>
+<p><em>Этот текст выделяется курсивом (имеет бОльшую значимость)</em></p><br>
+<p class="uvaga2">Примечание. Браузеры отображают &lt;strong&gt; как &lt;b&gt; (полужирным) и &lt;em&gt; как &lt;i&gt; (курсивом). Тем не менее, существует разница в значении этих тегов: &lt;b&gt; и &lt;i&gt; определяет жирный и курсивный текст, но теги &lt;strong&gt; и &lt;em&gt; означают, что текст является «важным» (более значимым).</p>
+<h3>Элемент HTML &lt;small&gt;</h3>
+<p>Элемент HTML &lt;small&gt; определяет уменьшенный текст (по сравнению из текстом по умолчанию):</p>
+<div class="w3-code">
+&lt;h3&gt;HTML &lt;small&gt;уменьшенный текст&lt;/small&gt; форматирование&lt;/h3&gt;
+</div>
+<p>Результат:</p>
+<h3>HTML <small>уменьшенный текст</small> форматирование</h3>
+<h3>Элемент HTML &lt;mark&gt;</h3>
+<p>Элемент HTML &lt;mark&gt; определяет особо <mark>отмеченный</mark> или <mark>выделенный</mark> текст (по умолчанию – желтым цветом):</p>
+<div class="w3-code">
+&lt;h4&gt;HTML &lt;mark&gt;Маркированное&lt;/mark&gt; форматирование&lt;/h4&gt;
+</div>
+<p>Результат:</p>
+<h3>HTML <mark>Маркированное</mark> форматирование</h3>
+<h3>Элемент HTML &lt;del&gt;</h3>
+<p>Элемент HTML <b>&lt;del&gt;</b> определяет удаленный (извлеченный) текст. Используется для выделения текста, удаленного из документа. Отображается перечеркнутым. Для тега доступны следующие атрибуты: cite, datetime.</p>
+<div class="w3-code">
+&lt;p&gt;Мой любимый цвет &lt;del&gt;фиолетовый&lt;/del&gt; красный.&lt;/p&gt;
+</div>
+<p>Результат:</p>
+<p>Мой любимый цвет <del>фиолетовый</del> красный.</p>
+<h3>Элемент HTML &lt;ins&gt;</h3>
+<p>Элемент HTML &lt;ins&gt; определяет вставленный текст, выделяя подчёркиванием. Для тега доступны следующие атрибуты: cite, datetime.</p>
+<div class="w3-code">
+&lt;p&gt;Мой любимый &lt;ins&gt;цвет&lt;/ins&gt; красный.&lt;/p&gt;
+</div>
+<p>Результат:</p>
+<p>Мой любимый <ins>цвет</ins> красный.</p>
+<h3>Элемент HTML &lt;sub&gt;</h3>
+<p>Элемент HTML &lt;sub&gt; определяет подстрочный текст. Используется для создания нижних индексов. Сдвигает текст ниже уровня строки, уменьшая его размер.</p>
+<div class="w3-code">
+&lt;p&gt;Это &lt;sub&gt;подстрочный&lt;/sub&gt; текст.&lt;/p&gt;
+</div>
+<p>Результат:</p>
+<p>Это <sub>подстрочный</sub> текст.</p>
+<h3>Элемент HTML &lt;sup&gt;</h3>
+<p>Элемент HTML &lt;sup&gt; определяет надстрочный текст. Используется для создания степеней. Сдвигает текст выше уровня строки, уменьшая его размер.</p>
+<div class="w3-code">
+&lt;p&gt;Это &lt;sup&gt;надстрочный&lt;/sup&gt; текст.&lt;/p&gt;
+</div>
+<p>Результат:</p>
+<p>Это <sup>надстрочный</sup> текст.</p>
+<p>Элементы &lt;sub&gt; и &lt;sup&gt; обычно используются для написания различных формул.</p>
+<p>Например:</p>
+<div class="w3-code">
+&lt;p&gt;Формула воды: H&lt;sub&gt;2&lt;/sub&gt;O;&lt;/p&gt;<br>
+&lt;p&gt;Формула Эйнштейна: e = mc&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+</div>
+<p>Результат:</p>
+<p>Формула воды: H<sub>2</sub>O; формула Эйнштейна: e=mc<sup>2</sup>.</p>
+
+<h4>Элементы форматирования текста HTML</h4>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Тег</th>
+    <th>Описание</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>&lt;b&gt;</td>
+    <td>Определяет полужирный текст</td>
+  </tr>
+  <tr>
+    <td>&lt;em&gt;</td>
+    <td>Определяет выделенный текст</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>&lt;i&gt;</td>
+    <td>Определяет курсивный текст</td>
+  </tr>
+  <tr>
+    <td>&lt;small&gt;</td>
+    <td>Определяет уменьшенный текст</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>&lt;strong&gt;</td>
+    <td>Определяет важный текст</td>
+  </tr>
+  <tr>
+    <td>&lt;sub&gt;</td>
+    <td>Определяет подстрочный текст</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>&lt;sup&gt;</td>
+    <td>Определяет надстрочный текст</td>
+  </tr>
+  <tr>
+    <td>&lt;ins&gt;</td>
+    <td>Определяет подчёркнутый текст</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>&lt;del&gt;</td>
+    <td>Определяет удалённый текст</td>
+  </tr>
+  <tr>
+    <td>&lt;mark&gt;</td>
+    <td>Определяет маркированный/выделенный текст (по умолчанию желтым цветом)</td>
+  </tr>
+</tbody>
+</table>
+
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/U383Na-NmDo" allowfullscreen></iframe></div></div>
+
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les07.html">&lt; Перейти на Урок №7 Основные Элементы и атрибуты </a></div>
+<div class="les-next"><a href="les09.html">Перейти на урок №9 Цитаты и комментарии &gt;</a></div>
+</div>
+		</article>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://www.w3.org/" target="_blank">W3C</a>
+        <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a>          
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
