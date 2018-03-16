@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Урок №11. HTML стили. Каскадные таблицы стилей - CSS. HTML5 / CSS3. Уроки для начинающих. Основы. Видеоурок. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Урок №11. HTML стили. CSS. HTML / CSS уроки для начинающих. Каскадные таблицы стилей. Стилизация страницы. Подключение файла CSS. CSS шрифты - color, font-family, font-size. CSS границы - border, CSS отступы - padding, margin, атрибуты идентификатора id и класса class">
+    <meta name="keywords" content="стили,стилизация, каскадная таблица стилей,подключение,css,html,html5,css3,стили,семейство шрифтов,атрибуты,идентификатор,классы,уроки для начинающих,видео">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<ul class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> Стили и форматирование</a>
+  <li><a href="les09.html"><b>Урок №9.</b> Цитаты и комментарии</a>
+  <li><a href="les10.html"><b>Урок №10.</b> Цвета в HTML</a>
+  <li><a href="les11.html"><b>Урок №11.</b> HTML-стили - CSS</a>
+  <li><a href="les12.html"><b>Урок №12.</b> Гиперссылки в HTML</a>
+  <li><a href="les13.html"><b>Урок №13.</b> Изображения в HTML</a>
+  <li><a href="les14.html"><b>Урок №14.</b> Таблицы в HTML</a>
+  <li><a href="les15.html"><b>Урок №15.</b> Списки в HTML</a>
+		</ul>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 11. HTML стили. Каскадные таблицы стилей - CSS</h2>
+<div class="quot" title="Умная мысль"><q>Я очень уважаю постепенные преобразования и стараюсь делать нечто подобное в своей жизни, но меня всегда привлекали революционные перемены. Потому что они труднее. Они эмоционально намного напряжённее. И во время таких перемен ты всегда проходишь через период, когда все говорят тебе, что у тебя ничего не получится.</q><br><address title="автор"><a href="https://ru.wikipedia.org/wiki/Джобс,_Стив" target="_blank">(Стив Джобс)</a></address></div>
+<ul class="plan">
+   <li>Стилизация HTML страниц с помощью CSS (каскадных таблиц стилей):
+    <ul class="list1">
+      <li>Встроенный CSS (inline);
+      <li>Внутренний CSS (internal);
+      <li>Внешний - CSS (external);
+    </ul>
+   <li>CSS шрифты - color, font-family, font-size
+   <li>CSS границы - border
+   <li>CSS отступы - padding (внутренний)
+   <li>CSS отступы - margin (внешний)
+   <li>Атрибут идентификатора - id
+   <li>Атрибут класса - class
+</ul>
+
+<p>Приветствую вас на одиннадцатом уроке по <strong><abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих</strong>, на котором вы узнаете о <strong>каскадных таблицах стилей (CSS)</strong> в <strong><abbr>HTML</abbr></strong>. Если вы только начинаете изучать <strong><abbr>HTML</abbr></strong>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+
+<h3>Стилизация HTML с помощью CSS (каскадных таблиц стилей)</h3>
+<p><strong>CSS</strong> - это каскадные таблицы стилей. <strong>CSS</strong> описывает, как элементы HTML должны отображаться на экране, на бумаге или на других носителях. <strong>CSS</strong> экономит много работы. Каскадные таблицы стилей могут контролировать расположение нескольких веб-страниц одновременно.</p>
+<p><strong>CSS</strong> можно добавить к элементам HTML тремя способами:</p>
+<ul class="list2">
+<li>Встроенный (inline) - с помощью атрибута style в самих элементах HTML;
+<li>Внутренний (internal) - с помощью элемента &lt;style&gt; в разделе &lt;head&gt;;
+<li>Внешний - (external) с помощью внешнего файла CSS, подключенного к HTML-странице;
+</ul>
+<p>Наиболее распространенным способом добавления CSS является сохранение стилей в отдельных файлах CSS. Однако здесь мы будем использовать встроенный (inline) и внутренний (internal) стиль, потому что такие способы легче продемонстрировать и вам проще попробовать. Хотя на своих сайтах рекомендуется использовать подключение к HTML-странице именно внешних файлов CSS.</p>
+<p class="uvaga2">Вы можете узнать больше о CSS в учебнике по CSS на сайте <a href="https://www.w3schools.com/css/default.asp" target="_blank">w3schools.com</a></p>
+<h3>Встроенный CSS</h3>
+<p><strong>Встроенный <abbr>CSS</abbr></strong> используется для применения уникального стиля к одному элементу <abbr>HTML</abbr>. Встроенный <abbr>CSS</abbr> использует атрибут style для элемента <abbr>HTML</abbr>.</p>
+<p>В этом примере цвет текста элемента &lt;h2&gt; отображается синим:</p>
+<p>Пример 11.1:</p>
+<div class="w3-code">
+&lt;h2 style="color:blue;"&gt;Это заголовок синего цвета&lt;/h2&gt;
+<div class="result"><a href="../ex/11.1.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Внутренний CSS</h3>
+<p>Внутренний CSS обычно используется для определения стиля одной HTML-страницы.</p>
+<p>Внутренний CSS определен в разделе &lt;head&gt; HTML страницы в элементе &lt;style&gt;:</p>
+<p>Пример 11.2:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+body {background-color: powderblue;}<br>
+h1 {color: blue;}<br>
+p {color: red;}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Это заголовок&lt;/h1&gt;<br>
+&lt;p&gt;Это параграф.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/11.2.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>В этом примере стиль задаётся элементам <b>body</b> (цвет фона страницы), заголовку <b>h1</b> и параграфу <b>p</b>.</p>
+<h3>Внешний CSS</h3>
+<p>Внешняя таблица стилей используется для определения стиля многих HTML-страниц. С внешней таблицей стилей вы можете изменить внешний вид всего веб-сайта, изменив только один файл <strong><abbr>CSS</abbr></strong>! Чтобы использовать внешнюю таблицу стилей, добавьте в нее ссылку в разделе &lt;head&gt; на <strong><abbr>HTML</abbr></strong>-странице:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+  &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h2&gt;Это заголовок&lt;/h2&gt;<br>
+&lt;p&gt;Это параграф.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<p>Внешняя таблица стилей может быть написана в любом текстовом редакторе. Файл не должен содержать HTML-код и должен быть сохранен с расширением .css.</p>
+<p>Вот как выглядит <b>styles.css</b>:</p>
+<div class="w3-code">
+body {background-color: powderblue;}<br>
+h1 {color: blue;}<br>
+p {color: red;}
+</div>
+<p>При подключении <strong>внешнего файла CSS</strong> результат отображения визульного оформления элементов на веб-странице будет таким же, как и при использовании <strong>встроенного</strong> и <strong>внутреннего</strong> стилей, но при этом общий вес (объём кода) страницы будет меньше. Кроме того, при изменении значений во внешней таблице стилей изменения происходят сразу на всех страницах, а не на одной, что значительно облегчает вёрстку многостраничного сайта, т.к. нет необходимости вносить изменения отдельно на каждой странице.</p>
+<h3>CSS шрифты. Color, font-family, font-size</h3>
+<p>Свойство CSS <strong>color</strong> определяет цвет текста, который будет использоваться.</p>
+<p>Свойство CSS <strong>font-family</strong> определяет семейство шрифта, который будет использоваться.</p>
+<p>Свойство CSS <strong>font-size</strong> определяет размер шрифта, который будет использоваться.</p>
+<p>Пример 11.3:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+&nbsp;h1 {<br>
+    &nbsp;&nbsp;color: blue;<br>
+    &nbsp;&nbsp;font-family: verdana;<br>
+    &nbsp;&nbsp;font-size: 300%;<br>
+&nbsp;}<br>
+&nbsp;p {<br>
+    &nbsp;&nbsp;color: red;<br>
+    &nbsp;&nbsp;font-family: courier;<br>
+    &nbsp;&nbsp;font-size: 160%;<br>
+&nbsp;}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Это заголовок&lt;/h1&gt;<br>
+&lt;p&gt;Это параграф.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/11.3.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h4>CSS границы - Border</h4>
+<p>Свойство CSS border определяет границу вокруг элемента HTML:</p>
+<p>Пример 11.4:</p>
+<div class="w3-code">
+&nbsp;p {<br>
+&nbsp;&nbsp;border: 1px solid powderblue;<br>
+&nbsp;}
+<div class="result"><a href="../ex/11.4.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h4>CSS отступы - Padding</h4>
+<p>Свойство CSS Padding определяет дополнение (пробел, внутренний отступ) между текстом и границей (border):</p>
+<p>Пример 11.5:</p>
+<div class="w3-code">
+&nbsp;p {<br>
+&nbsp;&nbsp;border: 1px solid powderblue;<br>
+&nbsp;&nbsp;padding: 30px;<br>
+&nbsp;}
+<div class="result"><a href="../ex/11.5.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h4>CSS отступы - Margin</h4>
+<p>Свойство CSS Margin определяет пробел (край, внешний отступ) за пределами границы (border):</p>
+<p>Пример 11.6:</p>
+<div class="w3-code">
+&nbsp;p {<br>
+&nbsp;&nbsp;border: 1px solid powderblue;<br>
+&nbsp;&nbsp;margin: 50px;<br>
+&nbsp;}
+<div class="result"><a href="../ex/11.6.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h4>Атрибут идентификатора - id</h4>
+<p>Чтобы определить конкретный стиль для одного специального элемента, добавьте атрибут id к элементу:</p>
+<p>Пример 11.7:</p>
+<div class="w3-code">
+&lt;p id="p01"&gt;Я отличаюсь от остальных. Я уникальный! &lt;/p&gt;
+</div>
+<p>затем определите стиль для элемента с конкретным идентификатором:</p>
+<p>Пример 11.7:</p>
+<div class="w3-code">
+#p01 {<br>
+&nbsp;&nbsp;color: blue;<br>
+}
+<div class="result"><a href="../ex/11.7.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Т.е. параграф с идентификатором p01 будет иметь цвет: синий (blue).</p>
+<p class="uvaga2">Примечание. Идентификатор элемента должен быть уникальным на странице, поэтому селектор идентификаторов используется для выбора одного уникального элемента!</p>
+<h4>Атрибут класса - class</h4>
+<p>Чтобы определить стиль для особого типа элементов, добавьте атрибут класса к элементу:</p>
+<div class="w3-code">
+&lt;p class="error"&gt;Я отличаюсь&lt;/p&gt; 
+</div>
+<p>затем определите стиль для элементов с определенным классом:</p>
+<p>Пример 11.8:</p>
+<div class="w3-code">
+&nbsp;p.error {<br>
+&nbsp;&nbsp;color: red;<br>
+}
+<div class="result"><a href="../ex/11.8.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Отличие между атрибутами идентификатора <i>id</i> и атрибутом класса <i>class</i> состоит в том, что идентификатор обычно используется для одного уникального элемента на странице, в то время, как атрибут класса используется для нескольких элементов на странице. Для обозначения идентификатора используется значок решетка (ещё называют диез или шарп), а для обозначения класса перед названием класса просто ставится точка.</p>
+<h4>Внешние ссылки</h4>
+<p>На внешние таблицы стилей можно ссылаться с полным URL-адресом или с указанием пути к текущей веб-странице.</p>
+<p>В этом примере для ссылки на таблицу стилей используется полный URL-адрес:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt; 
+</div>
+<p>На некоторых сайтах данный способ используется для подключения внешних библиотек стилей.</p>
+<p>В этом примере ссылка на таблицу стилей, которая находится в папке styles на текущем веб-сайте:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;link rel="stylesheet" href="/styles/styles.css"&gt;
+</div>
+<p>В этом примере ссылка на таблицу стилей, расположенную в той же папке, что и текущая страница:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;link rel="stylesheet" href="styles.css"&gt;
+</div>
+<p>Подробнее о путях файлов читайте в разделе «Пути файлов HTML»: <a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">https://www.w3schools.com/html/html_filepaths.asp</a></p>
+<h4>Краткое содержание главы</h4>
+<ul class="list1">
+<li>Используйте атрибут HTML style для встроенного стиля;
+<li>Используйте элемент HTML &lt;style&gt; для определения внутреннего CSS;
+<li>Используйте элемент HTML &lt;link&gt; для ссылки на внешний файл CSS;
+<li>Используйте элемент HTML &lt;head&gt; для хранения элементов &lt;style&gt; и &lt;link&gt;;
+<li>Используйте свойство CSS color для задания цвета текста;
+<li>Используйте свойство CSS font-family для текстовых шрифтов;
+<li>Используйте свойство CSS font-size для размера текста;
+<li>Используйте свойство CSS border для задания границ;
+<li>Используйте свойство CSS padding для пространства внутри элемента до границы;
+<li>Используйте свойство CSS margin для пространства за пределами границы элемента.
+</ul>
+</article>
+
+<!--
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/U383Na-NmDo" allowfullscreen></iframe></div></div>
+-->
+
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les10.html">&lt; Перейти на Урок №10 Цвета в HTML </a></div>
+<div class="les-next"><a href="les12.html">Перейти на урок №12 гипперссылки в HTML &gt;</a></div>
+</div>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://www.w3.org/" target="_blank">W3C</a>
+        <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a>          
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
