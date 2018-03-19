@@ -1,7 +1,7 @@
 *{padding: 0; margin: 0; transition: all .2s;}
 
 h1 { font-size: 2em; padding: 15px 0 0 10px;}
-h2 { font-size: 1.75em; padding: 10px; }
+h2 { font-size: 1.75em; padding: 10px;}
 h3 { font-size: 1.5em; padding: 6px;}
 h4 { font-size: 1.25em; padding: 4px;}
 h5 { font-size: 1.15em; padding: 3px;}
@@ -67,6 +67,7 @@ text-shadow: 1px 1px 50px #FF00AE, 0 0 1em #94E4E7;}
 .plan {list-style-type: circle; padding: 12px; color: #1D4260; margin-left:30px;}
 .list1 {list-style-type: disc; padding: 10px; font-family: calibri; font-size: 1.1em; color: #651E32; margin-left:30px;}
 .list2 {list-style-type: square; padding: 5px; color: #1D4260; margin-left:10px;}
+.list3 {padding: 5px; color: #1D4260; margin-left:15px;}
 .code {font-size: 1.1em; font-family: calibri; color: #11299F; padding: 10px; text-align: left;}
 .code-area {font-size: 1.1em; font-family: calibri; color: #11299F; padding: 15px 10px 15px 20px; text-align: left;}
 .uvaga {display:inline-block; border: 1px dashed blue; border-radius: 3px; background: #ADD8D5; font-size: .9em; font-family: verdana; color: #C90009; padding: 5px; text-align: left;}
@@ -120,8 +121,8 @@ footer {display:inline-block; background:#0066FF; width: 100%; text-align: cente
 	padding: 8px 12px;
 	border-left: 4px solid #4CAF50;
 	word-wrap: break-word;
-	font-family: Consolas,"courier new";
-	font-size: 16px;
+	font-family: verdana, consolas,"courier new";
+	font-size: .8em;
 }
 
 .w3-table {
@@ -133,3 +134,14 @@ footer {display:inline-block; background:#0066FF; width: 100%; text-align: cente
 
 .w3-table-tr1 {background-color: #B7D6D7;}
 
+.html5badge {
+background-image:url('../img/html5_badge20.png');
+background-repeat:no-repeat;
+background-position:right;
+padding-right:50px;
+}
+
+span.marked, span.deprecated {
+ color:#e80000;
+ background-color:transparent;
+}
