@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Урок №12. HTML ссылки - гиперссылки. HTML5 / CSS3. Уроки для начинающих. Основы. Видеоурок. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Урок №12. HTML ссылки. Как создать гиперссылку на веб-странице. HTML / CSS уроки для начинающих.">
+    <meta name="keywords" content="ссылки,гиперссылки,css,html,html5,css3,уроки для начинающих,видео">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<ul class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> Стили и форматирование</a>
+  <li><a href="les09.html"><b>Урок №9.</b> Цитаты и комментарии</a>
+  <li><a href="les10.html"><b>Урок №10.</b> Цвета в HTML</a>
+  <li><a href="les11.html"><b>Урок №11.</b> HTML-стили - CSS</a>
+  <li><a href="les12.html"><b>Урок №12.</b> Гиперссылки в HTML</a>
+  <li><a href="les13.html"><b>Урок №13.</b> Изображения в HTML</a>
+  <li><a href="les14.html"><b>Урок №14.</b> Таблицы в HTML</a>
+  <li><a href="les15.html"><b>Урок №15.</b> Списки в HTML</a>
+		</ul>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 12. Ссылки в HTML</h2>
+<div class="quot" title="Умная мысль"><q>Когда вам в голову пришла гениальная идея, действуйте незамедлительно.</q><br><address title="автор"><a href="https://ru.wikipedia.org/wiki/Гейтс,_Билл" target="_blank">(Билл Гейтс)</a></address></div>
+
+<ul class="plan">
+  <li>HTML-ссылки. Синтаксис
+  <li>Абсолютные и относительные (локальные) ссылки
+  <li>Цвета HTML-ссылок
+  <li>Целевой атрибут (attribute target) в HTML ссылках
+  <li>Изображение как ссылка
+  <li>Атрибут title в ссылках
+  <li>HTML ссылки, создающие закладку
+  <li>Внешние пути ссылок
+  <li>Ссылка на элемент с указанным идентификатором id
+  <li>Ссылка на JavaScript-код
+  <li>Различия ссылок в HTML 4.01 и HTML5
+  <li>Настройки CSS по умолчанию для ссылки
+</ul>
+
+<p>Приветствую вас на двеннадцатом уроке по <strong><abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих</strong>, на котором вы узнаете о <strong>ссылках</strong> в <strong><abbr>HTML</abbr></strong>. Если вы только начинаете изучать <strong><abbr>HTML</abbr></strong>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+<h2>Что такое ссылки в HTML?</h2>
+<p>Cсылки присутствуют на большинстве веб-страниц. Ссылки позволяют пользователям кликать по ним и переходить со страницы на страницу, с одного сайта на другой.</p>
+<p><strong><abbr>HTML</abbr> ссылки</strong> – это гиперссылки. Вы можете нажать на ссылку и перейти на другой документ (другую веб-страницу). Когда вы наводите мышь на ссылку, стрелка мыши обычно превращается в маленькую ладонь.</p>
+<p><b>Примечание.</b> Ссылка не обязательно должна быть текстовой. Это также может быть изображение или любой другой элемент <abbr>HTML</abbr>.</p>
+<h3><abbr>HTML</abbr> ссылки. Синтаксис</h3>
+<p>В <abbr>HTML</abbr> ссылки определяются тегом &lt;a&gt; (сокращенно от слова anchor (анг.) – якорь):</p>
+<p><b>&lt;a href="url"&gt;Текст ссылки&lt;/a&gt;</b></p>
+<p>Пример 12.1:</p>
+<div class="w3-code">
+&lt;a href="https://www.w3schools.com/html/"&gt;Учебник HTML&lt;/a&gt;
+<div class="result"><a href="../ex/12.1.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Атрибут <strong>href</strong> (сокращенно от анг. hypertext reference/гипертекстовая ссылка) является обязательным и указывает адрес получателя ссылки <i>(<a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a>)</i>. Текст ссылки - видимая часть. Нажав на текст ссылки, вы перейдёте по указанному адресу. В качестве адреса ссылки также может использоваться документ любого типа и результат перехода по ссылке зависит от конечного файла. Так, архивы (файлы с расширением <i>.zip</i> или <i>.rar</i>) будут сохраняться на локальный диск, документы с расширением <i>.pdf</i> по умолчанию открываются в браузере для чтения.</p><p>Новый документ по умолчанию загружается в текущее окно браузера, однако это свойство можно изменить с помощью атрибута <strong>target</strong> с разными значениями.</p>
+<p><b>Примечание.</b> Без косой черты (слеша) на адресах подпапки вы можете создать на сервере два запроса. Многие серверы автоматически добавят косую черту в адрес и затем создадут новый запрос.</p>
+<h3>Абсолютные и относительные (локальные) ссылки</h3>
+<p>Есть два вида ссылок - абсолютные и относительные. В приведенном выше примере используется <strong>абсолютный URL</strong> (полный веб-адрес). Абсолютные ссылки, как правило, ведут на другой сайт.</p>
+<p><strong>Локальная ссылка</strong> (ссылка на страницу, которая находится на том же веб-сайте) указана с <strong>относительным URL</strong> (без указания http://www...). Т.е. все ссылки, с помощью которых можно перемещаться по страницам в пределах одного сайта - относительные, и для них нет необходимости указывать полный веб-адрес.</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+</div>
+<p>В этом примере ссылка ведёт на страницу, которая находится в том же каталоге на сайте, что и страница, на которой размещена данная ссылка.</p>
+<h3>Цвета HTML ссылок</h3>
+<p>По умолчанию во всех браузерах ссылка будет отображаться так:</p>
+<ul class="list1">
+  <li>Не посещенная ссылка подчеркнута и синего цвета;
+  <li>Посещенная ссылка подчеркнута и фиолетового цвета;
+  <li>Активная ссылка подчеркнута и красного цвета.
+</ul>
+<p>Пример 12.2:</p>
+<div class="w3-code">
+&lt;a href="https://html5beginners.github.io/" target="_blank"&gt;Самый лучший сайт про HTML в Интернете!!!&lt;/a&gt;
+<div class="result"><a href="../ex/12.2.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Вы можете изменить цвета по умолчанию, используя CSS (добавьте данный код стиля между тегами &lt;head&gt; &lt;/head&gt; на странице со ссылкой и посмотрите результат!):</p>
+<p>Пример 12.3:</p>
+<div class="w3-code">
+&lt;style&gt;<br>
+a:link {<br>
+&nbsp;&nbsp;color: green;<br>
+&nbsp;&nbsp;background-color: transparent;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+}<br>
+a:visited {<br>
+&nbsp;&nbsp;color: #FF00AE;<br>
+&nbsp;&nbsp;background-color: transparent;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+}<br>
+a:hover {<br>
+&nbsp;&nbsp;color: red;<br>
+&nbsp;&nbsp;background-color: transparent;<br>
+&nbsp;&nbsp;text-decoration: underline;<br>
+}<br>
+a:active {<br>
+&nbsp;&nbsp;color: #33BEC3;<br>
+&nbsp;&nbsp;background-color: transparent;<br>
+&nbsp;&nbsp;text-decoration: underline;<br>
+}<br>
+&lt;/style&gt;
+<div class="result"><a href="../ex/12.3.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>где:<br>
+  <strong>a:link</strong> - обычная ссылка;<br>
+  <strong>a:visited</strong> - посещенная ссылка;<br>
+  <strong>a:hover</strong> - ссылка при наведении на неё мышки;<br>
+  <strong>a:active</strong> - активная (открытая) ссылка.
+</p>
+<h3>Целевой атрибут (attribute target) в HTML ссылках</h3>
+<p><strong>Атрибут target</strong> указывает, где можно открыть связанный документ.</p>
+<p><strong>Атрибут target</strong> может иметь одно из следующих значений:</p>
+<ul class="list1">
+  <li>_blank - открывает связанный документ в новом окне или вкладке;
+  <li>_self - открывает связанный документ в том же окне/вкладке, когда он был нажат (работает в браузерах по умолчанию);
+  <li>_parent - открывает связанный документ в родительском фрейме;
+  <li>_top - открывает связанный документ во всё открытое окно;
+  <li>framename - открывает связанный документ в именованном фрейме.
+</ul>
+<p>В этом примере (target="_blank") откроется связанный документ в новом окне / вкладке браузера:</p>
+<p>Пример 12.4:</p>
+<div class="w3-code">
+&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Посетите W3Schools!&lt;/a&gt;
+<div class="result"><a href="../ex/12.4.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Если ваша веб-страница заблокирована во фрейме, вы можете использовать <em>target="_top"</em> для выхода из фрейма:</p>
+<p>Пример 12.5:</p>
+<div class="w3-code">&lt;a href="https://www.w3schools.com/html/" target="_top"&gt;HTML5 учебник!&lt;/a&gt;
+<div class="result"><a href="../ex/12.5.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Изображение как ссылка</h3>
+<p>Обычно изображения используются как ссылки:</p>
+<p>Пример 12.6:</p>
+<div class="w3-code">
+&lt;a href="index.html"&gt;<br>
+&lt;img src="../img/HTML5_logo.png" alt="logo" style="width:50px;height:60px;border:0;"&gt;<br>
+&lt;/a&gt;
+<div class="result"><a href="../ex/12.6.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p><b>Примечание</b>: граница указывается ноль (border:0;), чтобы IE9 (и более ранние версии) не отображал границу вокруг изображения (когда изображение является ссылкой).</p>
+<h3>Атрибут title в ссылках</h3>
+<p><strong>Атрибут title</strong> указывает дополнительную информацию об элементе. Информация чаще всего отображается в виде текста всплывающей подсказки, когда курсор находится над элементом.</p>
+<p>Пример 12.7:</p>
+<div class="w3-code">
+&lt;a href="https://www.w3schools.com/html/" title="Перейти в раздел HTML на W3Schools"&gt;Посетите HTML учебник&lt;/a&gt;
+<div class="result"><a href="../ex/12.7.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Подводим мышку к ссылке и видим всплывающую подсказку!</p>
+
+<h3>HTML ссылки, создающие закладку (с указанным идентификатором id)</h3>
+<p><strong>HTML-закладки</strong> используются, чтобы позволить читателям перейти к определенным частям веб-страницы. Закладки могут быть полезны, если ваша веб-страница очень длинная. Чтобы сделать закладку, вы должны сначала создать закладку, а затем добавить к ней ссылку. При щелчке по ссылке страница будет прокручиваться до местоположения с закладкой.</p>
+<p>Пример:</p>
+<p>Сначала создайте закладку с атрибутом <strong>id</strong>:</p>
+<div class="w3-code">&lt;h2 id="C4"&gt;глава 4&lt;/h2&gt;</div>
+<p>Затем добавьте ссылку на закладку («Перейти к главе 4»), с той же страницы:</p>
+<div class="w3-code">&lt;a href="#C4"&gt;Перейти к главе 4&lt;/a&gt;</div>
+<p>Или добавьте ссылку на закладку («Перейти к главе 4»), с другой страницы:</p>
+<div class="w3-code">&lt;a href="html_demo.html#C4"&gt;Перейти к главе 4&lt;/a&gt;</div>
+<p>Как связать элемент с указанным идентификатором внутри страницы (атрибут name не поддерживается в <strong>HTML5</strong>).</p>
+<p>Пример: 12.8</p>
+<div class="w3-code">
+&lt;h2 id="top"&gt;Начало страницы&lt;/h2&gt;<br>
+&lt;p&gt;много текста&lt;/p&gt;<br>
+&lt;p&gt;…много текста&lt;/p&gt;<br>
+&lt;p&gt;…много текста&lt;/p&gt;<br>
+&lt;p&gt;…много текста&lt;/p&gt;<br>
+&lt;p&gt;…много текста&lt;/p&gt;<br>
+&lt;a href="#top"&gt;Перейти на начало!&lt;/a&gt;
+<div class="result"><a href="../ex/12.8.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Нажав на ссылку "Перейти на начало!" вас автоматически вернёт на начало страницы или к тому месту, где прикреплён <strong>id</strong>. Чтобы увидеть данный эффект, необходимо, чтобы на странице было много текста и была видна вертикальная полоса прокрутки.</p>
+<h3>Внешние пути</h3>
+<p>На внешние страницы можно ссылаться с полным URL-адресом или с указанием пути к текущей веб-странице. В этом примере для ссылки на веб-страницу используется <strong>полный URL-адрес</strong>:</p>
+<p>Пример:</p>
+<div class="w3-code">&lt;a href="https://html5beginners.github.io/"&gt;HTML для начинающих&lt;/a&gt;</div>
+<p>В этом примере ссылка на страницу, расположенную в папке <b>w3c</b> на текущем веб-сайте:</p>
+<p>Пример:</p>
+<div class="w3-code">&lt;a href="/w3c/w3c00.html"&gt;Уроки W3C&lt;/a&gt;</div>
+<p>Этот пример ссылается на страницу, расположенную в той же папке, что и на текущей странице:</p>
+<div class="w3-code">&lt;a href="about.html"&gt;Про сайт&lt;/a&gt;</div>
+<p>Также ссылку можно связать с почтовым сообщением <em>mailto</em> (будет работать, только если у вас установлена электронная почта - email).</p>
+<p>Это ссылка на email:</p>
+<div class="w3-code">&lt;a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"&gt;Отправить почту&lt;/a&gt;</div>
+<p><b>Примечание</b>. Пространства между словами следует заменить на %20, чтобы убедиться, что браузер правильно отобразит текст.</p>
+<p>Или можно просто сделать ссылку с указанием email:</p>
+<div class="w3-code">&lt;a href="mailto:user@example.com target="_top"&gt;Написать сообщение&lt;/a&gt;</div>
+<p>И откроется почтовый клиент, который установлен по умолчанию. (На Windows, где установлен пакет Microsoft Office, обычно запускается Outlook).</p>
+
+<h3>Ссылка на JavaScript</h3>
+<p>Можно также добавить <strong>JavaScript-код</strong> внутри атрибута href:</p>
+<p>Пример: 12.9:</p>
+<div class="w3-code">
+&lt;a href="javascript:alert('Hello World!');"&gt;Выполнить JavaScript&lt;/a&gt;
+<div class="result"><a href="../ex/12.9.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Нажимая на такую ссылку, срабатывает JavaScript и появляется всплывающее окно с фразой <strong>'Hello, World!'</strong>.</p>
+<h3>Различия между HTML 4.01 и HTML5</h3>
+<p>В HTML 4.01 тег &lt;a&gt; может быть либо гиперссылкой, либо якорем. В <strong><abbr>HTML5</abbr></strong> тег &lt;a&gt; всегда является гиперссылкой, но если он не имеет атрибута href, он является только заполнителем для гиперссылки.</p>
+<p><strong><abbr>HTML5</abbr></strong> имеет несколько новых атрибутов, а некоторые атрибуты <strong><abbr>HTML4.01</abbr></strong> больше не поддерживаются.</p>
+<h3>Глобальные атрибуты</h3>
+<p>Тег &lt;a&gt; также поддерживает <strong>глобальные атрибуты</strong> в <abbr>HTML</abbr>.</p>
+<h3>Атрибуты события</h3>
+<p>Тег &lt;a&gt; также поддерживает <strong>атрибуты событий</strong> в <abbr>HTML</abbr>.</p>
+<h3>Настройки CSS по умолчанию для ссылки</h3>
+<p>В большинстве браузеров будет отображаться элемент &lt;a&gt; со следующими значениями по умолчанию:</p>
+<div class="w3-code">
+a:link, a:visited {<br>
+&nbsp;&nbsp;color: (internal value);<br>
+&nbsp;&nbsp;text-decoration: underline;<br>
+&nbsp;&nbsp;cursor: auto;<br>
+}<br>
+a:link:active, a:visited:active {<br>
+&nbsp;&nbsp;color: (internal value);<br>
+}
+</div>
+<p>При необходимости данные настройки можно изменить!</p>
+<h4>Краткое содержание главы</h4>
+<ul class="list2">
+  <li>Используйте элемент &lt;a&gt; для определения ссылки;
+  <li>Используйте атрибут href для определения адреса ссылки;
+  <li>Используйте целевой атрибут (target), чтобы определить, где открыть связанный документ;
+  <li>Используйте элемент &lt;img&gt; (внутри &lt;a&gt;), чтобы использовать изображение в качестве ссылки;
+  <li>Используйте атрибут id (id="значение") для определения закладок на странице;
+  <li>Используйте ссылку href (href="#значение") для ссылки на закладку.
+</ul>
+<h3>Атрибуты</h3>
+<p class="html5badge" title="Новый в HTML5" style="background-position:left;padding-left:20px;height:18px;">= Новый в HTML5.</p>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Атрибут</th>
+    <th>Значение</th>
+    <th>Описание</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>charset</td>
+    <td>char_encoding</td>
+    <td><span class="deprecated">Не поддерживается в HTML5.</span><br>Задает набор символов связанного документа</td>
+  </tr>
+  <tr>
+    <td>coords</td>
+    <td>coordinates</td>
+    <td><span class="deprecated">Не поддерживается в HTML5.</span><br>Указывает координаты ссылки</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td title="Новый в HTML5" class="html5badge">download</td>
+    <td>filename</td>
+    <td>Указывает, что цель будет загружаться, когда пользователь нажимает на гиперссылку</td>
+  </tr>
+  <tr>
+    <td>href</td>
+    <td>URL</td>
+    <td>Указывает URL-адрес страницы, на которую ссылается ссылка</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>hreflang</td>
+    <td>language_code</td>
+    <td>Задает язык связанного документа</td>
+  </tr>
+  <tr>
+    <td title="Новый в HTML5" class="html5badge">media</td>
+    <td>media_query</td>
+    <td>Определяет, какой носитель/устройство привязан к документу для оптимизации</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>name</td>
+    <td>section_name</td>
+    <td><span class="deprecated">Не поддерживается в HTML5.</span> Вместо этого используйте глобальный атрибут id.<br>Задает имя привязки (якоря)</td>
+  </tr>
+  <tr>
+    <td>rel</td>
+    <td>alternate, author, bookmark, external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag</td>
+    <td>Задает связь между текущим документом и связанным документом</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>rev</td>
+    <td>text</td>
+    <td><span class="deprecated">Не поддерживается в HTML5.</span><br>Задает взаимосвязь между связанным документом и текущим документом</td>
+  </tr>
+  <tr>
+    <td>shape</td>
+    <td>default, rect, circle, poly</td>
+    <td><span class="deprecated">Не поддерживается в HTML5.</span><br>Определяет форму ссылки</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td>target</td>
+    <td>_blank, _parent, _self, _top, framename</td>
+    <td>Определяет, где можно открыть связанный документ</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>media_type</td>
+    <td>Задает тип носителя связанного документа</td>
+  </tr>
+</tbody>
+</table>
+</article>
+
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/lNgNxzWzOUc" allowfullscreen></iframe></div><br>Данный видео урок предназначен для новичков, желающих освоить язык разметки веб-страниц HTML. В данном уроке вы узнаете о ссылках в HTML.</div>
+
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les10.html">&lt; Перейти на Урок №10 Цвета в HTML </a></div>
+<div class="les-next"><a href="les12.html">Перейти на урок №12 гипперссылки в HTML &gt;</a></div>
+</div>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://www.w3.org/" target="_blank">W3C</a>
+        <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a>          
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
