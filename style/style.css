@@ -27,7 +27,7 @@ header {background: #000080; width: 100%; padding-bottom: 10px; color: #ADD8E6; 
 menu {list-style-position: inside;}
 figcaption {font-family: curier; font-size:.9em;}
 
-img {margin: 5px;}
+img {margin: 2px;}
 .imgleft {float: left;}
 .imgcenter {text-align:center; max-width:100%; padding-top: 5px; padding-bottom: 5px;}
 .imgright {float: right;}
@@ -140,6 +140,12 @@ background-repeat:no-repeat;
 background-position:right;
 padding-right:50px;
 }
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-col.m4, .w3-third {width: 33.33333%;}
+.w3-codespan {color: crimson;background-color: #f1f1f1;padding-left: 4px;padding-right: 4px;font-size: 110%;}
+.w3-code, .w3-codespan {font-family: Consolas,"courier new";font-size:.9em;}
 
 span.marked, span.deprecated {
  color:#e80000;
