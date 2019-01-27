@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Изображения в HTML. Атрибуты width, height и style</title>
+<style>
+/* Эта таблица стилей устанавливает ширину всех изображений на 100%: */
+img {
+width:100%;
+}
+</style>
+</head>
+<body>
+<h3>Стилизация изображения</h3>
+<p>Изображение ниже имеет атрибут width, установленный на 128 пикселей, 
+но таблица стилей отменяет его и устанавливает ширину 100%.</p>
+<img src="../img/html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<p>В приведенном ниже изображении используется атрибут style, где ширина 
+равна 128 пикселям, что переопределяет таблицу стилей</p>
+<img src="../img/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+</body>
+</html>
