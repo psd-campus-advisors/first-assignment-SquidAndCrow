@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Таблицы в HTML</title>
+        <head>
+            <style>
+                table,td,th {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                td,th {
+                    padding: 5px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Ячейка, которая охватывает две колонки</h2>
+            <p>Чтобы сделать диапазон ячеек более чем одним столбцом, используйте атрибут colspan с указанием количества столбцов.</p>
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>55577854</td>
+                    <td>55577855</td>
+                </tr>
+            </table>
+        </body>
+    </html>
+	
