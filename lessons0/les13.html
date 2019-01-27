@@ -55,12 +55,18 @@
 <div class="quot" title="Умная мысль"><q>Ваше время ограничено, не тратьте его, живя чужой жизнью.</q><br><address title="автор"><a href="https://ru.wikipedia.org/wiki/Джобс,_Стив" target="_blank">(Стив Джобс)</a></address></div>
 
 <ul class="plan">
-  <li>
-  <li>
-  <li>
-  <li>
-  <li>
-  <li>
+  <li>Синтаксис изображений в <abbr title="Язык гипертекстовой разметки">HTML</abbr>;
+  <li>Тег <em>&lt;img&gt;</em>, атрибуты <em>src</em> и <em>alt</em>;
+  <li>Размер изображения - ширина (<em>width</em>) и высота (<em>height</em>);
+  <li>Изображения в другой папке;
+  <li>Изображения на другом сервере;
+  <li>Анимированные изображения;
+  <li>Изображение как ссылка;
+  <li>Обтекание изображения - свойство <em>float</em>;
+  <li>Карты изображений - <em>image-map</em>;
+  <li>Тег <em>&lt;area&gt;</em>, атрибуты <em>shape</em> и <em>coords</em>;
+  <li>Фоновое изображение - <em>background-image</em>;
+  <li>Элемент <em>&lt;picture&gt;</em> (картинка).
 </ul>
 
 <p>Приветствую вас на триннадцатом уроке по <strong><abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих</strong>, на котором вы узнаете об <strong>изображениях</strong> в <strong><abbr>HTML</abbr></strong>. Если вы только начинаете изучать <strong><abbr>HTML</abbr></strong>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
@@ -146,6 +152,7 @@ img {<br>
 <p>В данном примере изображение находится в папке <strong>img</strong>. Точки перед <b>img</b> с разделяющим слешем означают, что папка <b>img</b> находится в директории на уровень выше. Обычно папки для хранения изображений на сайте имеют название <b>img</b> или <b>image</b> (<b>images</b>).</p>
 <h3>Изображения на другом сервере</h3>
 <p>Некоторые веб-сайты хранят свои изображения на специальных серверах для хранения изображений. Фактически, вы можете получить доступ к изображениям с любого веб-адреса в мире, указав к нему путь:</p>
+<p>Пример 13.3:</p>
 <div class="w3-code">
 &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;
 <div class="result"><a href="../ex/13.3.html" target="_blank">Посмотреть результат!</a></div>
@@ -153,6 +160,7 @@ img {<br>
 <p>В данном примере отображается картинка, которая находится на сайте <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></p>
 <h3>Анимированные изображения</h3>
 <p>HTML позволяет использовать анимированные GIF-файлы:</p>
+<p>Пример 13.4:</p>
 <div class="w3-code">
 &lt;img src="../img/programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;
 <div class="result"><a href="../ex/13.4.html" target="_blank">Посмотреть результат!</a></div>
@@ -268,7 +276,7 @@ area {<br>
   </tbody>
 </table>
 
-<h3>Фоновое изображение</h3>
+<h3>Фоновое изображение - background-image</h3>
 <p>Чтобы добавить фоновое изображение в элемент HTML, используйте свойство CSS <strong>background-image</strong>:</p>
 <p>Пример 13.8:</p>
 <p>Чтобы добавить фоновое изображение на веб-страницу, укажите свойство <em>background-image</em> элемента <em>BODY</em>:</p>
@@ -284,7 +292,7 @@ area {<br>
 <div class="w3-code">
 &lt;body&gt;<br>
 &lt;p style="background-image:url('../img/clouds.jpg')"&gt;<br>
-Вы можете указать фоновые изображения для любого видимого элемента HTML. В этом примере фоновое изображение указано для параграфа. По умолчанию фоновое изображение будет повторяться в направлении (направлениях), где оно меньше элемента, в котором указано. Попробуйте изменить размер браузера, чтобы увидеть, как фоновое изображение ведёт себя.<br>
+Вы можете указать фоновые изображения для любого видимого элемента HTML. В этом примере фоновое изображение указано для параграфа. По умолчанию фоновое изображение будет повторяться в направлении (направлениях), где оно меньше элемента, в котором указано. Попробуйте изменить размер окна браузера, чтобы увидеть, как фоновое изображение ведёт себя.<br>
 &lt;/p&gt;<br>
 &lt;/body&gt;
 <div class="result"><a href="../ex/13.9.html" target="_blank">Посмотреть результат!</a></div>
@@ -370,7 +378,7 @@ area {<br>
   </tr>
   <tr class="w3-table-tr1">
     <td><a href="https://www.w3schools.com/tags/att_img_align.asp" target="_blank">align</a></td>
-    <td>top bottom middle left right</td>
+    <td>top, bottom, middle, left, right</td>
     <td><span class="deprecated">Не поддерживается в HTML5.</span> Определяет выравнивание изображения в соответствии с окружающими элементами.</td>
   </tr>
   <tr>
@@ -459,7 +467,7 @@ area {<br>
 </table>
 <br>
 
-<h3>Атрибут для &lt;area&gt;</h3>
+<h3>Атрибуты для &lt;area&gt;</h3>
 <p class="html5badge" title="Новый в HTML5" style="background-position:left;padding-left:20px;height:18px;">= Новый в HTML5.</p>
 <table class="w3-table">
   <tbody>
@@ -532,12 +540,12 @@ area {<br>
 </table>
 </article>
 
-<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/lNgNxzWzOUc" allowfullscreen></iframe></div><br>Данный видео урок предназначен для новичков, желающих освоить язык разметки веб-страниц HTML. В данном уроке вы узнаете о ссылках в HTML.</div>
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/wvbLMi12XIQ" allowfullscreen></iframe></div><br>Данный видео урок предназначен для новичков, желающих освоить язык разметки веб-страниц HTML. В данном уроке вы узнаете об изображениях в HTML.</div>
 
 <hr><br>
 <div class="pages">
-<div class="les-prev"><a href="les11.html">&lt; Перейти на Урок №11. HTML стили. CSS </a></div>
-<div class="les-next"><a href="les13.html">Перейти на урок №13. Изображения в HTML &gt;</a></div>
+<div class="les-prev"><a href="les12.html">&lt; Перейти на Урок №12. Гиперссылки в HTML </a></div>
+<div class="les-next"><a href="les14.html">Перейти на урок №14. Таблицы в HTML &gt;</a></div>
 </div>
 		
 	<div class="useful">

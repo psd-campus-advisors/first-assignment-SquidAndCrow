@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Урок №15. Списки в HTML - HTML5 / CSS3. Неупорядоченный и упорядочные списки (нумерованные и ненумерованные). Уроки для начинающих. Основы. Видеоурок. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Урок №15. Списки в HTML. Как создать или добавить список на веб-страницу. Нумерованный и ненумерованный список на веб-странице. HTML / CSS уроки для начинающих. Основы языка HTML">
+    <meta name="keywords" content="списки,теги,list,как добавить,нумерованный,упорядоченный,css3,уроки для начинающих">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<ul class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> Стили и форматирование</a>
+  <li><a href="les09.html"><b>Урок №9.</b> Цитаты и комментарии</a>
+  <li><a href="les10.html"><b>Урок №10.</b> Цвета в HTML</a>
+  <li><a href="les11.html"><b>Урок №11.</b> HTML-стили - CSS</a>
+  <li><a href="les12.html"><b>Урок №12.</b> Гиперссылки в HTML</a>
+  <li><a href="les13.html"><b>Урок №13.</b> Изображения в HTML</a>
+  <li><a href="les14.html"><b>Урок №14.</b> Таблицы в HTML</a>
+  <li><a href="les15.html"><b>Урок №15.</b> Списки в HTML</a>
+  <li><a href="les15.html"><b>Урок №16.</b> Блоки в HTML</a>
+		</ul>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 15. Списки в HTML</h2>
+<div class="quot" title="Умная мысль"><q>Жизнь как раз в том и заключается, чтобы 7 раз упасть и 8 раз подняться.</q><br><address title="автор"><a href="https://ru.wikipedia.org/wiki/Омар_Хайям" target="_blank">(Пауло Коэльо)</a></address></div>
+
+<ul class="plan">
+  <li>Неупорядоченный (маркированный, ненумерованный) список в <abbr title="Язык гипертекстовой разметки">HTML</abbr>;
+  <li>CSS свойство <b>list-style-type</b>;
+  <li>Стили маркера для элемента списка;
+  <li>Упорядоченный (пронумерованный) список в <abbr title="Язык гипертекстовой разметки">HTML</abbr>;
+  <li>Атрибут <b>type</b> тега <b>&lt;ol&gt;</b>;
+  <li>Типы маркера элемента списка: числа, заглавные буквы, строчные буквы, прописные римские цифры, римские цифры в нижнем регистре;
+  <li>Списки описания;
+  <li>Подсчет контрольного списка;
+  <li>Горизонтальный список с помощью CSS;
+  <li>HTML теги списка;
+</ul>
+
+<p>Приветствую вас на пятнадцатом уроке по <strong><abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих</strong>, на котором вы узнаете о <strong>списках</strong> в <strong><abbr>HTML</abbr></strong>. Если вы только начинаете изучать <strong><abbr>HTML</abbr></strong>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+<br>
+
+<article>
+<p>Списки на веб-странице выглядат также, как и в любом другом документе. Пример</p>
+<p><strong>Неупорядоченный список</strong>:</p>
+<ul class="list1">
+  <li>Вещь
+  <li>Вещь
+  <li>Вещь
+  <li>Вещь
+</ul>
+<p><strong>Упорядоченный список</strong>:</p>
+<ol class="list-ordered">
+  <li>Первая вещь
+  <li>Вторая вещь
+  <li>Третья вещь
+  <li>Четвертая вещь
+</ol>
+<p>Списки бывают разных видов.</p>
+<h3>Неупорядоченный (маркированный или ненумерованный) список в HTML</h3>
+<p>Неупорядоченный список начинается с тега <code class="w3-codespan">&lt;ul&gt;</code>. Каждый элемент списка начинается с тега <code class="w3-codespan">&lt;li&gt;</code>.</p>
+<p>Элементы списка будут отмечены маркерами (по умолчанию в виде маленьких чёрных кругов):</p>
+<p>Пример 15.1:</p>
+<div class="w3-code">
+&lt;ul&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.1.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+
+<p>В неупорядоченном (ненумерованном) списке можно выбирать вид маркера элемента списка.</p>
+<p>CSS свойство <code class="w3-codespan">list-style-type</code> используется для определения стиля маркера элемента списка:</p>
+
+<table>
+  <tr>
+    <th>Значение</th>
+    <th>Описание</th>
+  </tr>
+  <tr>
+    <td>disc</td>
+    <td>Устанавливает маркер элемента списка в виде закрашенного круга (как и по умолчанию)</td>
+  </tr>
+  <tr>
+    <td>circle</td>
+    <td>Устанавливает маркер элемента списка в виде круга</td>
+  </tr>
+    <tr>
+    <td>square</td>
+    <td>Устанавливает маркер элемента списка в виде квадрата</td>
+  </tr>
+    <tr>
+    <td>none</td>
+    <td>Элементы списка не будут отмечены (т.е. маркеры не отображаются)</td>
+  </tr>
+</table>
+<p>Пример 15.2 – маркер <em>disc</em>:</p>
+<div class="w3-code">
+&lt;ul style="list-style-type:disc"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.2.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Пример 15.3 – маркер <em>circle</em>:</p>
+<div class="w3-code">
+&lt;ul style="list-style-type:circle"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.3.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Пример 15.4 – маркер <em>square</em>:</p>
+<div class="w3-code">
+&lt;ul style="list-style-type:square"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.4.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Пример 15.5 – маркер <em>none:</em></p>
+<div class="w3-code">
+&lt;ul style="list-style-type:none"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.5.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Упорядоченный (пронумерованный) список в HTML</h3>
+<p>Упорядоченный список начинается с тега &lt;ol&gt;. Каждый элемент списка начинается с тега &lt;li&gt;.</p>
+<p>Элементы списка будут помечены номерами по умолчанию:</p>
+<p>Пример 15.6. Упорядоченный список:</p>
+<div class="w3-code">
+&lt;ol&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.6.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Упорядоченные списки могут иметь различные типы маркеров.</p>
+<h3>Атрибут <em>type</em> в упорядоченном списке</h3>
+<p>Атрибут <code class="w3-codespan">type</code> тега <code class="w3-codespan">&lt;ol&gt;</code> определяет тип маркера элемента списка:</p>
+<table>
+  <tr>
+    <th>Тип</th>
+    <th>Описание</th>
+  </tr>
+  <tr>
+    <td>type="1"</td>
+    <td>Элементы списка будут пронумерованы числами (по умолчанию)</td>
+  </tr>
+  <tr>
+    <td>type="A"</td>
+    <td>Элементы списка будут пронумерованы заглавными буквами</td>
+  </tr>
+  <tr>
+    <td>type="a"</td>
+    <td>Элементы списка будут пронумерованы строчными буквами</td>
+  </tr>
+  <tr>
+    <td>type="I"</td>
+    <td>Элементы списка будут пронумерованы прописными римскими цифрами</td>
+  </tr>
+  <tr>
+    <td>type="i"</td>
+    <td>Элементы списка будут пронумерованы строчными римскими цифрами</td>
+  </tr>
+</table>
+<p>Элементы упорядоченного списка могут быть пронумерованы: числами (как и по умолчанию), заглавными буквами, строчными буквами, прописными римскими цифрами и римскими цифрами в нижнем регистре.</p>
+<p>Тип <b>"Числа"</b>:</p>
+<p>Пример 15.7:</p>
+<div class="w3-code">
+&lt;ol type="1"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.7.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Тип <b>"Заглавные буквы"</b>:</p>
+<p>Пример 15.8:</p>
+<div class="w3-code">
+&lt;ol type="A"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.8.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Тип <b>"Строчные буквы"</b>:</p>
+<p>Пример 15.9:</p>
+<div class="w3-code">
+&lt;ol type="a"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.9.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Тип <b>"Прописные римские цифры"</b>:</p>
+<p>Пример 15.10:</p>
+<div class="w3-code">
+&lt;ol type="I"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.10.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<p>Тип <b>"Римские цифры в нижнем регистре"</b>:</p>
+<p>Пример 15.11:</p>
+<div class="w3-code">
+&lt;ol type="i"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.11.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>HTML списки описания</h3>
+<p>HTML также поддерживает списки описания.</p>
+<p>Список описания - это список терминов с описанием каждого термина.</p>
+<p>Тег &lt;dl&gt; определяет список описания, тег &lt;dt&gt; определяет термин (название), а тег &lt;dd&gt; описывает каждый термин (название):</p>
+<p>Пример 15.12:</p>
+<div class="w3-code">
+&lt;dl&gt;<br>
+  &lt;dt&gt;Coffee&lt;/dt&gt;<br>
+  &lt;dd&gt;- black hot drink&lt;/dd&gt;<br>
+  &lt;dt&gt;Milk&lt;/dt&gt;<br>
+  &lt;dd&gt;- white cold drink&lt;/dd&gt;<br>
+&lt;/dl&gt;
+<div class="result"><a href="../ex/15.12.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Вложенные HTML-списки</h3>
+<p>Список может быть вложенным (списки внутри списков):</p>
+<p>Пример 15.13:</p>
+<div class="w3-code">
+&lt;ul&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea<br>
+    &lt;ul&gt;<br>
+      &lt;li&gt;Black tea&lt;/li&gt;<br>
+      &lt;li&gt;Green tea&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+  &lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+<div class="result"><a href="../ex/15.13.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<div class="uvaga2">Примечание. Элементы списка могут содержать новый список и другие элементы HTML, такие как изображения и ссылки и т.д.</div>
+<h3>Подсчет контрольного списка</h3>
+<p>По умолчанию упорядоченный список начинает отсчет с 1. Если вы хотите начать подсчет с указанного числа, вы можете использовать атрибут <em>start</em> (т.е. начало):</p>
+<p>Пример 15.14:</p>
+<div class="w3-code">
+&lt;ol start="50"&gt;<br>
+  &lt;li&gt;Coffee&lt;/li&gt;<br>
+  &lt;li&gt;Tea&lt;/li&gt;<br>
+  &lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+<div class="result"><a href="../ex/15.14.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<h3>Горизонтальный список с помощью CSS</h3>
+<p>HTML-списки можно стилизовать различными способами с помощью CSS.</p>
+<p>Одним из популярных способов является создание списка по горизонтали для создания меню навигации:</p>
+<p>Пример 15.15:</p>
+<div class="w3-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+  list-style-type: none;<br>
+  margin: 0;<br>
+  padding: 0;<br>
+  overflow: hidden;<br>
+  background-color: #333;<br>
+}<br>
+<br>
+li {<br>
+  float: left;<br>
+}<br>
+<br>
+li a {<br>
+  display: block;<br>
+  color: white;<br>
+  text-align: center;<br>
+  padding: 16px;<br>
+  text-decoration: none;<br>
+}<br>
+<br>
+li a:hover {<br>
+  background-color: #111;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br><br>
+&lt;body&gt;<br>
+&lt;ul&gt;<br>
+  &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<div class="result"><a href="../ex/15.15.html" target="_blank">Посмотреть результат!</a></div>
+</div>
+<div class="uvaga2">Совет: вы можете узнать больше о CSS в нашем <a href="https://www.w3schools.com/css/default.asp" target="_blank">руководстве CSS</a>.</div>
+<h4 style="text-align: center">Резюме</h4>
+<ul class="list2">
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;ul&gt;</code> для определения неупорядоченного списка;
+  <li>Используйте свойство CSS <code class="w3-codespan">list-style-type</code> для определения маркера элемента списка;
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;ol&gt;</code> для определения упорядоченного списка;
+  <li>Используйте атрибут HTML <code class="w3-codespan">type</code> для определения типа нумерации;
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;li&gt;</code> для определения элемента списка;
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;dl&gt;</code> для определения списка описания;
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;dt&gt;</code> для определения термина описания;
+  <li>Используйте элемент HTML <code class="w3-codespan">&lt;dd&gt;</code> для описания термина в списке описания;
+  <li>Списки могут быть вложены в списки;
+  <li>Элементы списка могут содержать другие элементы HTML;
+  <li>Используйте свойство CSS <code class="w3-codespan">float: left</code> или <code class="w3-codespan">display: inline</code> для горизонтального отображения списка.
+</ul>
+<h3 style="text-align: center">HTML теги списка</h3>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Тег</th>
+    <th>описание</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td><a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank">&lt;ul&gt;</a></td>
+    <td>Определяет неупорядоченный список</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank">&lt;ol&gt;</a></td>
+    <td>Определяет упорядоченный список</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td><a href="https://www.w3schools.com/tags/tag_li.asp" target="_blank">&lt;li&gt;</a></td>
+    <td>Определяет элемент списка</td>
+  </tr>
+    <tr>
+    <td><a href="https://www.w3schools.com/tags/tag_dl.asp" target="_blank">&lt;dl&gt;</a></td>
+    <td>Определяет список описания</td>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td><a href="https://www.w3schools.com/tags/tag_dt.asp" target="_blank">&lt;dt&gt;</a></td>
+    <td>Определяет термин в списке описания</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/tags/tag_dd.asp" target="_blank">&lt;dd&gt;</a></td>
+    <td>Описывает термин в списке описания</td>
+  </tr>
+  </tbody>
+</table><br>
+<div class="uvaga2">Для получения полного списка всех доступных тегов HTML, посетите <a href="https://www.w3schools.com/tags/default.asp" target="_blank">справочник по тегам HTML</a>.</div>
+</article>
+<br>
+
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/M8tGRqmnJdI" allowfullscreen></iframe></div><br>Данный видео урок предназначен для новичков, желающих освоить язык разметки веб-страниц HTML. В данном уроке вы узнаете о списках в HTML.</div>
+
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les14.html">&lt; Перейти на Урок №14. Таблицы в HTML </a></div>
+<div class="les-next"><a href="les16.html">Перейти на урок №16. Блоки в HTML &gt;</a></div>
+</div>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://www.w3.org/" target="_blank">W3C</a>
+        <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a>          
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
