@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Урок №16. Блочные и строчные (встроенные) элементы в HTML - HTML5 / CSS3. Уроки для начинающих. Основы. Видеоурок. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Урок №16. Блочные и строчные элементы в HTML. Как создать или добавить элементы div и span на веб-страницу. HTML / CSS уроки для начинающих. Основы языка HTML">
+    <meta name="keywords" content="элементы,div,span,блочный,строчный,html,css,уроки для начинающих">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/handheld.css">
+</head>
+<body>
+	<header>
+<h1>УРОКИ ДЛЯ НАЧИНАЮЩИХ ПО HTML / CSS</h1>
+<h4>верстка сайтов с помощью HTML5 + CSS3 для начинающих</h4>
+	</header>
+	<nav>
+      <ul class="menu-header">
+      <li><a href="../index.html">Главная</a>
+      <li><a href="../w3c/w3c00.html">HTML5 - W3C</a>
+      <li><a href="video/video1.html">Видеоуроки</a>
+      <li><a href="pages/handbook.html">Справочник тегов</a>
+      <li><a href="pages/sources.html">Ресурсы</a>
+      <li><a href="pages/search.html">Поиск по сайту</a>
+      </ul>
+  </nav>
+<main>
+	<div class="left-sidebar">
+		<h6>Уроки по HTML для начинающих</h6>
+		<ul class="les">
+  <li><a href="les01.html"><b>Урок №1.</b> Введение. Что такое HTML</a>
+  <li><a href="les02.html"><b>Урок №2.</b> Редакторы HTML кода</a>
+  <li><a href="les03.html"><b>Урок №3.</b> Какие бывают сайты</a>
+  <li><a href="les04.html"><b>Урок №4.</b> Структура веб-страницы</a>
+  <li><a href="les05.html"><b>Урок №5.</b> Семантическая разметка веб-страницы</a>
+  <li><a href="les06.html"><b>Урок №6.</b> Основные примеры в HTML</a>
+  <li><a href="les07.html"><b>Урок №7.</b> Основные элементы и атрибуты</a>
+  <li><a href="les08.html"><b>Урок №8.</b> Стили и форматирование</a>
+  <li><a href="les09.html"><b>Урок №9.</b> Цитаты и комментарии</a>
+  <li><a href="les10.html"><b>Урок №10.</b> Цвета в HTML</a>
+  <li><a href="les11.html"><b>Урок №11.</b> HTML-стили - CSS</a>
+  <li><a href="les12.html"><b>Урок №12.</b> Гиперссылки в HTML</a>
+  <li><a href="les13.html"><b>Урок №13.</b> Изображения в HTML</a>
+  <li><a href="les14.html"><b>Урок №14.</b> Таблицы в HTML</a>
+  <li><a href="les15.html"><b>Урок №15.</b> Списки в HTML</a>
+  <li><a href="les16.html"><b>Урок №16.</b> Блоки в HTML</a>
+  <li><a href="les17.html"><b>Урок №17.</b> Class и id в HTML</a>
+  <li><a href="les18.html"><b>Урок №18.</b> Iframes (фреймы) в HTML</a>
+  <li><a href="les19.html"><b>Урок №19.</b> JavaScript в HTML</a>
+  <li><a href="les20.html"><b>Урок №20.</b>  Пути к файлам в HTML</a>
+  <li><a href="les21.html"><b>Урок №21.</b>  Тег Head на веб-странице</a>
+  <li><a href="les22.html"><b>Урок №22.</b>  Макеты веб-страниц</a>
+  <li><a href="les23.html"><b>Урок №23.</b>  Адаптивный веб-дизайн</a>
+  <li><a href="les24.html"><b>Урок №24.</b>  Элементы компьютерного кода в HTML</a>
+  <li><a href="les25.html"><b>Урок №25.</b>  Символьные объекты в HTML</a>
+  <li><a href="les26.html"><b>Урок №26.</b>  Кодировка веб-страниц</a>
+  <li><a href="les27.html"><b>Урок №27.</b>  URL веб-страниц</a>
+  <li><a href="les28.html"><b>Урок №28.</b>  HTML и XHTML</a>
+		</ul>
+	</div>
+
+	<div class="content">
+		<article>
+	<a href="../index.html"><img alt="HTML5" class="imgleft" title="Перейти на Главную" src="../img/HTML5_logo.png"></a>
+<h2>Урок 16. Блоки в HTML</h2>
+<div class="quot" title="Умная мысль"><q>Не додумывай слишком много. Так ты создаешь проблемы, которых изначально не было.</q><br><address title="автор"><a href="https://ru.wikipedia.org/wiki/Ницше,_Фридрих" target="_blank">(Фридрих Ницше)</a></address></div>
+
+<ul class="plan">
+  <li>Блочные и встроенные (строчные) элементы в HTML;
+  <li>Элемент &lt;div&gt;;
+  <li>Элемент &lt;span&gt;;
+</ul>
+
+<p>Приветствую вас на шестнадцатом уроке по <strong><abbr title="от англ. HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> для начинающих</strong>, на котором вы узнаете о <strong>блочных</strong> и <strong>строчных</strong> элементах в <strong><abbr>HTML</abbr></strong>. Если вы только начинаете изучать <strong><abbr>HTML</abbr></strong>, то рекомендуется посмотреть также предыдущие мои уроки для начинающих (<a href="https://www.youtube.com/playlist?list=PLnDItP9wSFGtMJSb9aFO5Qz-usu6zDS4x" target="_blank">Плейлист на канале YouTube</a>).</p>
+<br>
+
+<article>
+<h3>Блочные и встроенные (строчные) элементы в HTML</h3>
+<p>Каждый элемент HTML имеет отображаемое значение по умолчанию в зависимости от типа элемента. Значение по умолчанию для большинства элементов является блочным или встроенным.</p>
+<h3>Блочные элементы</h3>
+<p>Блочный элемент всегда начинается с новой строки и занимает всю доступную ширину на странице (растягивается влево и вправо, насколько это возможно).</p>
+<h3>Элемент &lt;div&gt;</h3>
+<p>Элемент &lt;div&gt; (от англ. <i>division</i> — раздел, подразделение) является универсальным блочным элементом и предназначен для группирования элементов документа с целью изменения вида содержимого через стили. Для этого добавляется атрибут <em>class</em> или <em>id</em> с именем класса или идентификатора.</p>
+<p>Синтаксис:</p>
+<div class="w3-code">&lt;div&gt; … &lt;/div&gt;</div>
+<p>Закрывающий тег обязателен.</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;div&gt;Hello&lt;/div&gt;<br>
+&lt;div&gt;World&lt;/div&gt;
+</div>
+<p>Элемент <b>DIV</b> является блочным элементом и будет начинаться с новой строки.</p>
+<p>Элемент &lt;div&gt; часто используется в качестве контейнера для других элементов HTML. Элемент &lt;div&gt; не имеет обязательных атрибутов, но стиль, класс и идентификатор являются общими. При использовании вместе с CSS элемент &lt;div&gt; можно использовать для стилей блоков содержимого:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;div style="background-color:black;color:white;padding:20px;"&gt;<br>
+  &lt;h2&gt;Лондон&lt;/h2&gt;<br>
+  &lt;p&gt;Лондон является столицей Англии. Это самый густонаселенный город в Соединенном Королевстве, с населением более 13 миллионов человек.&lt;/p&gt;<br>
+&lt;/div&gt;
+</div>
+<p><strong>Блочные элементы в HTML</strong>:</p>
+<p>&lt;address&gt; &lt;article&gt; &lt;aside&gt; &lt;blockquote&gt; &lt;canvas&gt; &lt;dd&gt; &lt;div&gt; &lt;dl&gt; &lt;dt&gt; &lt;fieldset&gt; &lt;figcaption&gt; &lt;figure&gt; &lt;footer&gt; &lt;form&gt; &lt;h1&gt;-&lt;h6&gt; &lt;header&gt; &lt;hr&gt; &lt;li&gt; &lt;main&gt; &lt;nav&gt; &lt;noscript&gt; &lt;ol&gt; &lt;output&gt; &lt;p&gt; &lt;pre&gt; &lt;section&gt; &lt;table&gt; &lt;tfoot&gt; &lt;ul&gt; &lt;video&gt;</p>
+<h3>Встроенные (строчные) элементы</h3>
+<p>Встроенный (строчный) элемент не начинается с новой строки и занимает столько ширины, сколько необходимо. Например, это встроенный элемент &lt;span&gt; внутри параграфа (абзаца).</p>
+<h3>Элемент &lt;span&gt;</h3>
+<p>Универсальный строчный элемент &lt;span&gt; (от англ. <i>span</i> — охватывать) предназначен для выделения отдельных строк, символов или других строчных элементов для дальнейшего изменения их оформления с помощью стилей.</p>
+<p>Синтаксис:</p>
+<div class="w3-code">
+&lt;span&gt; ... &lt;/span&gt;
+</div>
+<p>Закрывающий тег обязателен.</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;span&gt;Hello&lt;span&gt;
+&lt;span&gt;World&lt;/span&gt;
+</div>
+<p> Элемент SPAN является встроенным (строчным) элементом и не будет начинаться с новой строки. Элемент &lt;span&gt; часто используется как контейнер для некоторого текста. Элемент &lt;span&gt; не имеет обязательных атрибутов, но стиль, класс и идентификатор являются общими. При использовании вместе с CSS элемент &lt;span&gt; можно использовать для стилизации частей текста:</p>
+<p>Пример:</p>
+<div class="w3-code">
+&lt;h1&gt;Мой &lt;span style="color:red"&gt;важный&lt;/span&gt; Заголовок&lt;/h1&gt;
+</div>
+<p><strong>Встроенные (строчные) элементы в HTML</strong>:</p>
+<p>&lt;a&gt; &lt;abbr&gt; &lt;acronym&gt; &lt;b&gt; &lt;bdo&gt; &lt;big&gt; &lt;br&gt; &lt;button&gt; &lt;cite&gt; &lt;code&gt; &lt;dfn&gt; &lt;em&gt; &lt;i&gt; &lt;img&gt; &lt;input&gt; &lt;kbd&gt; &lt;label&gt; &lt;map&gt; &lt;object&gt; &lt;q&gt; &lt;samp&gt; &lt;script&gt; &lt;select&gt; &lt;small&gt; &lt;span&gt; &lt;strong&gt; &lt;sub&gt; &lt;sup&gt; &lt;textarea&gt; &lt;time&gt; &lt;tt&gt; &lt;var&gt;</p>
+<h4 style="text-align:center;">Группирующие теги в HTML</h4>
+<table class="w3-table">
+  <tbody>
+  <tr>
+    <th>Тег</th>
+    <th>Описание</th>
+  </tr>
+  <tr class="w3-table-tr1">
+    <td><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank" rel="nofollow">&lt;div&gt;</a></td>
+    <td>Определяет блочный раздел в документе</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/tags/tag_span.asp" target="_blank" rel="nofollow">&lt;span&gt;</a></td>
+    <td>Определяет строчный раздел в документе</td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+<div class="uvaga2">Для получения полного списка всех доступных тегов HTML, посетите <a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="nofollow">справочник по тегам HTML</a>.</div>
+</article>
+<br>
+
+<div class="videowrap"><div class="videoblock"><iframe width="1280" height="720" src="https://www.youtube.com/embed/M8tGRqmnJdI" allowfullscreen></iframe></div><br>Данный видео урок предназначен для новичков, желающих освоить язык разметки веб-страниц HTML. В данном уроке вы узнаете о блочных и строчных элементах в HTML.</div>
+
+<hr><br>
+<div class="pages">
+<div class="les-prev"><a href="les15.html">&lt; Перейти на Урок №15. Списки в HTML </a></div>
+<div class="les-next"><a href="les17.html">Перейти на урок №17. Class и Id в HTML &gt;</a></div>
+</div>
+		
+	<div class="useful">
+    	<ul>
+        <li><a href="https://websunsay.github.io/" target="_blank">Уроки HTML/CSS для початківців</a>
+        <li><a href="https://validator.w3.org/" target="_blank" rel="nofollow">Валидатор HTML</a>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="nofollow">Валидатор CSS</a>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="nofollow">Учебник от w3schools</a>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="nofollow">WHATWG (LS)</a>
+        <li><a href="https://checker.html5.org/" target="_blank" rel="nofollow">Валидатор Whatwg</a>
+        <li><a href="https://github.com/" target="_blank" rel="nofollow">GitHub</a>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank" rel="nofollow">Developer Mozilla</a>
+        <li><a href="https://webref.ru/" target="_blank" rel="nofollow">Webref</a>
+        <li><a href="http://htmlbook.ru/" target="_blank" rel="nofollow">HTMLBook</a>
+        <li><a href="https://html5book.ru/" target="_blank" rel="nofollow">HTML5Book</a>
+        <li><a href="https://ruseller.com/" target="_blank" rel="nofollow">Ruseller</a>
+      </ul>
+    </div>
+		
+	</div>
+
+</main>
+	<footer>
+<div class="copy">Copyright HTML / CSS для начинающих © 2017. All Rights Reserved&nbsp;&nbsp;<a href="mailto:bilokurakyne@gmail.com">Связь с админом</a>
+<a href="https://www.youtube.com/channel/UCHMtoMp4TyUG_fN3G-8zHXg/videos" target="_blank"><img src="../img/youtube_logo.jpg" alt="канал на Youtube" id="youtubelogo" title="Канал на сайте YouTube"></a></div>
+	</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
