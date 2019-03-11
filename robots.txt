@@ -1,0 +1,6 @@
+# Rule 1
+User-agent: *
+Allow: /
+
+Sitemap: http://websunsay.github.io/sitemap.xml
+Sitemap: https://websunsay.github.io/sitemap.xml
