@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Форми. Урок №34. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,форми,web,веб,сторінка,utf-8">
+    <meta name="description" content="Урок 34. HTML. CSS. Форми. Що це таке? Як створюються форми на веб-сторінках? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Форми. Створення форм на сайті. Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Форми. Як створити форму на сайті? HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок. HTML. Форми</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les33.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_elements.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>HTML/CSS. HTML форми</h2>
+        <div class="w3-example">
+            <h3>HTML Form Example</h3>
+            <div class="w3-white w3-padding notranslate">
+                <form action="https://www.w3schools.com/action_page.php?firstname=Mickey&lastname=Mouse" target="_blank">
+                    First name:<br>
+                    <input type="text" name="firstname" value="Mickey"><br>
+                    Last name:<br>
+                    <input type="text" name="lastname" value="Mouse">
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit" target="_blank">Спробуйте самі »</a>
+        </div>
+        <hr>
+        <h2>Елемент &lt;form&gt;</h2>
+        <p>HTML елемент <code>&lt;form&gt;</code> визначає форму, яка використовується для збору даних користувача:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>.<br><i>form elements</i><br>.<br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+        </div><br>
+        <p>HTML форма містить <strong>елементи форми</strong>.</p>
+        <p>Елементи форми - це різні типи елементів введення, такі як текстові поля, прапорці, перемикачі, кнопки надсилання та багато іншого.</p>
+        <hr>
+        <h2>Елемент &lt;input&gt;</h2>
+        <p>Елемент <code>&lt;input&gt;</code> є найважливішим елементом форми. Елемент <code>&lt;input&gt;</code> може відображатися кількома способами, залежно від <strong>типу</strong> атрибуту.</p>
+        <p>Ось кілька прикладів.</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тип</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Визначає одне рядкове поле введення тексту</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Визначає radio-перемикач (для вибору одного з багатьох варіантів)</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="submit"&gt;</td>
+                <td>Визначає кнопку відправки (для відправки форми)</td>
+            </tr>
+            </tbody></table>
+        <div class="w3-panel w3-note">
+            <p>Більш докладно про типи вводу ви дізнаєтеся пізніше в цьому підручнику.</p>
+        </div>
+        <hr>
+        <h2>Введення тексту - text input</h2>
+        <p><code>&lt;input type="text"&gt;</code> визначає одне рядкове поле введення для <strong>введення тексту</strong>:</p><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br> &nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="firstname"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Так виглядатиме в браузері:</p>
+        First name:<br> <input type="text"><br>
+        Last name:<br> <input type="text">
+        <div class="w3-panel w3-note">
+            <p><b>Примітка:</b> Саму форму не видно. Також зверніть увагу, що типова (за умовчанням) ширина текстового поля становить 20 символів.</p>
+        </div>
+        <hr>
+        <h2>Кнопка radio для входу</h2>
+        <p><code>&lt;input type="radio"&gt;</code> визначає <strong>radio-кнопку</strong>.</p>
+        <p>Radio-кнопки дозволяють користувачеві вибрати один з обмеженого числа варіантів:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="male"</span> checked</span><span style="color:mediumblue">&gt;</span></span> Male<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="female"</span></span><span style="color:mediumblue">&gt;</span></span> Female<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="radio"</span> name<span style="color:mediumblue">="gender"</span> value<span style="color:mediumblue">="other"</span></span><span style="color:mediumblue">&gt;</span></span> Other<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Наведений вище <strong>HTML</strong>-код так буде відображатись у веб-браузері:</p>
+        <input type="radio" name="gender" checked=""> Male<br>
+        <input type="radio" name="gender"> Female<br>
+        <input type="radio" name="gender"> Other
+        <hr>
+        <h2>Кнопка Submit (Відправити)</h2>
+        <p><code>&lt;input type="submit"&gt;</code> визначає кнопку для <strong>відправки</strong> даних форми до <strong>обробника форм</strong>. Обробник форм зазвичай є сторінкою сервера зі сценарієм для обробки вхідних даних. Обробник форм вказано в атрибуті <strong>action</strong> форми:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="firstname"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span> value<span style="color:mediumblue">="Submit"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Наведений вище <strong>HTML</strong>-код так буде відображатись у веб-браузері:</p>
+        <form action="https://www.w3schools.com/action_page.php?firstname=Mickey&lastname=Mouse" target="_blank">
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <h2>Атрибут action (дії)</h2>
+        <p>Атрибут <code>action</code> визначає дію, яку слід виконати після відправки форми. Зазвичай, дані форми надсилаються на веб-сторінку на сервері, коли користувач натискає на кнопку "Submit" ("Відправити").</p>
+        <p>У наведеному вище прикладі дані форми відправляються на сторінку на сервері "/action_page.php". Ця сторінка містить серверний сценарій, який обробляє дані форми:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> <strong>action<span style="color:mediumblue">="/action_page.php</span></strong>"</span></span><span style="color:mediumblue">&gt;</span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Якщо атрибут <code>action</code> опущений, дія виконується на поточній сторінці.</p>
+        <hr>
+        <h2>Атрибут target (ціль)</h2>
+        <p>Атрибут <code> target </code> визначає, чи буде відкрито поданий результат у новому вікні, на вкладці веб-браузера, фреймі або в поточному вікні. Значення за замовчуванням - "<code>_self</code>", що означає, що форма буде надіслана в поточному вікні. Щоб відкрити результат у новій вкладці веб-браузера, скористайтеся значенням "<code>_blank</code>":</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span> <strong>target<span style="color:mediumblue">="_blank"</span></strong></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_target" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Іншими дійсними значеннями є <code>"_parent"</code>, <code>"_top"</code> або назва, що представляє назву фрейму.</p>
+        <h2>Атрибут method</h2>
+        <p>Атрибут <code>method</code> вказує метод HTTP (<strong>GET</strong> або <strong>POST</strong>), який буде використовуватися під час відправки даних форми:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span> <strong>method<span style="color:mediumblue">="get"</span></strong></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_get" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>або:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span> <strong>method<span style="color:mediumblue">="post"</span></strong></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_post" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Коли використовувати GET?</h2>
+        <p>Метод за замовчуванням при передачі даних форми <strong>GET</strong>. Однак, коли <strong>GET</strong> використовується, дані, надіслані формою, будуть <strong>видимі в полі адреси сторінки</strong>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">/action_page.php?firstname=Mickey&amp;lastname=Mouse</div>
+        </div><br>
+        <h5>Примітки щодо GET:</h5>
+        <ul class="list-disc">
+            <li>Додає дані у відправній формі до URL-адрес у парах ім'я/значення
+            <li>Довжина URL-адреси обмежена (близько 3000 символів)
+            <li>Ніколи не використовуйте GET для надсилання конфіденційних даних! (буде відображено в URL-адресі)
+            <li>Корисно для подання форм, де користувач хоче зробити закладку результату
+            <li>GET є кращим варіантом для незахищених даних, наприклад рядків запитів у Google
+        </ul>
+        <hr>
+        <h2>Коли використовувати POST?</h2>
+        <p>Завжди використовуйте <strong>POST</strong>, якщо дані форми містять конфіденційну або особисту інформацію. Метод <strong>POST</strong> не відображає подані дані форми в полі адреси сторінки.</p>
+        <h5>Примітки щодо POST:</h5>
+        <ul class="list-disc">
+            <li>POST не має обмежень за розмірами і може використовуватися для надсилання великих обсягів даних.
+            <li>Надіслані форми з POST не можна додавати в закладки
+        </ul>
+        <hr>
+        <h2>Атрибут name</h2>
+        <p>Для кожного поля введення має бути подано атрибут <code>name</code> (назва). Якщо атрибут <code>name</code> пропущений, дані цього поля введення взагалі не надсилатимуться.</p>
+        <p>У цьому прикладі буде подано лише поле вводу "Last name" ("Прізвище"):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span> value<span style="color:mediumblue">="Submit"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit_id" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Групування даних форм за допомогою &lt;fieldset&gt;</h2>
+        <p>Елемент <code>&lt;fieldset&gt;</code> використовується для групування пов'язаних даних у формі. Елемент <code>&lt;legend&gt;</code> визначає заголовок для елемента <code>&lt;fieldset&gt;</code>.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>fieldset<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>legend<span style="color:mediumblue">&gt;</span></span>Personal information:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/legend<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; First name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="firstname"</span> value<span style="color:mediumblue">="Mickey"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; Last name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> name<span style="color:mediumblue">="lastname"</span> value<span style="color:mediumblue">="Mouse"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span> value<span style="color:mediumblue">="Submit"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/fieldset<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_legend" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Так цей HTML код виглядатиме в браузері:</p>
+        <form action="https://www.w3schools.com/action_page.php?firstname=Mickey&lastname=Mouse" target="_blank">
+            <fieldset>
+                <legend>Personal information:</legend>
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Mouse">
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms4" target="_blank" rel="nofollow">Exercise 4 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>Список всіх атрибутів &lt;form&gt;:</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Атрибут</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td>accept-charset</td>
+                <td>Вказує набір символів, що використовується у поданій формі (за замовчуванням: набір символів сторінки).</td>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td>Вказує адресу (url), куди подати форму (за умовчанням: сторінка подання).</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>Вказує, чи має браузер автоматично заповнювати форму (за умовчанням: увімкнено).</td>
+            </tr>
+            <tr>
+                <td>enctype</td>
+                <td>Визначає кодування поданих даних (за умовчанням: url-encoded).</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>Вказує метод HTTP, який використовується під час відправки форми (за умовчанням: GET).</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Вказує назву, що використовується для ідентифікації форми (для використання DOM: document.forms.name).</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>Вказує, що браузер не повинен перевіряти форму.</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>Вказує ціль адреси в атрибуті action (за умовчанням:_self).</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Ви дізнаєтеся більше про атрибути форм у наступних розділах.</p>
+        </div>
+
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les33.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_elements.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/html_forms.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Елементи. Урок №5. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,елементи,код,теги,документ,сторінка,веб">
+    <meta name="description" content="Урок 5. HTML. Елементи веб-сторінки. Заголовки, параграфи. Як створювати сайти? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Елементи веб-сторінок. HTML, CSS. Заголовки, параграфи, зображення, посилання" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Основні елементи коду. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №5. HTML. Елементи</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les04.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les06.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>Елементи HTML-коду. З чого складається веб-сторінка?</h2>
+        <p>Елемент в HTML зазвичай складається з <b>початкового</b> тегу та <b>кінцевого</b> тегу, вміст якого вставлений між ними:</p>
+        &lt;Початковий тег&gt; Вміст розміщується тут ... &lt;/Кінцевий тег&gt;
+        <p><strong>Елемент HTML</strong> - це все від початкового тегу до кінцевого тегу:</p>
+        <span style="font-size: 1.2em;"><span style="color:mediumblue">&lt;</span><span style="color:brown">p</span><span style="color:mediumblue">&gt;</span>My first paragraph.<span style="color:mediumblue">&lt;</span><span style="color:brown">/p</span><span style="color:mediumblue">&gt;</span></span>
+        <table class="w3-table-all">
+            <tbody>
+            <tr>
+                <th>Початковий тег</th>
+                <th>Вміст елементу</th>
+                <th>Кінцевий тег</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>My First Heading</td>
+                <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>My first paragraph.</td>
+                <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Елементи <strong>HTML</strong> без вмісту називаються порожніми елементами. Порожні елементи не мають кінцевого тегу, такого як <code>&lt;br&gt;</code> елемент, який вказує на розрив рядка (break – перерив)</p>
+        </div>
+        <hr>
+        <h3>Вкладені елементи HTML</h3>
+        <p>Елементи <strong>HTML</strong> можуть бути вкладеними (елементи можуть містити елементи). Всі документи <strong>HTML</strong> складаються з вкладених елементів <strong>HTML</strong>.</p>
+        <p>Цей приклад містить чотири <strong>HTML елементи</strong>:</p><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <h4>Пояснення прикладу</h4>
+        <p>Елемент <code>&lt;html&gt;</code> визначає весь документ. Він має <strong>початковий тег</strong> <code>&lt;html&gt;</code> і <strong>кінцевий тег</strong> <code>&lt;/html&gt;</code>. Вміст (<strong>контент</strong>) елемента - це інший елемент <strong>HTML</strong> (елемент <code>&lt;body&gt;</code>).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <p>Елемент <code>&lt;body&gt;</code> визначає тіло документа. Він має <strong>початковий тег</strong> <code>&lt;body&gt;</code> і <strong>кінцевий тег</strong> <code>&lt;/body&gt;</code>. Вміст (<strong>контент</strong>) елемента - це два інші елементи <strong>HTML</strong> <code>(&lt;h1&gt;</code> і <code>&lt;p&gt;</code>).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <p>Елемент <code>&lt;h1&gt;</code> визначає заголовок. Він має <strong>початковий тег</strong> <code>&lt;h1&gt;</code> і <strong>кінцевий тег</strong> <code>&lt;/h1&gt;</code>. Вміст (<strong>контент</strong>) елемента: My First Heading.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Елемент <code>&lt;p&gt;</code> визначає параграф. Він має початковий тег <code>&lt;p&gt;</code> і кінцевий тег <code>&lt;/p&gt;</code>. Вміст (<strong>контент</strong>) елемента: My first paragraph.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <hr>
+        <h4>Не забувайте кінцевий тег</h4>
+        <p>Деякі елементи <strong>HTML</strong> відображатимуться правильно, навіть якщо ви забули <strong>кінцевий тег</strong>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph<br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph<br>
+                <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Наведений вище приклад працює у всіх браузерах, оскільки <strong>закриваючий тег</strong> вважається необов'язковим.</p>
+        <p>Ніколи не покладайтеся на це. Бо це може призвести до несподіваних результатів та / або помилок, якщо ви забудете <strong>кінцевий тег</strong>.</p>
+        <hr>
+        <h3>Порожні елементи HTML</h3>
+        <p>Елементи <strong>HTML</strong> без вмісту називаються <strong>порожніми елементами</strong>.</p>
+        <p><code>&lt;br&gt;</code> - це порожній елемент без закриваючого тегу (тег <strong>&lt;br&gt;</strong> визначає розрив рядка):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a <span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span> paragraph with a line break.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Порожні елементи можуть бути "закриті" у початковому тезі: <code>&lt;br /&gt;</code>.</p>
+        <p><strong>HTML5</strong> не вимагає закриття порожніх елементів. Але якщо ви хочете більш суворої перевірки, або якщо вам потрібно зробити ваш документ читаним XML-парсерами, ви повинні закрити всі <strong>HTML-елементи</strong> належним чином.</p>
+        <hr>
+        <h3>Використовуйте рядкові теги</h3>
+        <p>Теги <strong>HTML</strong> не чутливі до регістру: <code>&lt;P&gt;</code> (у великому регістрі) означає те саме, що і <code>&lt;p&gt;</code> (у маленькому регістрі).</p>
+        <p>Стандарт <strong>HTML5</strong> не вимагає використання тегів в нижньому регістрі, але <em>W3C</em> рекомендує нижній регістр для написання <strong>HTML-коду</strong> і вимагає нижнього регістру для більш жорстких типів документів, таких як <strong>XHTML</strong>.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> У <strong>W3Schools</strong> завжди використовують теги нижнього регістру.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les04.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les06.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les05.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Параграфи. Урок №8. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,параграфи,абзаци,теги,paragraph,tags">
+    <meta name="description" content="Урок 8. HTML. Параграфи на веб-сторінках. Як зробити абзац в html? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Параграфи на веб-сторінці. HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Параграфи (абзаци) на веб-сторінках. W3schools українською. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №8. HTML. Параграфи (абзаци)</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les07.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les09.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>Параграфи в HTML. Як зробити параграфи на веб-сторінках?</h2>
+        <p>Елемент <strong>HTML</strong> <code>&lt;p&gt;</code> визначає параграф (абзац):</p>
+        <div class="w3-panel w3-note">
+            <p><b>Примітка:</b> Слово <em>paragraph</em> зазвичай перекладається, як <em>абзац</em>. Але в середовищі веб-розробників частіше використовують слово <em>параграф</em>, тобто відступ тексту з нового рядка. Тут і далі буде використовуватись саме слово <em>параграф</em>.</p>
+        </div>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is another paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><b>Примітка:</b> Браузери автоматично додають пробіл (margin) до і після параграфу.</p>
+        </div><hr>
+        <h2>Відображення HTML</h2>
+        <p>Ви не можете знати впевнено, де саме буде відображатись ваша веб-сторінка, на яких дисплеях чи пристроях. Великі або малі екрани та розміри вікон створюють різні результати. За допомогою HTML-коду ви не можете змінювати вихідне відображення, додаючи додаткові пробіли або додаткові рядки у вашому HTML-коді. Під час відображення сторінки веб-браузер видаляє будь-які додаткові пробіли та додаткові рядки:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but
+                the browser <br>ignores it.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>This paragraph<br>contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                a lot of spaces<br>in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                code,<br>but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser <br>ignores
+                it.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h3>Не забувайте про кінцевий тег</h3>
+        <p>Більшість браузерів відображатиме HTML правильно, навіть якщо ви забудете кінцевий тег:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is another paragraph.
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs0" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Приклад вище буде працювати в більшості браузерів, але не покладайтеся на нього.</p>
+        <div class="w3-panel w3-note">
+            <p><b>Примітка:</b> Видалення кінцевого тегу може призвести до несподіваних результатів або помилок у відображенні веб-сторінки.</p>
+        </div>
+        <hr>
+        <h2>Перерви HTML-рядків</h2>
+        <p>Елемент <strong>HTML</strong> <code>&lt;br&gt;</code> визначає <strong>розрив рядка</strong>. Використовуйте функцію <code>&lt;br&gt;</code>, якщо потрібно перервати рядок (створити новий рядок), не починаючи новий параграф:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span>a paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span>with line breaks.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Тег <code>&lt;br&gt;</code> - це порожній тег, що означає, що він не має кінцевого тегу.</p>
+        <hr>
+        <h2>Проблема відображення поезії</h2>
+        <p>Цей вірш відображатиметься в одному рядку:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br>&nbsp; Зродились ми великої години,<br><br>&nbsp; З пожеж війни і з полум'я вогнів,<br><br>&nbsp; Плекав нас біль по втраті України,<br><br>&nbsp; Кормив нас гнів і злість на ворогів.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Елемент HTML &lt;pre&gt;</h2>
+        <p>Елемент HTML <code>&lt;pre&gt;</code> визначає попередньо відформатований текст. Текст всередині елемента <code>&lt;pre&gt;</code> відображається шрифтом фіксованої ширини (зазвичай Courier), і він зберігає пробіли і розриви рядків так, як написано:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>pre<span style="color:mediumblue">&gt;</span></span><br>&nbsp; І ось ідем у бою життєвому<br>
+                <br>&nbsp; Міцні, тверді, незломні мов граніт,<br><br>&nbsp; Бо плач не дав свободи ще нікому,<br><br>&nbsp; А хто борець, той здобуває світ.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/pre<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_paragraphs1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_paragraphs2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_paragraphs3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_paragraphs4" target="_blank" rel="nofollow">Exercise 4 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>Довідник HTML тегів</h2>
+        <p><strong>Довідник HTML</strong> тегів на сайті <em><a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="nofollow">W3Schools</a></em> містить додаткову інформацію про <strong>HTML</strong> елементи та їх атрибути.</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank" rel="nofollow">&lt;p&gt;</a></td>
+                <td>Визначає параграф (абзац)</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>Вставляє один розрив рядка</td>
+            </tr>
+            <tr>
+                <td>&lt;pre&gt;</td>
+                <td>Визначає попередньо відформатований текст</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Довідник HTML тегів</h3>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a href="../tags/default.html">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les07.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les09.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les08.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

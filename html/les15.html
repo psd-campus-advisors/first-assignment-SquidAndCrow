@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Посилання. Урок №15. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,посилання,href,anchor,веб,сторінка">
+    <meta name="description" content="Урок 15. HTML. CSS. Посилання на веб-сторінках. Як зробити посилання на сайті? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Посилання на веб-сторінці. href, HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Посилання на веб-сторінках. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №15. HTML. Посилання</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les14.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les16.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Як зробити посилання на веб-сайті?</h2>
+        <p>Посилання знаходяться майже на всіх веб-сторінках. Посилання дозволяють користувачам натискати їх і переходити від сторінки до сторінки.</p>
+        <h2>HTML-посилання - гіперпосилання</h2>
+        <p><strong>HTML-посилання</strong> - це гіперпосилання. Ви можете натиснути на посилання та перейти до іншої веб-сторінки. Коли ви пересуваєте курсор миші через посилання, стрілка миші перетвориться на маленьку руку.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Посилання не обов'язково повинно бути текстом. Це може бути також зображення або будь-який інший елемент HTML.</p>
+        </div><hr>
+        <h2>HTML-посилання - синтаксис</h2>
+        <p><strong>HTML</strong> посилання визначаються тегом <code>&lt;a&gt;</code>:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="<i>url</i>"</span></span><span style="color:mediumblue">&gt;</span></span><i>link text</i><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Атрибут <code>href</code> визначає адресу призначення (<span style="color:#000FE2;">https://www.w3schools.com/html/</span>) посилання. Текст посилання є видимою частиною (Visit our HTML tutorial). Натиснувши на текст посилання, вас відішле на вказану веб-адресу.</p>
+        <h2>Локальні посилання</h2>
+        <p>У наведеному вище прикладі використано абсолютну URL-адресу (повну веб-адресу). Локальне посилання (посилання на той самий веб-сайт) вказано з відносним URL (без https://www....).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="html_images.asp"</span></span><span style="color:mediumblue">&gt;</span></span>HTML Images<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Кольори HTML посилання</h2>
+        <p>За замовчуванням посилання відображатиметься так (у всіх веб-браузерах):</p>
+        <ul class="list-disc">
+            <li>Невідвідане посилання - підкреслене і синім кольором
+            <li>Відвідане посилання - підкреслено і фіолетовим кольором
+            <li>Активне посилання - підкреслено і червоним кольором
+        </ul>
+        <p>За допомогою <strong>CSS</strong> можна змінити кольори за замовчуванням:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+&lt;style&gt;<br>a:link <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> green<span style="color:black">;</span></span> <br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> transparent<span style="color:black">;</span></span>
+  <br>&nbsp;&nbsp;text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>
+a:visited <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> pink<span style="color:black">;</span></span><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> transparent<span style="color:black">;</span></span><br>&nbsp;
+  text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>a:hover <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> transparent<span style="color:black">;</span></span><br>
+  &nbsp; text-decoration<span style="color:mediumblue"><span style="color:black">:</span> underline<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>
+  a:active <span style="color:black">{</span><span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> yellow<span style="color:black">;</span></span><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> transparent<span style="color:black">;</span></span><br>&nbsp;
+  text-decoration<span style="color:mediumblue"><span style="color:black">:</span> underline<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>&lt;/style&gt;
+ </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_colors" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Посилання часто використовуються як кнопки, які робляться за допомогою CSS:</p>
+        <p><a class="mytestbtn" href="javascript:void(0)">This is a link</a></p><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+&lt;style&gt;<br>a:link, a:visited <span style="color:black">{</span><span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> #f44336<span style="color:black">;</span></span><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 15px 25px<span style="color:black">;</span></span><br>&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp; text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br>&nbsp; display<span style="color:mediumblue"><span style="color:black">:</span> inline-block<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>a:hover, a:active <span style="color:black">{</span><span style="color:red"><br>&nbsp;
+  background-color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>&lt;/style&gt; </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Щоб дізнатися більше про <strong>CSS</strong>, перейдіть до <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">підручника CSS</a>.</p>
+        </div><hr>
+        <h2>HTML-посилання - атрибут target</h2>
+        <p>Атрибут <code>target</code> (пер. - ціль, мета) визначає, де відкривати пов'язаний документ.</p>
+        <p>Атрибут <code>target</code> може мати одне з таких значень:</p>
+        <ul class="list-disc">
+            <li><code>_blank</code> - відкриває пов'язаний документ у новому вікні або вкладці
+            <li><code>_self</code> - відкриває зв'язаний документ у тому ж вікні / вкладці, в якому було натиснуто посилання
+            <li><code>_parent</code> - відкриває пов'язаний документ у батьківському фреймі
+            <li><code>_top</code> - відкриває пов'язаний документ у повному вікні
+            <li><em>framename</em> - відкриває пов'язаний документ у названому фреймі
+        </ul><br>
+        <p>Цей приклад відкриє пов'язаний документ у новому вікні / вкладці веб-браузера:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/"</span> target<span style="color:mediumblue">="_blank"</span></span><span style="color:mediumblue">&gt;</span></span>Visit W3Schools!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p><b>Порада</b>. Якщо веб-сторінка заблокована у фреймі, ви можете скористатися <code>target="_top"</code>, щоб вийти з фрейму:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/html/"</span> target<span style="color:mediumblue">="_top"</span></span><span style="color:mediumblue">&gt;</span></span>HTML5 tutorial!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target_top" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML-посилання - зображення як посилання</h2>
+        <p>Зазвичай зображення використовуються як посилання:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="HTML tutorial"</span> style<span style="color:mediumblue">="width:42px;height:42px;border:0;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> <code>border: 0;</code> додається, щоб запобігти відображенню рамки навколо зображення в IE9 (і раніших версіях) (коли зображення є посиланням). Хоча для інших сучасних браузерів даний параметр не потрібен. </p>
+        </div><hr>
+        <h2>HTML-посилання - атрибут title</h2>
+        <p>Атрибут <code>title</code> визначає додаткову інформацію про елемент. Ця інформація найчастіше відображається як текст-підказка, коли мишка переміщується над елементом (наприклад, над посиланням).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/html/"</span> title<span style="color:mediumblue">="Go to W3Schools HTML section"</span></span><span style="color:mediumblue">&gt;</span></span>Visit our HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML-посилання - Створення закладки</h2>
+        <p>HTML закладки (bookmark) використовуються для того, щоб читачі могли переходити до певних частин веб-сторінки. Закладки можуть бути корисними, якщо ваша веб-сторінка дуже довга. Щоб створити закладку, спочатку потрібно створити закладку, а потім додати посилання на неї. Коли посилання буде натиснуто, сторінка прокрутиться до необхідного місця за допомогою закладки.</p>
+        <h3>Приклад</h3>
+        <p>Спочатку створіть закладку з атрибутом id:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> id<span style="color:mediumblue">="C4"</span></span><span style="color:mediumblue">&gt;</span></span>Глава 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <p>Потім додайте посилання на закладку ("Перейти до глави 4") з однієї сторінки:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#C4"</span></span><span style="color:mediumblue">&gt;</span></span>Перейти до глави 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <p>Або додайте посилання на закладку ("Перейти до глави 4") з іншої сторінки:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="html_demo.html#C4"</span></span><span style="color:mediumblue">&gt;</span></span>Перейти до глави 4<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Зовнішні шляхи</h2>
+        <p>На зовнішні сторінки можна посилатися з повною URL-адресою або шляхом, відносно поточної веб-сторінки.</p>
+        <p>Цей приклад використовує повну URL-адресу для посилання на веб-сторінку:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/html/default.asp"</span></span><span style="color:mediumblue">&gt;</span></span>HTML tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Цей приклад посилається на сторінку, розташовану в папці html на поточному веб-сайті:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="/html/default.asp"</span></span><span style="color:mediumblue">&gt;</span></span>HTML tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Цей приклад посилається на сторінку, розташовану в тій же папці, що й поточна сторінка:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span>HTML tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Докладніше про шляхи файлів ви можете прочитати в розділі <a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank" rel="nofollow">Шляхи HTML файлів</a>.</p>
+        </div>
+        <hr>
+        <h3>Резюме розділу</h3>
+        <ul class="list-disc">
+            <li>Використовуйте елемент <code>&lt;a&gt;</code> щоб визначити посилання
+            <li>Використовуйте атрибут <code>href</code> для визначення адреси посилання
+            <li>Використовуйте атрибут <code>target</code> щоб визначити, де відкрити пов'язаний документ
+            <li>Використовуйте елемент <code>&lt;img&gt;</code> (всередині &lt;a&gt;) щоб використовувати зображення як посилання
+            <li>Використовуйте атрибут <code>id</code> (id = "value"), щоб визначити закладки на сторінці
+            <li>Використовуйте атрибут <code>href</code> (href="#value") для посилання на закладку
+        </ul>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_links1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_links2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_links3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_links4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_links5" target="_blank" rel="nofollow">Exercise 5 »</a>
+            </div>
+        </div>
+        <h2>HTML теги посилання</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" rel="nofollow">&lt;a&gt;</a></td>
+                <td>Визначає гіперпосилання</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a
+                    href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les14.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les16.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <!-- Коментарі від Disqus -->
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les15.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

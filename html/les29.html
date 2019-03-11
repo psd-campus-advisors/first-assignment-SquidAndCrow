@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Символьні об'єкти. Урок №29. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,символи,символьні,об'єкти,знаки,значки,web,веб,сторінка">
+    <meta name="description" content="Урок 29. HTML. CSS. Символи і символьні об'єкти на веб-сторінках. Як створювати символьні об'єкти на веб-сторінках? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Символьні об'єкти на веб-сторінці. Як створювати? Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Символи та символьні об'єкти на веб-сторінках. Додавання різних символів на веб-сайт. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №29. HTML. Символьні об'єкти</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les28.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les30.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Символьні об'єкти на веб-сторінках</h2>
+        <p>Зарезервовані символи в <strong>HTML</strong> повинні бути замінені символьними об'єктами. Символи, яких немає на клавіатурі, також можуть бути замінені об'єктами.</p>
+        <h2>HTML символьні об'єкти</h2>
+        <p>Деякі символи зарезервовані в <strong>HTML</strong>. Якщо ви використовуєте у вашому тексті знаки "менше ніж" (&lt;) або "більше ніж" (&gt;), браузер може змішувати їх з тегами. Символьні об'єкти використовуються для відображення зарезервованих символів у <strong>HTML</strong>.</p>
+        <p>Структура написання символу виглядає так:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                &amp;<i>назва_символу</i>;
+                <p>або</p>
+                &amp;#<i>номер_символу</i>;
+            </div>
+        </div><br>
+        <p>Чтобы отобразить знак «меньше» (&lt;), мы должны написать: <b>&amp;lt;</b> or <b>&amp;#60;</b></p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Перевага використання імені об'єкта - назва об'єкта легко запам'ятовується. Недолік використання назви об'єкта - браузери можуть не підтримувати всі імена об'єктів, але підтримка номерів хороша.</p>
+        </div>
+        <hr>
+        <h2>Нерозривний простір &amp;nbsp;</h2>
+        <p>Загальним символом, використовуваним в <strong>HTML</strong>, є нерозривний простір: <strong>&amp;nbsp;</strong></p>
+        <p>Нерозривний простір - це простір, який не проривається в новий рядок. Два слова, розділені нерозривним простором, злипаються разом (не розбиваються на новий рядок). Це зручно, коли слова порушуються.</p>
+        <p>Приклади:</p>
+        <ul class="list-disc">
+            <li>§ 10
+            <li>10 км / год
+            <li>10 PM
+        </ul>
+        <p>Інше поширене використання нерозривного простору полягає в тому, щоб заборонити браузерам відсікати пробіли в HTML-сторінках. Якщо ви пишете 10 пробілів у вашому тексті, браузер видалить 9 з них. Щоб додати справжні пробіли до тексту, можна скористатися символьним об'єктом <strong>&amp;nbsp;</strong>.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Нерозривний дефіс (<a href="https://www.w3schools.com/charsets/ref_utf_punctuation.asp">&amp;#8209;</a>) дозволяє використовувати дефіс (-), який не розривається.</p>
+        </div>
+        <hr>
+        <h2>Деякі інші корисні символьні HTML об'єкти</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Результат</th>
+                <th>Опис</th>
+                <th>Назва символьного об'єкту</th>
+                <th>Номер символьного об'єкту</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>нерозривний простір</td>
+                <td>&amp;nbsp;</td>
+                <td>&amp;#160;</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>менше ніж</td>
+                <td>&amp;lt;</td>
+                <td>&amp;#60;</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>більше ніж</td>
+                <td>&amp;gt;</td>
+                <td>&amp;#62;</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>амперсанд</td>
+                <td>&amp;amp;</td>
+                <td>&amp;#38;</td>
+            </tr>
+            <tr>
+                <td>"</td>
+                <td>подвійні лапки</td>
+                <td>&amp;quot;</td>
+                <td>&amp;#34;</td>
+            </tr>
+            <tr>
+                <td>'</td>
+                <td>одинарні лапки (апостроф)</td>
+                <td>&amp;apos;</td>
+                <td>&amp;#39;</td>
+            </tr>
+            <tr>
+                <td>¢</td>
+                <td>цент</td>
+                <td>&amp;cent;</td>
+                <td>&amp;#162;</td>
+            </tr>
+            <tr>
+                <td>£</td>
+                <td>фунт</td>
+                <td>&amp;pound;</td>
+                <td>&amp;#163;</td>
+            </tr>
+            <tr>
+                <td>¥</td>
+                <td>єна</td>
+                <td>&amp;yen;</td>
+                <td>&amp;#165;</td>
+            </tr>
+            <tr>
+                <td>€</td>
+                <td>євро</td>
+                <td>&amp;euro;</td>
+                <td>&amp;#8364;</td>
+            </tr>
+            <tr>
+                <td>©</td>
+                <td>авторське право</td>
+                <td>&amp;copy;</td>
+                <td>&amp;#169;</td>
+            </tr>
+            <tr>
+                <td>®</td>
+                <td>зареєстрований товарний знак</td>
+                <td>&amp;reg;</td>
+                <td>&amp;#174;</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Примітка: Імена символьних об'єктів чутливі до регістру.</p>
+        </div>
+        <hr>
+        <h2>Об'єднання діакритичних знаків</h2>
+        <p>Діакритичний знак - це "гліф", який додається до літери. Деякі діакритичні знаки, такі як важливість (&nbsp; ̀) і наголос (&nbsp; ́), називаються акцентами.</p>
+        <p>Діакритичні знаки можуть з'являтися як над, так і під літерою, всередині літери і між двома літерами.</p>
+        <p>Діакритичні знаки можуть використовуватися в поєднанні з буквено-цифровими символами для створення символу, який відсутній у наборі символів (кодуванні), використаному на сторінці.</p>
+        <p>Ось кілька прикладів.</p>
+        <table class="w3-table-all">
+        <tbody><tr>
+            <th>Знак</th>
+            <th>Символ</th>
+            <th>Конструкція</th>
+            <th>Результат</th>
+        </tr>
+        <tr>
+            <td>&nbsp;̀</td>
+            <td>a</td>
+            <td>a&amp;#768;</td>
+            <td>à</td>
+        </tr>
+        <tr>
+            <td>&nbsp;́</td>
+            <td>a</td>
+            <td>a&amp;#769;</td>
+            <td>á</td>
+        </tr>
+        <tr>
+            <td>̂</td>
+            <td>a</td>
+            <td>a&amp;#770;</td>
+            <td>â</td>
+        </tr>
+        <tr>
+            <td>&nbsp;̃</td>
+            <td>a</td>
+            <td>a&amp;#771;</td>
+            <td>ã</td>
+        </tr>
+        <tr>
+            <td>&nbsp;̀</td>
+            <td>O</td>
+            <td>O&amp;#768;</td>
+            <td>Ò</td>
+        </tr>
+        <tr>
+            <td>&nbsp;́</td>
+            <td>O</td>
+            <td>O&amp;#769;</td>
+            <td>Ó</td>
+        </tr>
+        <tr>
+            <td>̂</td>
+            <td>O</td>
+            <td>O&amp;#770;</td>
+            <td>Ô</td>
+        </tr>
+        <tr>
+            <td>&nbsp;̃</td>
+            <td>O</td>
+            <td>O&amp;#771;</td>
+            <td>Õ</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>У наступному розділі цього посібника ви побачите більше <strong>HTML-символів</strong>.</p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les28.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les30.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les29.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Кольори. Урок №13. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,кольори,веб дизайн,колір,hex,rgb">
+    <meta name="description" content="Урок 13. HTML. Кольори на веб-сторінках. Як необхідно додавати колір для елементів web-документів? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Різні кольори на веб-сторінці. HTML, CSS. Як задати колір тексту, фону?" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Кольори на веб-сторінках. Як зробити колір в коді на веб-документах? Які бувають кольори? HTML, CSS, JavaScript для початківців. " />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №13. HTML. Кольори</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les12.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les14.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML кольори. Як додавати кольори на веб-сторінках? Які бувають кольори в веб-дизайні?</h2>
+        <p><strong>HTML</strong> <em>кольори</em> задаються за допомогою попередньо визначених назв кольорів, або значень <em>RGB</em>, <em>HEX</em>, <em>HSL</em>, <em>RGBA</em>, <em>HSLA</em>.</p>
+        <hr>
+        <h2>Назви кольорів</h2>
+        <p>В <strong>HTML</strong> можна вказати колір за допомогою назви кольору:</p>
+        <div class="w3-row w3-center" style="margin:0 -16px;line-height:80px;color:white;">
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:tomato;">Tomato</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:orange;">Orange</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:dodgerblue;">DodgerBlue</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:gray;">Gray</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:slateblue;">SlateBlue</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:violet;">Violet</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:lightgray;color:#444444">LightGray</div>
+            </div>
+            <div class="w3-col l3 m6 w3-padding">
+                <div style="background-color:darkred;">Darkred</div>
+            </div>
+        </div>
+        <p><a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names" target="_blank" rel="nofollow">Спробуйте самі! »</a></p>
+        <p><strong>HTML</strong> підтримує <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" rel="nofollow">140 стандартних назв кольорів</a>.</p>
+        <hr>
+        <h2>Колір фону - Background Color</h2>
+        <p>Можна встановити колір фону для <strong>HTML</strong> елементів:</p><br>
+        <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World</div>
+        <br>
+        <div class="w3-container" style="background-color:tomato;color:white;"><br>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+        </div><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="background-color:DodgerBlue;"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="background-color:Tomato;"</span></span><span style="color:mediumblue">&gt;</span></span>Lorem
+                ipsum...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_background" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Колір тексту - Text Color</h2>
+        <p>Можна встановити колір тексту:</p>
+        <h3 style="color:tomato">Hello World</h3>
+        <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="color:Tomato;"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:DodgerBlue;"</span></span><span style="color:mediumblue">&gt;</span></span>Lorem ipsum...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:MediumSeaGreen;"</span></span><span style="color:mediumblue">&gt;</span></span>Ut wisienim...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_text" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Колір межі - Border Color</h2>
+        <p>Можна встановити колір меж (border):</p>
+        <h4 style="border:2px solid Tomato;padding-left:5px;">Hello World</h4>
+        <h4 style="border:2px solid DodgerBlue;padding-left:5px;">Hello World</h4>
+        <h4 style="border:2px solid Violet;padding-left:5px;">Hello World</h4>
+        <br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="border:2px
+  solid Tomato;"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="border:2px
+  solid DodgerBlue;"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="border:2px
+  solid Violet;"</span></span><span style="color:mediumblue">&gt;</span></span>Hello World<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_border" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Колірні значення</h2>
+        <p>У <strong>HTML</strong> можна також вказати кольори, використовуючи значення <strong>RGB</strong>, значення <strong>HEX</strong>, значення <strong>HSL</strong>, значення <strong>RGBA</strong> і значення <strong>HSLA</strong>:</p>
+        <p>Те ж саме, що і назва кольору "Tomato":</p>
+        <div class="w3-center" style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+            <div style="background-color:rgb(255, 99, 71);margin:10px 0;">rgb(255, 99, 71)</div>
+            <div style="background-color:#ff6347;margin:10px 0;">#ff6347</div>
+            <div style="background-color:hsl(9, 100%, 64%);margin:10px 0;">hsl(9, 100%, 64%)</div>
+        </div>
+        <p>Те ж саме, що і назва кольору "Tomato", але 50% прозорості:</p>
+        <div class="w3-center" style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+            <div style="background-color:rgba(255, 99, 71, 0.5);margin:10px 0;">rgba(255, 99, 71, 0.5)</div>
+            <div style="background-color:hsla(9, 100%, 64%, 0.5);margin:10px 0;">hsla(9, 100%, 64%, 0.5)</div>
+        </div><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="background-color:rgb(255,
+  99, 71);"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="background-color:#ff6347;"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="background-color:hsl(9, 100%, 64%);"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="background-color:rgba(255, 99, 71, 0.5);"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> style<span style="color:mediumblue">="background-color:hsla(9, 100%, 64%, 0.5);"</span></span><span style="color:mediumblue">&gt;</span></span>...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_values" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Значення RGB</h2>
+        <p>У HTML колір можна вказувати як значення RGB, використовуючи цю формулу:</p>
+        <p><strong>rgb (red, green, blue)</strong></p>
+        <p>що означає: <span style="color:red;">червоний</span>, <span style="color:green;">зелений</span>, <span style="color:blue;">синій</span>.</p>
+        <p>Кожен параметр (червоний, зелений і синій) визначає інтенсивність кольору від 0 до 255.</p>
+        <p>Наприклад, rgb (255, 0, 0) відображається у вигляді червоного кольору, тому що червоний встановлюється на його найвище значення (255), а інші встановлюються на 0.</p>
+        <p>Для відображення чорного кольору всі параметри кольору повинні бути встановлені в 0, наприклад: rgb (0, 0, 0).</p>
+        <p>Для відображення білого кольору всі параметри кольору повинні бути встановлені на 255, наприклад: rgb (255, 255, 255).</p>
+        <p>Поекспериментуйте самостійно, змішуючи значення RGB.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h6>
+                    <h6 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h6>
+                    <h6 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h6>
+                    <h6 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h6>
+                    <h6 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h6>
+                    <h6 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Відтінки сірого часто визначаються з використанням рівних значень для всіх 3 джерел світла:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:rgb(0, 0, 0);">rgb(0, 0, 0)</h6>
+                    <h6 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h6>
+                    <h6 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h6>
+                    <h6 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h6>
+                    <h6 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h6>
+                    <h6 style="background-color:rgb(255, 255, 255); color: #ddd;">rgb(255, 255, 255)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb_gray" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Значення HEX</h2>
+        <p>У <strong>HTML</strong> можна вказати колір, використовуючи шістнадцяткове значення у вигляді:</p>
+        <p><b>#rrggbb</b></p>
+        <p>Де <b>rr</b> (<span style="color:red;">червоний</span>), <b>gg</b> (<span style="color:green;">зелений</span>) і <b>bb</b> (<span style="color:blue;">синій</span>) є шістнадцятковими значеннями між <b>00</b> і <b>ff</b> (такими ж, як десяткові 0-255).</p>
+        <p>Наприклад, #ff0000 відображається у вигляді червоного кольору, оскільки червоний встановлюється на його найвище значення (ff), а інші встановлюються на найнижчі значення (00).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:#ff0000;">#ff0000</h6>
+                    <h6 style="background-color:#0000ff;">#0000ff</h6>
+                    <h6 style="background-color:#3cb371;">#3cb371</h6>
+                    <h6 style="background-color:#ee82ee;">#ee82ee</h6>
+                    <h6 style="background-color:#ffa500;">#ffa500</h6>
+                    <h6 style="background-color:#6a5acd;">#6a5acd</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hex" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Відтінки сірого часто визначаються з використанням рівних значень для всіх 3 джерел світла:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:#000000;">#000000</h6>
+                    <h6 style="background-color:#3c3c3c;">#3c3c3c</h6>
+                    <h6 style="background-color:#787878;">#787878</h6>
+                    <h6 style="background-color:#b4b4b4;">#b4b4b4</h6>
+                    <h6 style="background-color:#f0f0f0;">#f0f0f0</h6>
+                    <h6 style="background-color:#ffffff; color: #ddd;">#ffffff</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hex_gray" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Значення HSL</h2>
+        <p>У <strong>HTML</strong> можна вказати колір за допомогою відтінку, насиченості та легкості (освітленості) - (HSL) у вигляді:</p>
+        <p><b>hsl</b> (відтінок, насиченість, легкість)</p>
+        <h3>Відтінок (Hue)</h3>
+        <p>Відтінок - це ступінь на колірному колесі від 0 до 360. 0 - червоний, 120 - зелений, а 240 - блакитний.</p>
+        <p>Насиченість - це процентне значення, 0% означає відтінок сірого, а 100% - повний колір.</p>
+        <p>Легкість також становить відсоток, 0% - чорний, 50% - на половину світлий або темний, 100% - білий.</p><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h6>
+                    <h6 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h6>
+                    <h6 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h6>
+                    <h6 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h6>
+                    <h6 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h6>
+                    <h6 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h3>Насиченість (Saturation)</h3>
+        <p>Насиченість може бути описана як інтенсивність кольору.</p>
+        <p>100% - це чистий колір, немає сірих відтінків.</p>
+        <p>50% - це 50% сірого кольору, але ви все ще можете побачити колір. </p>
+        <p>0% повністю сірий, ви не можете більше бачити колір.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_saturation" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h3>Легкість / Освітленість / Яскравість (Lightness)</h3>
+        <p>Легкість кольору можна охарактеризувати як світло, яке ви хочете надати кольору, де 0% означає відсутність світла (чорний), 50% означає 50% світла (ні темний, ні світлий), 100% означає повну легкість (білий колір).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h6>
+                    <h6 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h6>
+                    <h6 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h6>
+                    <h6 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h6>
+                    <h6 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h6>
+                    <h6 style="background-color:hsl(0, 100%, 100%); color: #ddd;">hsl(0, 100%, 100%)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_lightness" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Відтінки сірого часто визначаються встановленням відтінку і насиченості до 0, а також регулюють яскравість від 0% до 100%, щоб отримати темніші / світліші відтінки:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 24%);">hsl(0, 0%, 24%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 94%);">hsl(0, 0%, 94%)</h6>
+                    <h6 style="background-color:hsl(0, 0%, 100%);color:#ddd;">hsl(0, 0%, 100%)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_gray" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Значення RGBA</h2>
+        <p>Значення кольорів <strong>RGBA</strong> є розширенням значень кольорів <strong>RGB</strong> з альфа-каналом, який визначає непрозорість кольору.</p>
+        <p>Значення кольору <strong>RGBA</strong> вказано за допомогою:</p>
+        <p><strong>rgba</strong> (<span style="color:red;">red - червоний</span>, <span style="color:green;">green - зелений</span>, <span style="color:blue;">blue - синій</span>, alpha - альфа)</p>
+        <p>Параметр "alpha" - це число між 0.0 (повністю прозорим) та 1.0 (зовсім не прозорим):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:rgba(255, 99, 71, 0); color: #ddd;">rgba(255, 99, 71, 0)</h6>
+                    <h6 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h6>
+                    <h6 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h6>
+                    <h6 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h6>
+                    <h6 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h6>
+                    <h6 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgba" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Значення HSLA</h2>
+        <p>Значення кольорів <strong>HSLA</strong> є розширенням значень кольорів <strong>HSL</strong> за допомогою альфа-каналу, який визначає непрозорість кольору.</p>
+        <p>Значення кольору <strong>HSLA</strong> вказано за допомогою:</p>
+        <p><strong>hsla</strong> (hue - відтінок, saturation - насиченість, lightness - легкість, alpha - альфа)</p>
+        <p>Параметр "альфа" - це число між 0.0 (повністю прозорим) та 1.0 (зовсім не прозорим):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <div class="w3-row w3-center" style="line-height:28px;color:white;font-size:16px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <h6 style="background-color:hsla(9, 100%, 64%, 0);color:#ddd;">hsla(9, 100%, 64%, 0)</h6>
+                    <h6 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h6>
+                    <h6 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h6>
+                    <h6 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h6>
+                    <h6 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h6>
+                    <h6 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h6>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsla" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p>Таким чином, ви можете використовувати різні способи запису кольору в <strong>HTML-розмітці</strong>. Але найчастіше використовується написання кольору в шістнадцятковому значенні <strong>HEX</strong> - як в найбільш універсальному і компактному стилі.</p><p>Існує безліч різних програм і плагінів до браузерів, за допомогою яких можна підбирати потрібний вам колір в будь-якому з колірних значень: <strong>за назвою</strong>, <strong>HEX, RGB, HSL</strong>. Наприклад, онлайн сервіси <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="nofollow">Color Picker</a> на сайті <a href="https://www.w3schools.com/" target="_blank" rel="nofollow">https://www.w3schools.com/</a>, <a href="https://colorscheme.ru/" target="_blank" rel="nofollow">https://colorscheme.ru/</a> та ін., програми <a href="https://colormania.ru.uptodown.com/windows" target="_blank" rel="nofollow">ColorMania</a>, <a href="https://microsearch-color-picker.software.informer.com/" target="_blank" rel="nofollow">Microsearch Color Picker</a>, <a href="https://pixie.ru.softonic.com/" target="_blank" rel="nofollow">Pixie</a> та ін., розширення <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank" rel="nofollow">ColorZilla</a>, <a href="https://chrome.google.com/webstore/detail/color-picker/jcmgligingjhdnhdhgepemlckgcgmgaj?hl=en" target="_blank" rel="nofollow">ColorPicker</a> в Chrome та ін.</p>
+        <h3>Довідник HTML тегів</h3>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a
+                    href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les12.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les14.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les13.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

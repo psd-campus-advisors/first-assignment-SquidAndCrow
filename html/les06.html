@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Атрибути. Урок №6. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,атрибути,код,теги,атрибутів">
+    <meta name="description" content="Урок 6. HTML. Атрибути тегів в html-елементах. Що таке атрибути? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Атрибути тегів на веб-сторінці. HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Атрибути тегів. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №6. HTML. Атрибути</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les05.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les07.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <p>Атрибути надають додаткову інформацію про елементи <strong>HTML</strong>.</p>
+        <h2>Атрибути HTML. Для чого потрібні атрибути?</h2>
+        <ul class="list-disc">
+            <li>Всі елементи HTML можуть мати атрибути
+            <li>Атрибути надають додаткову інформацію про елемент
+            <li>Атрибути завжди задаються в початковому тезі
+            <li>Атрибути зазвичай входять в пари імен / значень, наприклад: name = "value" (ім'я атрибута / значення)
+        </ul>
+        <hr>
+        <h2>Атрибут href</h2>
+        <p>Посилання <strong>HTML</strong> визначаються тегом <code>&lt;a&gt;</code>. Адреса посилання вказана в атрибуті <code>href</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>This is a link<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Докладніше про посилання та тег <code>&lt;a&gt;</code> можна дізнатися в наступних розділах цього посібника.</p>
+        <hr>
+        <h2>Атрибут src</h2>
+        <p>Зображення в <strong>HTML</strong> визначаються тегом <code>&lt;img&gt;</code>.</p>
+        <p>Назва файлу джерела зображення вказано в атрибуті <code>src</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img_src" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h2>Атрибути width (ширина) і height (висота)</h2>
+        <p>Зображення в <strong>HTML</strong> мають набір атрибутів розміру, який визначає ширину і висоту зображення:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> width<span style="color:mediumblue">="500"</span> height<span style="color:mediumblue">="600"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Розмір зображення задається в пікселях: width = "500" означає ширину 500 пікселів.</p>
+        <p>Ви дізнаєтеся більше про зображення в розділі <a href="les16.html" target="_blank" rel="nofollow">Зображення в HTML</a>.</p>
+        <hr>
+        <h2>Атрибут alt</h2>
+        <p>Атрибут <code>alt</code> вказує альтернативний текст для використання, коли зображення не може бути відображено. Значення атрибуту можна прочитати читачами екрану (скрінрідерами). Таким чином, хтось "слухає" веб-сторінку, наприклад людина з порушенням зору може "почути" елемент.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Атрибут <code>alt</code> також корисний, якщо зображення не існує. Подивіться, що станеться, якщо ми спробуємо відобразити зображення, яке не існує:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_typo.jpg"</span> alt<span style="color:mediumblue">="Girl
+  with a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt_error" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Атрибут style</h2>
+        <p>Атрибут <code>style</code> використовується для визначення стилю елемента, наприклад кольору, шрифту, розміру тощо.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="color:red"</span></span><span style="color:mediumblue">&gt;</span></span>I am a paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Ви дізнаєтеся більше про стилізацію пізніше в цьому посібнику, а також в <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">підручнику по CSS</a> на W3Schools.</p>
+        </div>
+        <hr>
+        <h2>Атрибут lang</h2>
+        <p>Мову веб-сторінки можна оголосити в тезі <code>&lt;html&gt;</code>. Мова оголошується атрибутом <code>lang</code>. Оголошення мови має важливе значення для додатків доступності (програми для читання з екрана) та пошукових систем:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en-US"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br>
+                ... Content<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Перші дві літери визначають мову (en). Якщо є діалект, використовують ще дві букви (US). Для української мови використовують букви uk.</p>
+        <hr>
+        <h2>Атрибут title</h2>
+        <p>Тут атрибут <code>title</code> додається до елемента <code>&lt;p&gt;</code>. Значення атрибута заголовка відображатиметься як спливаюча підказка, коли ви пересуваєте курсор миші над параграфом:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="I'm a tooltip"</span></span><span style="color:mediumblue">&gt;</span></span><br>This is a paragraph.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Використовуйте атрибути нижнього регістру</h2>
+        <p>Стандарт <strong>HTML5</strong> не вимагає імен атрибутів у нижньому регістрі. Атрибут <code>title</code> може бути записаний у верхньому або нижньому регістрі – <strong>title</strong> або <strong>TITLE</strong>.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> W3C рекомендує нижній регістр в <strong>HTML</strong> і вимагає нижнього регістру для більш жорстких типів документів, таких як <strong>XHTML</strong>.</p>
+        </div>
+        <hr>
+        <h2>Значення атрибутів в лапках</h2>
+        <p>Стандарт <strong>HTML5</strong> не вимагає лапок навколо значень атрибутів. Атрибут <code>href</code>, показаний вище, може бути написаний без лапок:</p>
+        <div class="w3-example">
+            <p>Приклад <b>(Погано)</b>:</p>
+            <div class="w3-border-red w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red">
+href<span style="color:mediumblue">=https://www.w3schools.com</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_noquotes" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад <b>(Добре)</b>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_withquotes" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p><strong>W3C</strong> рекомендує лапки в <strong>HTML</strong> і вимагає лапки для більш жорстких типів документів, таких як <strong>XHTML</strong>. Іноді потрібно використовувати лапки. Цей приклад не відображатиме правильно атрибут <code>title</code>, оскільки він містить пробіл:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red">
+ title<span style="color:mediumblue">=About </span>W3Schools</span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_error" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Найбільш поширеним написанням <strong>HTML-коду</strong> є з використанням лапок. Опущення лапок може призвести до помилок. У <strong>W3Schools</strong> завжди використовують лапки навколо значень атрибутів.</p>
+        </div>
+        <hr>
+        <h2>Одинарні чи подвійні лапки?</h2>
+        <p>Подвійні лапки навколо значень атрибутів є найбільш поширеними в <strong>HTML</strong>, але також можна використовувати і одинарні лапки. У деяких ситуаціях, коли значення атрибута само по собі містить подвійні лапки, необхідно використовувати одинарні лапки:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">='John "ShotGun" Nelson'</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Або навпаки:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> title<span style="color:mediumblue">="John 'ShotGun' Nelson"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_single_double" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h4>Резюме розділу</h4>
+        <ul class="list-disc">
+            <li>Всі елементи <strong>HTML</strong> можуть мати <strong>атрибути</strong>
+            <li>Атрибут <code>title</code> надає додаткову інформацію "підказки"
+            <li>Атрибут <code>href</code> містить інформацію про адреси для посилань
+            <li>Атрибути <code>width</code> (ширини) та <code>height</code> (висоти) надають інформацію про розмір зображень
+            <li>Атрибут <code>alt</code> надає альтернативний текст для скрінрідерів (считувачив екрану)
+            <li> У <strong>W3Schools</strong> завжди використовують імена атрибутів <strong>нижнього регістру</strong>
+            <li>У <strong>W3Schools</strong> завжди пишуть значення атрибутів з <strong>подвійними лапками</strong>
+        </ul><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes5" target="_blank" rel="nofollow">Exercise 5 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML Атрибути</h2>
+        <p>Нижче наведено алфавітний список деяких атрибутів, які часто використовуються в <strong>HTML</strong>, про які ви дізнаєтеся більше в цьому підручнику:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Атрибут</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Визначає альтернативний текст для зображення, коли зображення не може бути відображене</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Вказує, що вхідний елемент повинен бути вимкнений</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>Вказує URL-адресу (веб-адресу) для посилання</td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Вказує унікальний ідентифікатор елемента</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Вказує URL-адресу (веб-адресу) зображення</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>Визначає вбудований стиль CSS для елемента</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Визначає додаткову інформацію про елемент (відображається як спливаюча підказка)</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Повний список всіх атрибутів для кожного елемента <strong>HTML</strong> наведено в <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank" rel="nofollow">довіднику атрибутів HTML</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les05.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les07.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les06.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

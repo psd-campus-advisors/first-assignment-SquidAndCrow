@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Таблиці. Урок №17. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,таблиці,табличний стиль,table,row,col,веб,сторінка">
+    <meta name="description" content="Урок 17. HTML. CSS. Таблиці на веб-сторінках. Як додати таблицю на сайт? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Таблиці на веб-сторінці. Тег table, tr,td,th. Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Таблиці на веб-сторінках. Табличний стиль. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №17. HTML. Таблиці</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les16.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les18.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Як додати таблицю в HTML-код на веб-сайті?</h2>
+
+        <div class="w3-example">
+            <h3>HTML Table Example</h3>
+            <div class="w3-white w3-padding notranslate">
+                <table id="customers">
+                    <tbody><tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                    </tbody></table>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro" target="_blank">Спробуйте самі! »</a>
+        </div>
+        <h2>Визначення таблиці в HTML</h2>
+        <p>Таблиця в <strong>HTML</strong> визначається тегом <code>&lt;table&gt;</code>. Кожен рядок таблиці визначається тегом <code>&lt;tr&gt;</code>. Заголовок таблиці визначається тегом <code>&lt;th&gt;</code>. За замовчуванням заголовки таблиць виділені жирним шрифтом і центровані. Чарунка з данними в таблиці (data/cell) визначається тегом <code>&lt;td&gt;</code>.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Firstname<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Lastname<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Age<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Jill<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Smith<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>50<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Eve<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Jackson<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>94<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+            </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Елементи <code>&lt;td&gt;</code> є контейнерами даних таблиці. Вони можуть містити всілякі елементи <strong>HTML</strong>; текст, зображення, списки, інші таблиці тощо</p>
+        </div>
+        <hr>
+        <h2>HTML таблиця - додавання межі (border)</h2>
+        <p>Якщо ви не вкажете межу для таблиці, вона буде відображатися без кордонів. Межа встановлюється за допомогою <strong>CSS</strong> властивості <code>border</code>.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">table, th, td<span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border<span style="color:mediumblue"><span style="color:black">:</span> 1px solid black<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Не забувайте визначати межі як для таблиці, так і для чарунок таблиці.</p>
+        </div>
+        <hr>
+        <h2>HTML таблиця - згорнуті межі (border-collapse)</h2>
+        <p>Якщо ви хочете, щоб рамки таблиці відображалися в один кордон, додайте <strong>CSS</strong>-властивість <code>border-collapse</code>.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"> table, th, td <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border<span style="color:mediumblue"><span style="color:black">:</span> 1px solid black<span style="color:black">;</span></span><br> &nbsp; border-collapse<span style="color:mediumblue"><span style="color:black">:</span> collapse<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_collapse" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML таблиця - додавання внутрішнього відступу в чарунках (padding)</h2>
+        <p>Внутрішній відступ чарунки визначає простір між вмістом чарунки та її межами. Якщо ви не вказуєте внутрішній відступ, чарунки таблиці відображатимуться без відступу.</p>
+        <p>Щоб встановити додавання внутрішнього відступу, використовуйте <strong>CSS</strong> властивість <code>padding</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+ th, td <span style="color:black">{</span><span style="color:red"><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 15px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellpadding" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML таблиця - вирівнювання заголовків ліворуч</h2>
+        <p>За замовчуванням заголовки таблиць виділені жирним шрифтом і центровані. Для вирівнювання заголовків таблиць використовуйте <strong>CSS</strong> властивість <code>text-align</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+ th <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> left<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_headings_left" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML таблиця - додавання інтервалу між кордонами</h2>
+        <p>Інтервал між кордонами визначає простір між чарунками. Щоб встановити інтервал між кордонами, використовуйте <strong>CSS</strong> властивість <code>border-spacing</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">table <span style="color:black">{</span><span style="color:red"><br>&nbsp; border-spacing<span style="color:mediumblue"><span style="color:black">:</span> 5px<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellspacing" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Якщо таблиця має <code>border-collapse</code>, то встановлення <code>border-spacing</code> ніяк е впливає.</p>
+        </div><hr>
+        <h2>HTML таблиця - чарунки, які охоплюють багато стовпців</h2>
+        <p>Щоб зробити чарунку, яка охоплює більш ніж один стовпець, використовуйте атрибут <code>colspan</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Name<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:red"> colspan<span style="color:mediumblue">="2"</span></span><span style="color:mediumblue">&gt;</span></span>Telephone<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Bill Gates<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>55577854<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>55577855<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colspan" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML таблиця - чарунки, які охоплюють багато рядків</h2>
+        <p>Щоб зробити чарунку, яка охоплює більш ніж один рядок, використовуйте атрибут <code>rowspan</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Name:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Bill Gates<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:red"> rowspan<span style="color:mediumblue">="2"</span></span><span style="color:mediumblue">&gt;</span></span>Telephone:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>55577854<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>55577855<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_rowspan" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML таблиця - додавання підпису</h2>
+        <p>Щоб додати підпис до таблиці, використовуйте тег <code>&lt;caption&gt;</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>caption<span style="color:mediumblue">&gt;</span></span>Monthly savings<span style="color:brown"><span style="color:mediumblue">&lt;</span>/caption<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Month<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Savings<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>January<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>$100<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>February<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>$50<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_tables2" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Тег <code>&lt;caption&gt;</code> має бути вставлений відразу після тегу <code>&lt;table&gt;</code></p>
+        </div>
+        <hr>
+        <h2>Особливий стиль для однієї таблиці</h2>
+        <p>Щоб визначити особливий стиль для окремої таблиці, додайте атрибут <code>id</code> (ідентифікатор) до таблиці:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> id<span style="color:mediumblue">="t01"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Firstname<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Lastname<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>th<span style="color:mediumblue">&gt;</span></span>Age<span style="color:brown"><span style="color:mediumblue">&lt;</span>/th<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Eve<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Jackson<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>94<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><br>
+        <div class="w3-example">
+            <p>Тепер ви можете визначити особливий стиль для цієї таблиці:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+table#t01 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;width<span style="color:mediumblue"><span style="color:black">:</span> 100%<span style="color:black">;</span></span> <br>
+&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #f1f1c1<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_id1" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-example">
+            <p>І додати нові стилі для цієї таблиці:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown">
+table#t01 tr:nth-child(even) <span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #eee<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+table#t01 tr:nth-child(odd) <span style="color:black">{</span><span style="color:red"><br>
+&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #fff<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br>
+table#t01 th <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> black<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+ </span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_id2" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h3>Резюме розділу</h3>
+        <ul class="list-disc">
+            <li>Використовуйте HTML елемент <code>&lt;table&gt;</code> для визначення таблиці
+            <li>Використовуйте HTML елемент <code>&lt;tr&gt;</code> для визначення рядка таблиці
+            <li>Використовуйте HTML елемент <code>&lt;td&gt;</code> для визначення чарунки з даними таблиці
+            <li>Використовуйте HTML елемент <code>&lt;th&gt;</code> щоб визначити заголовок таблиці
+            <li>Використовуйте HTML елемент <code>&lt;caption&gt;</code> щоб визначити підпис таблиці
+            <li>Використовуйте CSS властивість <code>border</code> для визначення меж таблиці
+            <li>Використовуйте CSS властивість <code>border-collapse</code> для згортання меж таблиці
+            <li>Використовуйте CSS властивість <code>padding</code> для додавання внутрішнього відступу в таблиці
+            <li>Використовуйте CSS властивість <code>text-align</code> для вирівнювання тексту в чарунці
+            <li>Використовуйте CSS властивість <code>border-spacing</code> для встановлення інтервалу між чарунками
+            <li>Використовуйте атрибут <code>colspan</code>, щоб зробити чарунки, що охоплюють кілька стовпців
+            <li>Використовуйте атрибут <code>rowspan</code>, щоб зробити чарунки, що охоплюють кілька рядків
+            <li>Використовуйте атрибут <code>id</code> для визначення стилю однієї таблиці
+        </ul>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables5" target="_blank" rel="nofollow">Exercise 5 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables6" target="_blank" rel="nofollow">Exercise 6 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML теги таблиці</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank" rel="nofollow">&lt;table&gt;</a></td>
+                <td>Визначає таблицю</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_th.asp" target="_blank" rel="nofollow">&lt;th&gt;</a></td>
+                <td>Визначає чарунку заголовка таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_tr.asp" target="_blank" rel="nofollow">&lt;tr&gt;</a></td>
+                <td>Визначає рядок у таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_td.asp" target="_blank" rel="nofollow">&lt;td&gt;</a></td>
+                <td>Визначає чарунку в таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_caption.asp" target="_blank" rel="nofollow">&lt;caption&gt;</a></td>
+                <td>Визначає підпис таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_colgroup.asp" target="_blank" rel="nofollow">&lt;colgroup&gt;</a></td>
+                <td>Визначає групу з одного або декількох стовпців у таблиці для форматування</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_col.asp" target="_blank" rel="nofollow">&lt;col&gt;</a></td>
+                <td>Вказує властивості стовпців для кожного стовпця в елементі <code>&lt;colgroup&gt;</code></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_thead.asp" target="_blank" rel="nofollow">&lt;thead&gt;</a></td>
+                <td>Групує вміст заголовка (head) в таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_tbody.asp" target="_blank" rel="nofollow">&lt;tbody&gt;</a></td>
+                <td>Групує вміст тіла (body) в таблиці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_tfoot.asp" target="_blank" rel="nofollow">&lt;tfoot&gt;</a></td>
+                <td>Групує вміст нижнього колонтитула (footer) в таблиці</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a
+                    href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les16.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les18.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les17.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

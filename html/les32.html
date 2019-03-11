@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. URL. Уніфіковані локатори ресурсів. Урок №32. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,URL,урл,уніфіковані,локатори,ресурсів,адреса,web,веб,сторінка,utf-8">
+    <meta name="description" content="Урок 32. HTML. CSS. URL веб-сторінок. Що таке web-адреса? Яка адреса в сайта? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. URL сайту. Адреса веб-сторінки. Як розміщуються веб-сайти в Інтернеті? Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. URL-адреса. Розміщення веб-сайту в Інтернеті. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №32. HTML. URL (уніфікований локатор ресурсів)</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les31.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les33.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. URL або веб-адреса</h2>
+        <p>URL-адреса - це інша назва для веб-адреси. URL-адреса може складатися зі слів (w3schools.com) або адреси Інтернет-протоколу (IP-адреса) (192.68.20.50). Більшість людей вводять ім'я під час серфінгу, тому що імена легше запам'ятовувати, ніж числа.</p>
+        <h3>URL - уніфікований локатор ресурсів</h3>
+        <p>Веб-браузери запитують сторінки з веб-серверів за допомогою URL-адреси. Уніфікований інформаційний ресурс (URL) використовується для адреси документа (або інших даних) в Інтернеті. Веб-адреса, наприклад, https://www.w3schools.com/html/default.asp, дотримується цих правил:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                scheme://prefix.domain:port/path/filename
+            </div>
+        </div>
+        <p>Пояснення:</p>
+        <ul class="list-disc">
+            <li><strong>scheme</strong> (схема) - визначає <strong>тип</strong> Інтернет-служби (найбільш поширеним є <strong>http</strong> або <strong>https</strong>)
+            <li><strong>prefix</strong> (префікс) - визначає <strong>префікс</strong> домену (за умовчанням для http є <strong>www</strong>)
+            <li><strong>domain</strong> (домен) - визначає <strong>назву домену</strong> Інтернету (наприклад, w3schools.com)
+            <li><strong>port</strong> (порт) - визначає <strong>номер порту</strong> на хості (за замовчуванням для http - <strong>80</strong>)
+            <li><strong>path</strong> (шлях) - визначає <strong>шлях</strong> на сервері (якщо пропущено: кореневий каталог сайту)
+            <li><strong>filename</strong> (назва файлу) - визначає <strong>назву документа</strong> або ресурсу
+        </ul>
+        <hr>
+        <h2>Загальні схеми URL-адрес</h2>
+        <p>У таблиці нижче наведено деякі загальні схеми:</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:10%">Схема</th>
+                <th style="width:35%">Коротко для</th>
+                <th>Використовується для</th>
+            </tr>
+            <tr>
+                <td>http</td>
+                <td>Протокол передачі гіпертексту</td>
+                <td>Загальні веб-сторінки. Не зашифровано</td>
+            </tr>
+            <tr>
+                <td>https</td>
+                <td>Безпечний протокол передачі гіпертексту</td>
+                <td>Захищає веб-сторінки. Зашифровано</td>
+            </tr>
+            <tr>
+                <td>ftp</td>
+                <td>Протокол передачі файлів</td>
+                <td>Завантаження або вивантаження файлів</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>&nbsp;</td>
+                <td>Файл на вашому комп'ютері</td>
+            </tr>
+            </tbody>
+        </table>
+        <hr><h2>URL кодування</h2>
+        <p>URL-адреси можна надсилати лише через Інтернет за допомогою набору символів ASCII. Якщо URL-адреса містить символи поза набором ASCII, URL-адресу потрібно конвертувати.</p>
+        <p>Кодування URL перетворює не-ASCII символи у формат, який може бути переданий через Інтернет.</p>
+        <p>Кодування URL замінює символи не-ASCII на "%", за якими йдуть шістнадцяткові цифри.</p>
+        <p>URL-адреси не можуть містити пробіли. Кодування URL зазвичай замінює пробіл знаком плюс (+) або %20.</p>
+        <hr>
+        <h2>Спробуйте самі</h2>
+        <form name="input" target="_blank" action="https://www.w3schools.com/action_page2.php?text=Hello+G%C3%BCnter" method="get">
+            <input type="text" value="Hello Günter" name="text" size="30">
+            <input type="submit" value="Відправити">
+        </form>
+        <br>
+        <p>Якщо натиснути кнопку "Відправити", браузер буде кодувати URL-адресу у вхідний сигнал, перш ніж він буде надісланий на сервер. Сторінка на сервері відобразить отриманий вхід.</p>
+        <p>Спробуйте інший вхід і ще раз натисніть "Відправити".</p>
+        <hr>
+        <h2>Приклади ASCII кодування</h2>
+        <p>Ваш браузер буде кодувати вхідні дані відповідно до набору символів, який використовується на вашій сторінці. Типовий набір символів (за умовчанням) в <strong>HTML5</strong> - це <strong>UTF-8</strong>.</p>
+        <table class="w3-table-all notranslate">
+            <tbody><tr>
+                <th style="width:20%">Символ</th>
+                <th style="width:40%">Із Windows-1252</th>
+                <th style="width:40%">Із UTF-8</th>
+            </tr>
+            <tr>
+                <td>€</td>
+                <td>%80</td>
+                <td>%E2%82%AC</td>
+            </tr>
+            <tr>
+                <td>£</td>
+                <td>%A3</td>
+                <td>%C2%A3</td>
+            </tr>
+            <tr>
+                <td>©</td>
+                <td>%A9</td>
+                <td>%C2%A9</td>
+            </tr>
+            <tr>
+                <td>®</td>
+                <td>%AE</td>
+                <td>%C2%AE</td>
+            </tr>
+            <tr>
+                <td>À</td>
+                <td>%C0</td>
+                <td>%C3%80</td>
+            </tr>
+            <tr>
+                <td>Á</td>
+                <td>%C1</td>
+                <td>%C3%81</td>
+            </tr>
+            <tr>
+                <td>Â</td>
+                <td>%C2</td>
+                <td>%C3%82</td>
+            </tr>
+            <tr>
+                <td>Ã</td>
+                <td>%C3</td>
+                <td>%C3%83</td>
+            </tr>
+            <tr>
+                <td>Ä</td>
+                <td>%C4</td>
+                <td>%C3%84</td>
+            </tr>
+            <tr>
+                <td>Å</td>
+                <td>%C5</td>
+                <td>%C3%85</td>
+            </tr>
+            </tbody></table>
+        <p>Для перегляду більш повної інформації про всі кодування URL-адрес, відвідайте <a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank" rel="nofollow">Довідник кодування URL-адрес</a>.</p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les31.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les33.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les32.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

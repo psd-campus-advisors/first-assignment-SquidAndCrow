@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Атрибут класу - class. Урок №20. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,атрибут,класу,class,web,довідник,веб,сторінка">
+    <meta name="description" content="Урок 20. HTML. CSS. Атрибут класу - class на веб-сторінках. Як використовують атрибути на веб-сторінках? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Атрибут класу - class на веб-сторінці. Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Атрибут класу - class на веб-сторінках. Додавання атрибуту class. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+    <style>
+        .city {background-color: tomato;color: white;padding: 10px;}
+        .cities {background-color: black;color: white;margin: 10px;padding: 10px;}
+    </style>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №20. HTML. Класи. Атрибут class</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les19.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les21.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Для чого потрібен атрибут класу - class в HTML-коді на веб-сайті? Використання атрибуту class</h2>
+        <p><strong>HTML атрибут</strong> <code>class</code> використовується для визначення рівних стилів для елементів з тим же ім'ям класу. Таким чином, всі <strong>HTML-елементи</strong> з однаковими атрибутами класу матимуть один і той самий формат і стиль.</p>
+        <p>Наприклад, ми маємо три елементи <code>&lt;div&gt;</code>, які вказують на одне ім'я класу:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br> .cities <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> black<span style="color:black">;</span></span><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp; margin<span style="color:mediumblue"><span style="color:black">:</span> 10px<span style="color:black">;</span></span><br> &nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 10px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> <br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="cities"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>London is the capital of England.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="cities"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="cities"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p>Результат:</p>
+            <div class="w3-white w3-padding">
+                <div class="cities">
+                    <h2>London</h2>
+                    <p>London is the capital of England.</p>
+                </div>
+                <div class="cities">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                <div class="cities">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Використання атрибуту class на вбудованих елементах</h2>
+        <p><strong>HTML атрибут</strong> <code>class</code> також можна використовувати для вбудованих елементів:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>span.note <span style="color:black">{</span><span style="color:red"><br> &nbsp; font-size<span style="color:mediumblue"><span style="color:black">:</span> 120%<span style="color:black">;</span></span><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br> </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>My <span style="color:brown"><span style="color:mediumblue">&lt;</span>span<span style="color:red"> class<span style="color:mediumblue">="note"</span></span><span style="color:mediumblue">&gt;</span></span>Important<span style="color:brown"><span style="color:mediumblue">&lt;</span>/span<span style="color:mediumblue">&gt;</span></span> Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is some <span style="color:brown"><span style="color:mediumblue">&lt;</span>span<span style="color:red"> class<span style="color:mediumblue">="note"</span></span><span style="color:mediumblue">&gt;</span></span>important<span style="color:brown"><span style="color:mediumblue">&lt;</span>/span<span style="color:mediumblue">&gt;</span></span> text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div_capitals" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Порада:</strong> Атрибут <code>class</code> можна використовувати на будь-якому елементі <strong>HTML</strong>.</p>
+            <p><strong>Примітка:</strong> Назва класу чутлива до регістру!</p>
+            <p><strong>Порада:</strong> Ви можете дізнатися більше про <strong>CSS</strong> у <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">посібнику по CSS</a>.</p>
+        </div>
+        <hr>
+        <h2>Виберіть елементи з певним класом</h2>
+        <p>У <strong>CSS</strong>, щоб вибрати елементи з певним класом, напишіть символ періоду (.), за яким слідує ім'я класу:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Використовуйте <strong>CSS</strong> для стилізації всіх елементів з назвою класу "city":</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br> <strong>.city</strong> <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> tomato<span style="color:black">;</span></span><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span style="color:mediumblue"><span style="color:black">:</span> 10px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> <br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br> <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> <strong>class<span style="color:mediumblue">="city"</span></strong></span><span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>London is the capital of England.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> <strong>class<span style="color:mediumblue">="city"</span></strong></span><span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> <strong>class<span style="color:mediumblue">="city"</span></strong></span><span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+                <p>Результат:</p>
+                <div class="w3-white w3-padding">
+                    <h2 class="city">London</h2>
+                    <p>London is the capital of England.</p>
+                    <h2 class="city">Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                    <h2 class="city">Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div><br>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_css" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Кілька класів</h2>
+        <p>HTML елементи можуть мати більше одного імені класу, кожне ім'я класу має бути розділене пробілом.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Елементи стилю з назвою класу "city", також стильові елементи з назвою класу "main":</p>
+            <div class="w3-border-green w3-code">
+  <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red">
+  class<span style="color:mediumblue">="city main"</span></span><span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red">
+  class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_multiple" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>У наведеному вище прикладі перший елемент <code>&lt;h2&gt;</code> належить як класу "city", так і класу "main".</p>
+        <hr>
+        <h3>Різні теги можуть поділяти один і той самий клас</h3>
+        <p>Різні теги, такі як <code>&lt;h2&gt;</code> і <code>&lt;p&gt;</code>, можуть мати однакове ім'я класу і тим самим поділяти той самий стиль:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span>Paris is the capital of France<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_tags" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Використання атрибуту class в JavaScript</h2>
+        <p>Назва класу може також використовуватися <strong>JavaScript</strong> для виконання певних завдань для елементів із заданим ім'ям класу. <strong>JavaScript</strong> може отримувати доступ до елементів із вказаним ім'ям класу за допомогою методу <code>getElementsByClassName()</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Коли користувач натискає кнопку, ховаються всі елементи з назвою класу "city":</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:mediumblue">function</span> myFunction() {<br>&nbsp; <span style="color:mediumblue">var</span> x = <strong>document.<span style="color:black">getElementsByClassName</span>(<span style="color:brown">"city"</span>)</strong>;<br>&nbsp; <span style="color:mediumblue">for</span> (<span style="color:mediumblue">var</span> i = <span style="color:red">0</span>; i &lt; x.<span style="color:black">length</span>; <span style="color:red">
+</span>  i++) {<br>&nbsp;&nbsp;&nbsp; x[i].<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"none"</span>;<br>&nbsp; }<br>}<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_js" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Вивчити основи JavaScript можна у розділі <a href="../html/les23.html">HTML JavaScript</a> або в <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="nofollow">посібнику з JavaScript</a>.</p>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes3" target="_blank" rel="nofollow">Exercise 3 »</a>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a href="../tags/default.html">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les19.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les21.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les20.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

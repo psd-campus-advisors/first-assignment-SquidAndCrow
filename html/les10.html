@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Форматування тексту. Урок №10. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,форматування,тексту,жирний,підкреслений,виділений,важливий">
+    <meta name="description" content="Урок 10. HTML. Форматування тексту на веб-сторінках. Як необхідно форматувати текст? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Форматування тексту на веб-сторінці. HTML, CSS. Жирний, виділений, підкреслений текст" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Форматування тексту на веб-сторінках. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №10. HTML. Форматування тексту</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les09.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les11.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>Форматування тексту в HTML. Як зробити форматування на веб-сторінках?</h2>
+        <div class="w3-example">
+            <p>Форматування тексту:</p>
+            <div class="w3-container w3-white">
+                <p><b>This text is bold</b></p>
+                <p><i>This text is italic</i></p>
+                <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Елементи форматування в HTML</h2>
+        <p>У попередньому уроці ви дізналися про <strong>HTML</strong> <strong>атрибут style</strong>. <strong>HTML</strong> також визначає спеціальні елементи для визначення тексту з <strong>особливим значенням</strong>. <strong>HTML</strong> використовує такі елементи, як <code>&lt;b&gt;</code> та <code>&lt;i&gt;</code> для форматування виводу, наприклад <strong>жирний</strong> або <em>курсивний</em> текст. Елементи форматування призначені для відображення спеціальних типів тексту:</p>
+        <ul class="list-disc">
+            <li><code>&lt;b&gt;</code> - жирний текст
+            <li><code>&lt;strong&gt;</code> - важливий текст (семантично важливий, виводиться жирним)
+            <li><code>&lt;i&gt;</code> - курсивний текст
+            <li><code>&lt;em&gt;</code> - підкреслений текст (семантично важливий, виводиться курсивом)
+            <li><code>&lt;mark&gt;</code> - позначений (маркований) текст
+            <li><code>&lt;small&gt;</code> - зменшений текст
+            <li><code>&lt;del&gt;</code> - видалений текст
+            <li><code>&lt;ins&gt;</code> - вставлений текст
+            <li><code>&lt;sub&gt;</code> - текст підрядковий (нижній індекс)
+            <li><code>&lt;sup&gt;</code> - текст надрядковий (верхній індекс)
+        </ul>
+        <hr>
+        <h2>HTML елементи &lt;b&gt; та &lt;strong&gt;</h2>
+        <p>HTML елемент <code>&lt;b&gt;</code> визначає жирний текст без додаткового значення.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>b<span style="color:mediumblue">&gt;</span></span>This text is bold<span style="color:brown"><span style="color:mediumblue">&lt;</span>/b<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p><strong>HTML</strong> елемент <code>&lt;strong&gt;</code> визначає важливий текст з додаванням семантично «сильного» значення.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>strong<span style="color:mediumblue">&gt;</span></span>This text is strong<span style="color:brown"><span style="color:mediumblue">&lt;</span>/strong<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елементи &lt;i&gt; та &lt;em&gt;</h2>
+        <p><strong>HTML</strong> елемент <code>&lt;i&gt;</code> визначає текст курсивом без додаткового значення.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>i<span style="color:mediumblue">&gt;</span></span>This text is italic<span style="color:brown"><span style="color:mediumblue">&lt;</span>/i<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <p><strong>HTML</strong> елемент <code>&lt;em&gt;</code> визначає підкреслений текст з додатковим смисловим значенням.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>em<span style="color:mediumblue">&gt;</span></span>This text is
+                emphasized<span style="color:brown"><span style="color:mediumblue">&lt;</span>/em<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_em" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Браузери відображаються <code>&lt;strong&gt;</code> як <code>&lt;b&gt;</code> (виділяються жирним шрифтом), а <code>&lt;em&gt;</code> як <code>&lt;i&gt;</code> (виділяються курсивним шрифтом). Однак, існує різниця в значенні цих тегів: <code>&lt;b&gt;</code> та <code>&lt;i&gt;</code> лише відображаються жирним і курсивним текстом, але теги <code>&lt;strong&gt;</code> та <code>&lt;em&gt;</code> означають, що текст "важливий" за значенням.</p>
+        </div>
+        <hr>
+        <h2>HTML елемент &lt;small&gt;</h2>
+        <p><strong>HTML</strong> елемент <code>&lt;small&gt;</code> визначає менший текст:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>HTML
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>small<span style="color:mediumblue">&gt;</span></span>Small<span style="color:brown"><span style="color:mediumblue">&lt;</span>/small<span style="color:mediumblue">&gt;</span></span> Formatting<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_small" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;mark&gt;</h2>
+        <p><strong>HTML</strong> елемент <code>&lt;mark&gt;</code> визначає <mark>позначений</mark> (<mark>маркований</mark>) текст (за умовчанням - жовтим кольором):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>HTML
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>mark<span style="color:mediumblue">&gt;</span></span>Marked<span style="color:brown"><span style="color:mediumblue">&lt;</span>/mark<span style="color:mediumblue">&gt;</span></span> Formatting<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_mark" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;del&gt;</h2>
+        <p>HTML елемент <code>&lt;del&gt;</code> визначає видалений (вилучений) текст.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My favorite color is <span style="color:brown"><span style="color:mediumblue">&lt;</span>del<span style="color:mediumblue">&gt;</span></span>blue<span style="color:brown"><span style="color:mediumblue">&lt;</span>/del<span style="color:mediumblue">&gt;</span></span> red.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;ins&gt;</h2>
+        <p><strong>HTML</strong> елемент <code>&lt;ins&gt;</code> визначає вставлений (доданий) текст.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My favorite
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ins<span style="color:mediumblue">&gt;</span></span>color<span style="color:brown"><span style="color:mediumblue">&lt;</span>/ins<span style="color:mediumblue">&gt;</span></span> is red.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_ins" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;sub&gt;</h2>
+        <p>HTML елемент <code>&lt;sub&gt;</code> визначає підрядковий текст (нижнього індексу).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is <span style="color:brown"><span style="color:mediumblue">&lt;</span>sub<span style="color:mediumblue">&gt;</span></span>subscripted<span style="color:brown"><span style="color:mediumblue">&lt;</span>/sub<span style="color:mediumblue">&gt;</span></span> text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;sup&gt;</h2>
+        <p><strong>HTML</strong> елемент <code>&lt;sup&gt;</code> визначає надрядковий текст (верхнього індексу).</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is <span style="color:brown"><span style="color:mediumblue">&lt;</span>sup<span style="color:mediumblue">&gt;</span></span>superscripted<span style="color:brown"><span style="color:mediumblue">&lt;</span>/sup<span style="color:mediumblue">&gt;</span></span> text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sup" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_formatting1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_formatting2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_formatting3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_formatting4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_formatting5" target="_blank" rel="nofollow">Exercise 5 »</a>
+            </div>
+        </div><hr>
+        <h2>HTML елементи форматування тексту</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_b.asp" target="_blank" rel="nofollow">&lt;b&gt;</a></td>
+                <td>Визначає жирний текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_em.asp" target="_blank" rel="nofollow">&lt;em&gt;</a></td>
+                <td>Визначає важливо підкреслений текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_i.asp" target="_blank" rel="nofollow">&lt;i&gt;</a></td>
+                <td>Визначає курсивний текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_small.asp" target="_blank" rel="nofollow">&lt;small&gt;</a></td>
+                <td>Визначає зменшений текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_strong.asp" target="_blank" rel="nofollow">&lt;strong&gt;</a></td>
+                <td>Визначає важливий за значенням текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_sub.asp" target="_blank" rel="nofollow">&lt;sub&gt;</a></td>
+                <td>визначає підрядковий текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_sup.asp" target="_blank" rel="nofollow">&lt;sup&gt;</a></td>
+                <td>визначає надрядковий текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_ins.asp" target="_blank" rel="nofollow">&lt;ins&gt;</a></td>
+                <td>Визначає вставлений текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank" rel="nofollow">&lt;del&gt;</a></td>
+                <td>Визначає видалений текст</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank" rel="nofollow">&lt;mark&gt;</a></td>
+                <td>Визначає позначений/маркований текст</td>
+            </tr>
+            </tbody>
+        </table><hr>
+        <h3>Довідник HTML тегів</h3>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a
+                    href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les09.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les11.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les10.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

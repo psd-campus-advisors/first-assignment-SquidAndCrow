@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Списки. Урок №18. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,списки,список,list,веб,сторінка">
+    <meta name="description" content="Урок 18. HTML. CSS. Списки на веб-сторінках. Як додати список на сайт? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Списки на веб-сторінці. Тег list. Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Списки на веб-сторінках. Створення списку. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №18. HTML. Списки</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les17.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les19.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Як додати списки в HTML-код на веб-сайті?</h2>
+        <div class="w3-example">
+            <h3>&nbsp;HTML список. Приклад</h3>
+            <div class="w3-padding w3-white">
+                <div class="w3-row">
+                    <div class="w3col w3-half">
+                        <h3>Невпорядкований (ненумерований) список:</h3>
+                        <ul class="list-disc">
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <li>Item</li>
+                        </ul>
+                    </div>
+                    <div class="w3col w3-half">
+                        <h3>Впорядкований (нумерований) список:</h3>
+                        <ol class="list-ordered">
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                            <li>Fourth item</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <a class="w3-btn w3-margin-top w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro" target="_blank">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Невпорядкований список HTML</h2>
+        <p>Невпорядкований (ненумерований) список починається з тега <code>&lt;ul&gt;</code>. Кожен елемент списку починається з тегу <code>&lt;li&gt;</code>. Елементи списку будуть позначені позначками (маленькі чорні кола) за замовчуванням:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h2>Невпорядкований список HTML - виберіть маркер пункту списку</h2>
+        <p>CSS властивість <code>list-style-type</code> використовується для визначення стилю маркера елемента списку:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Значення</th>
+                <th>Опис</th>
+            </tr>
+            <tr class="w3-table-tr1">
+                <td>disc</td>
+                <td>Встановлює маркер елемента списку у вигляді закрашеного кола (як і за замовчуванням)</td>
+            </tr>
+            <tr>
+                <td>circle</td>
+                <td>Встановлює маркер елемента списку у вигляді пустого кола</td>
+            </tr>
+            <tr class="w3-table-tr1">
+                <td>square</td>
+                <td>Встановлює маркер елемента списку у вигляді квадрата</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Елементи списку не буде помічено (тобто маркери не відображаються)</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-example">
+            <p>Приклад - <strong>disc</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_disc" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад - <strong>circle</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:red"> style<span style="color:mediumblue">="list-style-type:circle;"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_circle" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад - <strong>square</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:red"> style<span style="color:mediumblue">="list-style-type:square;"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_square" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад - <strong>none</strong>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:red"> style<span style="color:mediumblue">="list-style-type:none;"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Впорядкований HTML список</h2>
+        <p>Упорядкований (нумерований) список починається з тега <code>&lt;ol&gt;</code>. Кожен елемент списку починається з тегу <code>&lt;li&gt;</code>. Елементи списку будуть позначені номерами за замовчуванням:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Впорядкований HTML список - атрибут типу</h2>
+        <p>Атрибут типу тега <code>&lt;ol&gt;</code> визначає тип маркера елемента списку:</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Значення</th>
+                <th>Опис</th>
+            </tr>
+            <tr class="w3-table-tr1">
+                <td>type="1"</td>
+                <td>Елементи списку будуть пронумеровані числами (за замовчуванням)</td>
+            </tr>
+            <tr>
+                <td>type="A"</td>
+                <td>Елементи списку будуть пронумеровані великими літерами</td>
+            </tr>
+            <tr class="w3-table-tr1">
+                <td>type="a"</td>
+                <td>Елементи списку будуть пронумеровані малими літерами</td>
+            </tr>
+            <tr>
+                <td>type="I"</td>
+                <td>Елементи списку будуть пронумеровані великими римськими числами</td>
+            </tr>
+            <tr class="w3-table-tr1">
+                <td>type="i"</td>
+                <td>Елементи списку будуть пронумеровані маленькими римськими числами</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-example">
+            <p>Числа:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> type<span style="color:mediumblue">="1"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_numbers" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Великі літери:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> type<span style="color:mediumblue">="A"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_ucase" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Малі літери:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> type<span style="color:mediumblue">="a"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_ucase" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Великі римські цифри:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> type<span style="color:mediumblue">="I"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_roman_ucase" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Малі римські цифри:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> type<span style="color:mediumblue">="i"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_roman_lcase" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML списки опису</h2>
+        <p>HTML також підтримує списки опису.</p>
+        <p>Список опису - це список термінів з описом кожного терміна. Тег <code>&lt;dl&gt;</code> визначає список опису, тег <code>&lt;dt&gt;</code> визначає термін (назву), а тег <code>&lt;dd&gt;</code> описує кожний термін:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>dl<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>dt<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/dt<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>dd<span style="color:mediumblue">&gt;</span></span>- black hot drink<span style="color:brown"><span style="color:mediumblue">&lt;</span>/dd<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>dt<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/dt<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>dd<span style="color:mediumblue">&gt;</span></span>- white cold drink<span style="color:brown"><span style="color:mediumblue">&lt;</span>/dd<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/dl<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Вкладені HTML списки</h2>
+        <p>Список може бути вкладеним (списки всередині списків):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<br> &nbsp; &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Black tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Green tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Елементи списку можуть містити новий список та інші елементи <strong>HTML</strong>, наприклад зображення та посилання, тощо.</p>
+        </div>
+        <hr>
+        <h2>Контроль підрахунку списку</h2>
+        <p>За замовчуванням, упорядкований список почне рахуватися з одиниці - 1. Якщо ви хочете почати відлік із якогось іншого зазначеного числа, ви можете використовувати атрибут start (початок):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>ol<span style="color:red"> start<span style="color:mediumblue">="50"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Coffee<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Tea<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span>Milk<span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ol<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_start" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h2>Горизонтальний список за допомогою CSS</h2>
+        <p>HTML списки можна створювати різними способами за допомогою <strong>CSS</strong>. Одним з популярних способів є формування списку по горизонталі, щоб створити навігаційне меню:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>ul <span style="color:black">{</span><span style="color:red"><br>&nbsp; list-style-type<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br> &nbsp; margin<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;overflow<span style="color:mediumblue"><span style="color:black">:</span> hidden<span style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #333333<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>li <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;float<span style="color:mediumblue"><span style="color:black">:</span> left<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>li a <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;display<span style="color:mediumblue"><span style="color:black">:</span> block<span style="color:black">;</span></span><br>&nbsp;&nbsp;color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span style="color:mediumblue"><span style="color:black">:</span> 16px<span style="color:black">;</span></span><br>&nbsp; text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br> <br>li a:hover <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> #111111<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br> </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#home"</span></span><span style="color:mediumblue">&gt;</span></span>Home<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#news"</span></span><span style="color:mediumblue">&gt;</span></span>News<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#contact"</span></span><span style="color:mediumblue">&gt;</span></span>Contact<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="#about"</span></span><span style="color:mediumblue">&gt;</span></span>About<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Ви можете дізнатися більше про <strong>CSS</strong> у <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">посібнику по <strong>CSS</strong></a>.</p>
+        </div>
+        <hr>
+        <h3>Резюме розділу</h3>
+        <ul class="list-disc">
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;ul&gt;</code> для визначення невпорядкованого списку
+            <li>Використовуйте <strong>CSS</strong> властивість <code>&lt;list-style-type&gt;</code> для визначення маркера елемента списку
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;ol&gt;</code> для визначення впорядкованого (нумерованого) списку
+            <li>Використовуйте <strong>HTML</strong> атрибут <code>&lt;type&gt;</code> щоб визначити тип нумерації
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;li&gt;</code> для визначення елемента списку
+            <li>Використовуйте <strong>HTML</strong> елемент <code>dl</code> для визначення списку опису
+            <li>Використовуйте <strong>HTML</strong> елемент <code>dt</code> щоб визначити термін опису
+            <li>Використовуйте <strong>HTML</strong> елемент <code>dd</code> щоб описати термін у списку опису
+            <li>Списки можуть бути вкладеними всередині списків
+            <li>Елементи списку можуть містити інші елементи <strong>HTML</strong>
+            <li>Використовуйте <strong>CSS</strong> властивість <code>float: left</code> або <code>display: inline</code> для відображення списку горизонтально
+        </ul>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists5" target="_blank" rel="nofollow">Exercise 5 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists6" target="_blank" rel="nofollow">Exercise 6 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML теги списку</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank" rel="nofollow">&lt;ul&gt;</a></td>
+                <td>Визначає невпорядкований (ненумерований) список</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank" rel="nofollow">&lt;ol&gt;</a></td>
+                <td>Визначає впорядкований (нумерований) список</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_li.asp" target="_blank" rel="nofollow">&lt;li&gt;</a></td>
+                <td>Визначає елемент списку</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_dl.asp" target="_blank" rel="nofollow">&lt;dl&gt;</a></td>
+                <td>Визначає список опису</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_dt.asp" target="_blank" rel="nofollow">&lt;dt&gt;</a></td>
+                <td>Визначає термін у списку опису</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_dd.asp" target="_blank" rel="nofollow">&lt;dd&gt;</a></td>
+                <td>Описує термін у списку опису</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a
+                    href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les17.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les19.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les18.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

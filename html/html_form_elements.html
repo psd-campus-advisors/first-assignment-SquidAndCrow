@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Елементи форми. Урок №35. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,елементи,форми,w3schools">
+    <meta name="description" content="Урок 35. Основи HTML. Елементи форми. Що це таке? Як створюються форми на веб-сторінках? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="HTML. Елементи форми. Урок №35. W3schools. Основи HTML5 для новачків та початківців" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Основи HTML. Елементи форми. Що це таке? Як створюються форми на веб-сторінках? Посібник для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок. HTML. Елементи форми</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_forms.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_input_types.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr>
+        <h2>HTML/CSS. HTML Елементи форм</h2>
+        <p>Цей розділ описує всі <strong>елементи форм в HTML</strong>.</p>
+        <hr>
+        <h3>Елемент &lt;input&gt;</h3>
+        <p>Найбільш важливим елементом форми є елемент <code>&lt;input&gt;</code>. Елемент <code>&lt;input&gt;</code> може відображатися кількома способами, залежно від атрибуту <code>type</code>.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> name<span style="color:mediumblue">="firstname"</span> type<span style="color:mediumblue">="text"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_input" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Якщо атрибут <code>type</code> опущений, поле введення отримує тип за замовчуванням: "text".</p>
+        </div>
+        <p>Усі різні типи вхідних даних розглядаються в наступному розділі.</p>
+        <hr>
+        <h3>Елемент &lt;select&gt;</h3>
+        <p>Елемент <code>&lt;select&gt;</code> визначає випадаючий список:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>select<span style="color:red"> name<span style="color:mediumblue">="cars"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="volvo"</span></span><span style="color:mediumblue">&gt;</span></span>Volvo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="saab"</span></span><span style="color:mediumblue">&gt;</span></span>Saab<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="fiat"</span></span><span style="color:mediumblue">&gt;</span></span>Fiat<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="audi"</span></span><span style="color:mediumblue">&gt;</span></span>Audi<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/select<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Елементи <code>&lt;option&gt;</code> визначають опцію, яку можна вибрати. За замовчуванням вибирається перший елемент у спадному списку. Щоб визначити попередньо вибраний параметр, додайте атрибут <code>selected</code> до параметра:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="fiat"</span> selected</span><span style="color:mediumblue">&gt;</span></span>Fiat<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_pre" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <h3>Видимі значення:</h3>
+        <p>Використовуйте атрибут <code>size</code>, щоб вказати кількість видимих значень:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>select<span style="color:red"> name<span style="color:mediumblue">="cars"</span> <strong>size<span style="color:mediumblue">="3"</span></strong></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="volvo"</span></span><span style="color:mediumblue">&gt;</span></span>Volvo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="saab"</span></span><span style="color:mediumblue">&gt;</span></span>Saab<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="fiat"</span></span><span style="color:mediumblue">&gt;</span></span>Fiat<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="audi"</span></span><span style="color:mediumblue">&gt;</span></span>Audi<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/select<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_size" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+    <h3>Дозволити вибір декількох позицій:</h3>
+    <p>Використовуйте атрибут <code>multiple</code>, щоб дозволити користувачеві вибрати більше одного значення:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>select<span style="color:red"> name<span style="color:mediumblue">="cars"</span> size<span style="color:mediumblue">="4"</span><strong> multiple</strong></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="volvo"</span></span><span style="color:mediumblue">&gt;</span></span>Volvo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="saab"</span></span><span style="color:mediumblue">&gt;</span></span>Saab<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="fiat"</span></span><span style="color:mediumblue">&gt;</span></span>Fiat<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="audi"</span></span><span style="color:mediumblue">&gt;</span></span>Audi<span style="color:brown"><span style="color:mediumblue">&lt;</span>/option<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/select<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_multiple" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h3>Елемент &lt;textarea&gt;</h3>
+        <p>Елемент <code>&lt;textarea&gt;</code> визначає багаторядкове поле введення (<strong>текстова область</strong>):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>textarea<span style="color:red"> name<span style="color:mediumblue">="message"</span> rows<span style="color:mediumblue">="10"</span> cols<span style="color:mediumblue">="30"</span></span><span style="color:mediumblue">&gt;</span></span><br>The cat was playing in the garden.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/textarea<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Атрибут <code>rows</code> визначає видиме число рядків у текстовій області. Атрибут <code>cols</code> визначає видиму ширину текстової області.</p>
+        <p>Таким чином HTML-код буде відображатися в браузері:</p>
+        <textarea rows="10" cols="30">The cat was playing in the garden.</textarea>
+        <p>Ви також можете визначити розмір області тексту за допомогою <strong>CSS</strong>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>textarea<span style="color:red"> name<span style="color:mediumblue">="message"</span> style<span style="color:mediumblue">="width:200px; height:600px;"</span></span><span style="color:mediumblue">&gt;</span></span><br>The cat was playing in the garden.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/textarea<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea_style" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h3>Елемент &lt;button&gt; (кнопка)</h3>
+        <p>Елемент <code>&lt;button&gt;</code> визначає клікабельну <strong>кнопку</strong> (яку можна натиснути):</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="button"</span> onclick<span style="color:mediumblue">="alert('Hello World!')"</span></span><span style="color:mediumblue">&gt;</span></span>Click Me!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_button" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Таким чином даний <strong>HTML</strong>-код буде відображатися в браузері:</p>
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        <br>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Завжди вказуйте атрибут <strong>type</strong> елемента кнопки. Різні браузери можуть використовувати різні типи за замовчуванням для елемента кнопки.</p>
+        </div>
+        <hr>
+        <h2>Елементи форми в HTML5</h2>
+        <p><strong>HTML5</strong> додав такі елементи форми:</p>
+        <ul class="list-disc">
+            <li><code>&lt;datalist&gt;</code>
+            <li><code>&lt;output&gt;</code>
+        </ul>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Браузери не показують невідомі елементи. Нові елементи, які не підтримуються у старих браузерах, не "псують" вашу веб-сторінку.</p>
+        </div>
+        <hr>
+        <h2>HTML5 елемент &lt;datalist&gt;</h2>
+        <p>Елемент <code>&lt;datalist&gt;</code> вказує список попередньо визначених параметрів для елемента <code>&lt;input&gt;</code>. Користувачі побачать розкривний список попередньо визначених параметрів під час введення даних. Атрибут <code>list</code> елемента <code>&lt;input&gt;</code> має посилатися на атрибут <code>id</code> елемента <code>&lt;datalist&gt;</code>.</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="../images/incompatible_safari2020.gif" title="Не підтримується Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> list<span style="color:mediumblue">="browsers"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>datalist<span style="color:red"> id<span style="color:mediumblue">="browsers"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="Internet Explorer"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="Firefox"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="Chrome"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="Opera"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>option<span style="color:red"> value<span style="color:mediumblue">="Safari"</span></span><span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/datalist<span style="color:mediumblue">&gt;</span></span> <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_datalist" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h2>HTML5 елемент &lt;output&gt;</h2>
+        <p>Елемент <code>&lt;output&gt;</code> являє собою результат обчислення (подібно до того, як виконується скрипт).</p>
+        <div class="w3-example">
+            <img style="float:right;" src="../images/compatible_opera2020.gif" title="Підтримується Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="../images/compatible_safari2020.gif" title="Підтримується Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="../images/compatible_chrome2020.gif" title="Підтримується Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="../images/compatible_firefox2020.gif" title="Підтримується Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="../images/compatible_edge2020.gif" title="Підтримується Internet Explorer" alt="Internet Explorer" width="20" height="20">
+            <p>Приклад:</p>
+            <p>Виконати розрахунок і показати результат у елементі <code>&lt;output&gt;</code>:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> action<span style="color:mediumblue">="/action_page.php"</span><br>&nbsp; oninput<span style="color:mediumblue">="x.value=parseInt(a.value)+parseInt(b.value)"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 0<br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="range"</span>&nbsp; id<span style="color:mediumblue">="a"</span> name<span style="color:mediumblue">="a"</span> value<span style="color:mediumblue">="50"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 100 +<br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="number"</span> id<span style="color:mediumblue">="b"</span> name<span style="color:mediumblue">="b"</span> value<span style="color:mediumblue">="50"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; =<br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>output<span style="color:red"> name<span style="color:mediumblue">="x"</span> for<span style="color:mediumblue">="a b"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/output<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>br<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="submit"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements3" target="_blank" rel="nofollow">Exercise 3 »</a>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML елементи форми</h2>
+        <p class="html5badge" style="background-position:left;padding-left:20px;height:18px;">= нові в HTML5.</p>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank" rel="nofollow">&lt;form&gt;</a></td>
+                <td>Визначає <strong>HTML</strong> форму для введення користувачем</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank" rel="nofollow">&lt;input&gt;</a></td>
+                <td>Визначає елемент управління введенням</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_textarea.asp" target="_blank" rel="nofollow">&lt;textarea&gt;</a></td>
+                <td>Визначає багаторядковий елемент управління введенням</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_label.asp" target="_blank" rel="nofollow">&lt;label&gt;</a></td>
+                <td>Визначає мітку для елемента <code>&lt;input&gt;</code></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_fieldset.asp" target="_blank" rel="nofollow">&lt;fieldset&gt;</a></td>
+                <td>Групи пов'язаних елементів у формі</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_legend.asp" target="_blank" rel="nofollow">&lt;legend&gt;</a></td>
+                <td>Визначає заголовок для елемента <code>&lt;fieldset&gt;</code></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_select.asp" target="_blank" rel="nofollow">&lt;select&gt;</a></td>
+                <td>Визначає випадаючий (розкривний) список</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_optgroup.asp" target="_blank" rel="nofollow">&lt;optgroup&gt;</a></td>
+                <td>Визначає групу відповідних параметрів у розкривному списку</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_option.asp" target="_blank" rel="nofollow">&lt;option&gt;</a></td>
+                <td>Визначає параметр у розкривному списку</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank" rel="nofollow">&lt;button&gt;</a></td>
+                <td>Визначає клікабельну кнопку (яку можна натискати)</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="https://www.w3schools.com/tags/tag_datalist.asp" target="_blank" rel="nofollow">&lt;datalist&gt;</a></td>
+                <td>Визначає список попередньо визначених параметрів для елементів управління введенням</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><a href="https://www.w3schools.com/tags/tag_output.asp" target="_blank" rel="nofollow">&lt;output&gt;</a></td>
+                <td>Визначає результат розрахунку</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="html_forms.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="html_form_input_types.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/html_form_elements.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

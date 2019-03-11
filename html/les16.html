@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Зображення. Урок №16. W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,зображення,img,картинки,веб,сторінка">
+    <meta name="description" content="Урок 16. HTML. CSS. Зображення на веб-сторінках. Як додати зображення на сайті? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Зображення на веб-сторінці. Теги img. Основи HTML, CSS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Зображення, картинки на веб-сторінках. HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №16. HTML. Зображення</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les15.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les17.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML/CSS. Як вставити зображення в HTML-код на веб-сайті?</h2>
+        <p>Зображення можуть покращити дизайн і зовнішній вигляд веб-сторінок.</p>
+        <hr>
+        <div class="w3-row" style="text-align:center">
+            <div class="w3-col m4" style="background-image:url('../img/pic_trulli.jpg');background-size:cover;height:300px;">
+            </div>
+            <div class="w3-col m4" style="background-image:url('../img/img_girl.jpg');background-size:cover;height:300px;">
+            </div>
+            <div class="w3-col m4" style="background-image:url('../img/img_chania.jpg');background-size:cover;height:300px;">
+            </div>
+        </div>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="pic_trulli.jpg"</span>
+alt<span style="color:mediumblue">="Italian Trulli"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span>
+alt<span style="color:mediumblue">="Girl in a jacket"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_girl" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_chania.jpg"</span> alt<span style="color:mediumblue">="Flowers in Chania"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_chania" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML-зображення. Синтаксис</h2>
+        <p>HTML зображення визначаються тегом <code>&lt;img&gt;</code>. Тег <code>&lt;img&gt;</code> порожній, він містить лише атрибути і не має закриваючого тегу.</p>
+        <p>Атрибут <code>src</code> вказує URL-адресу (веб-адресу) зображення:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="<i>url</i>"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div><hr>
+        <h2>Атрибут alt</h2>
+        <p>Атрибут <code>alt</code> надає альтернативний текст для зображення, якщо користувач з якоїсь причини не може його переглянути (через повільне з'єднання, помилку в атрибуті <strong>src</strong> або якщо користувач використовує екранний ридер).</p>
+        <p>Значення атрибута <code>alt</code> має описувати зображення:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_chania.jpg"</span> alt<span style="color:mediumblue">="Flowers in Chania"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_alt_chania" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Якщо браузер не може знайти зображення, він відобразить значення атрибута <code>alt</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="wrongname.gif"</span> alt<span style="color:mediumblue">="Flowers in Chania"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_wrongname" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Атрибут <code>alt</code> обов'язковий. Без нього веб-сторінка не буде вважатися валідною (відповідати специфікації <strong>HTML5</strong>).</p>
+        </div><hr>
+        <h2>Розмір зображення - width (ширина) і height (висота)</h2>
+        <p>Атрибут <code>style</code> можна використовувати для визначення ширини та висоти зображення.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl in a jacket"</span> style<span style="color:mediumblue">="width:500px;height:600px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_size" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>Крім того, можна використовувати атрибути <code>width</code> і <code>height</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_girl.jpg"</span> alt<span style="color:mediumblue">="Girl in a jacket"</span> width<span style="color:mediumblue">="500"</span> height<span style="color:mediumblue">="600"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_attributes" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <p>Атрибути <code>width</code> та <code>height</code> завжди визначають ширину та висоту зображення в пікселях.</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Завжди вказуйте ширину - width та висоту - height зображення. Якщо ширина і висота не вказані, сторінка може миготіти під час завантаження зображення.</p>
+        </div><hr>
+        <h2>Ширина і висота, або стиль?</h2>
+        <p>Атрибути <code>width</code>, <code>height</code> та <code>style</code> дійсні в <strong>HTML5</strong>. Проте <strong>W3C</strong> пропонує використовувати атрибут <code>style</code>. Це не дозволяє таблицям стилів змінювати розмір зображень:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>img <span style="color:black">{</span><span style="color:red"> <br>&nbsp;&nbsp;width<span style="color:mediumblue"><span style="color:black">:</span> 100%<span style="color:black">;</span></span> <br></span><span style="color:black">}</span><br> </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> width<span style="color:mediumblue">="128"</span> height<span style="color:mediumblue">="128"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_style" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Зображення в іншій папці</h2>
+        <p>Якщо не вказано, браузер очікує знайти зображення в тій же папці, що й веб-сторінка. Тим не менш, звичайне зберігання зображень у підпапці. Потім потрібно вказати ім'я папки в атрибуті <code>src</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="/images/html5.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_folder" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Зображення на іншому сервері</h2>
+        <p>Деякі веб-сайти зберігають свої зображення на серверах зображень. Насправді, ви можете отримати доступ до зображень з будь-якої веб-адреси в світі:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="https://www.w3schools.com/images/w3schools_green.jpg"</span> alt<span style="color:mediumblue">="W3Schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_w3schools" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Докладніше про шляхи до файлів ви можете прочитати в розділі <a href="les24.html" target="_blank" rel="nofollow">Шляхи HTML файлів</a>.</p>
+        </div><hr>
+        <h2>Анімовані зображення</h2>
+        <p>HTML дозволяє анімовані GIF-файли:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="programming.gif"</span> alt<span style="color:mediumblue">="Computer Man"</span> style<span style="color:mediumblue">="width:48px;height:48px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>Зображення як посилання</h2>
+        <p>Щоб використовувати зображення як посилання, помістіть тег <code>&lt;img&gt;</code> у тезі <code>&lt;a&gt;</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="HTML tutorial"</span> style<span style="color:mediumblue">="width:42px;height:42px;border:0;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> border: 0; додано, щоб запобігти відображенню рамки навколо зображення в IE9 (і раніших версіях) (коли зображення є посиланням).</p>
+        </div><hr>
+        <h2>Плаваюче зображення - Float</h2>
+        <p>Використовуйте <strong>CSS</strong> властивість <code>float</code>, щоб дозволити зображенню плавати праворуч або ліворуч від тексту:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="Smiley face"</span> style<span style="color:mediumblue">="float:right;width:42px;height:42px;"</span></span><span style="color:mediumblue">&gt;</span></span><br> The image will float to the right of the text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="Smiley face"</span> style<span style="color:mediumblue">="float:left;width:42px;height:42px;"</span></span><span style="color:mediumblue">&gt;</span></span><br> The image will float to the left of the text.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Щоб дізнатися більше про CSS Float, ознайомтеся з <a href="https://www.w3schools.com/css/css_float.asp" target="_blank" rel="nofollow">посібником CSS Float</a>.</p>
+        </div><hr>
+        <h2>Карти зображень</h2>
+        <p>Тег <code>&lt;map&gt;</code> визначає карту зображення. Карта зображень - це зображення з інтерактивними (клікабельними) областями.</p>
+        <p>На зображенні нижче клікніть зображення комп'ютера, телефону або чашки кави:</p>
+        <img src="../img/workplace.jpg" alt="Workplace" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Sun" href="computer.html" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="Mercury" href="phone.html" target="_blank">
+            <area shape="circle" coords="337,300,44" alt="Venus" href="coffee.html" target="_blank">
+        </map>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="workplace.jpg"</span> alt<span style="color:mediumblue">="Workplace"</span> usemap<span style="color:mediumblue">="#workmap"</span></span><span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>map<span style="color:red"> name<span style="color:mediumblue">="workmap"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="rect"</span> coords<span style="color:mediumblue">="34,44,270,350"</span> alt<span style="color:mediumblue">="Computer"</span> href<span style="color:mediumblue">="computer.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="rect"</span> coords<span style="color:mediumblue">="290,172,333,250"</span> alt<span style="color:mediumblue">="Phone"</span> href<span style="color:mediumblue">="phone.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="circle"</span> coords<span style="color:mediumblue">="337,300,44"</span> alt<span style="color:mediumblue">="Coffee"</span> href<span style="color:mediumblue">="coffee.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/map<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <p>де:</p>
+        <ul class="list-disc">
+            <li>map - карта;
+            <li>name - ім'я;
+            <li>usemap - призначена для користувача карта;
+            <li>area - площа, область;
+            <li>shape - форма;
+            <li>rect (від rectangle) - прямокутник;
+            <li>circle - коло;
+            <li>coords (від coordinates) - координати.
+        </ul>
+        <p>В даному прикладі при кліці на кожному з об'єктів на зображенні (на ноутбуці, мобільному телефоні і чашці кави) ми будемо переходити на нову сторінку з описом кожного з об'єктів. Якщо ж ми спробуємо клікнути де-небудь в іншому місці на зображенні поза даних об'єктів, то нічого не відбудеться.</p>
+        <p>Атрибут <code>name</code> тега <code>&lt;map&gt;</code> пов'язаний з атрибутом <code>usemap</code> тега <code>&lt;img&gt;</code> і створює зв'язок між зображенням і картою. Елемент <code>&lt;map&gt;</code> містить декілька тегів <code>&lt;area&gt;</code>, які визначають області зображення, на які можна клікати мишкою і переходити за посиланням.</p>
+        <h2>Фонове зображення - Background Image</h2>
+        <p>Щоб додати фонове зображення до <strong>HTML</strong>, скористайтеся <strong>CSS</strong> властивістю <code>background-image</code>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Щоб додати фонове зображення на веб-сторінці, вкажіть властивість <strong>background-image</strong> для елемента BODY:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:red"> style<span style="color:mediumblue">="background-image:url('clouds.jpg');"</span></span><span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Background Image<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><br>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Щоб додати фонове зображення до параграфу, вкажіть властивість <strong>background-image</strong> для елемента P:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:red"> style<span style="color:mediumblue">="background-image:url('clouds.jpg');"</span></span><span style="color:mediumblue">&gt;</span></span><br>...<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background2" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Щоб дізнатися більше про фонові зображення, ознайомтеся з <a href="https://www.w3schools.com/css/css_background.asp" target="_blank" rel="nofollow">посібником CSS Background</a>.</p>
+        </div><hr>
+        <h2>Елемент &lt;picture&gt;</h2>
+        <p><strong>HTML5</strong> представив елемент <code>&lt;picture&gt;</code>, щоб додати більше гнучкості під час визначення ресурсів зображення. Елемент <code>&lt;picture&gt;</code> містить ряд елементів <code>&lt;source&gt;</code>, кожен з яких посилається на різні джерела зображення. Таким чином браузер може вибрати зображення, яке найкраще відповідає поточному перегляду та / або пристрою. Кожен елемент <code>&lt;source&gt;</code> має атрибути, що описують, коли їх зображення найбільш підходить. Браузер буде використовувати перший елемент <code>&lt;source&gt;</code> з відповідними значеннями атрибутів та ігнорувати будь-які наступні <code>&lt;source&gt;</code> елементи.</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <p>Відображається одне зображення, якщо вікно веб-браузера (вікно перегляду) становить мінімум 650 пікселів, а інше зображення - якщо ні, але більше 465 пікселів.</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>picture<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>source<span style="color:red"> media<span style="color:mediumblue">="(min-width: 650px)"</span> srcset<span style="color:mediumblue">="img_pink_flowers.jpg"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>source<span style="color:red"> media<span style="color:mediumblue">="(min-width: 465px)"</span> srcset<span style="color:mediumblue">="img_white_flower.jpg"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_orange_flowers.jpg"</span> alt<span style="color:mediumblue">="Flowers"</span> style<span style="color:mediumblue">="width:auto;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/picture<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Завжди вказуйте елемент <code>&lt;img&gt;</code> як останній дочірній елемент елемента <code>&lt;picture&gt;</code>. Елемент <code>&lt;img&gt;</code> використовується браузерами, які не підтримують елемент <code>&lt;picture&gt;</code>, або якщо жоден з тегів <code>&lt;source&gt;</code> не був зіставлений.</p>
+        </div><hr>
+        <h2>HTML зчитувачі екрану (скрінрідери)</h2>
+        <p>Зчитувач екрану (скрінрідер) - це програма, яка читає HTML-код, конвертує текст і дозволяє користувачеві "слухати" вміст. Читачі екрану корисні для людей з вадами зору або для навчання інвалідам.</p>
+        <hr>
+        <h2>Резюме розділу</h2>
+        <ul class="list-disc">
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;img&gt;</code>, щоб визначити зображення
+            <li>Використовуйте <strong>HTML</strong> атрибут <code>src</code> для визначення URL-адреси зображення
+            <li>Використовуйте <strong>HTML</strong> атрибут <code>alt</code> для визначення альтернативного тексту для зображення, якщо воно не може бути відображене
+            <li>Використовуйте <strong>HTML</strong> атрибути <code>width</code> та <code>height</code>, щоб визначити розмір зображення
+            <li>Використовуйте <strong>CSS</strong> властивості <code>width</code> та <code>height</code> для визначення розміру зображення (альтернативно)
+            <li>Використовуйте <strong>CSS</strong> властивість <code>float</code>, щоб дозволити зображенню обтікати
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;map&gt;</code>, щоб визначити карту зображення
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;area&gt;</code>, щоб визначити області, які можна натискати на карті зображення
+            <li>Використовуйте атрибут <code>&lt;img&gt;</code> <strong>HTML</strong> елемента <code>usemap</code>, щоб вказати на карту зображення
+            <li>Використовуйте <strong>HTML</strong> елемент <code>&lt;picture&gt;</code> для показу різних зображень для різних пристроїв
+        </ul>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Завантаження зображень займає багато часу. Великі зображення можуть уповільнити роботу вашої сторінки. Використовуйте зображення, враховуючи їх розміри та вагу.</p>
+        </div>
+        <hr>
+        <div class="w3-container w3-dark-grey w3-padding">
+            <h2 style="text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;">Перевірте себе вправами!</h2>
+            <div class="w3-bar w3-margin-bottom">
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images1" target="_blank" rel="nofollow">Exercise 1 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images2" target="_blank" rel="nofollow">Exercise 2 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images3" target="_blank" rel="nofollow">Exercise 3 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images4" target="_blank" rel="nofollow">Exercise 4 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images5" target="_blank" rel="nofollow">Exercise 5 »</a>
+                <a class="w3-bar-item w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images5" target="_blank" rel="nofollow">Exercise 6 »</a>
+            </div>
+        </div>
+        <h2>HTML теги зображення</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" rel="nofollow">&lt;img&gt;</a></td>
+                <td>Визначає зображення</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_map.asp" target="_blank" rel="nofollow">&lt;map&gt;</a></td>
+                <td>Визначає карту зображення</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_area.asp" target="_blank" rel="nofollow">&lt;area&gt;</a></td>
+                <td>Визначає область, що можна натискати на карті зображення</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" rel="nofollow">&lt;picture&gt;</a></td>
+                <td>Визначає контейнер для декількох ресурсів зображення</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a href="../tags/default.html" target="_blank">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les15.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les17.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les16.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>

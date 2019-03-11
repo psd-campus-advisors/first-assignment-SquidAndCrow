@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>HTML. Голова веб-сторінки. Урок №25. Курси W3schools українською. Уроки для початківців</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML,CSS,уроки,для початківців,html5,css3,голова,head,тег,довідник,веб,сторінка">
+    <meta name="description" content="Урок 25. HTML. CSS. Голова веб-сторінки. Тег head. Що міститься в голові? Посібник для початківців">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ws.css">
+    <link rel="stylesheet" href="../styles/handheld.css">
+    <link rel="canonical" href="https://websunsay.github.io/">
+    <meta property="og:title" content="Уроки для початківців по веб-дизайну і веб-програмуванню. Голова веб-сторінки. Основи HTML, CSS, JS" />
+    <meta property="og:type" content="веб-сайт" /> <!--описывает тип объекта на странице-->
+    <meta property="og:url" content="https://websunsay.github.io/" /><!--адрес сайта-->
+    <meta property="og:image" content="../image/html5_64x64.png" /><!--адрес картинки-->
+    <meta property="og:description" content="Уроки по веб-дизайну. Голова веб-сторінки. Тег HEAD. Курс HTML, CSS, JavaScript для початківців. Основи для чайників" />
+    <meta property="og:locale" content="uk" /> <!--мова сайту-->
+    <meta property="og:site_name" content="WebSunSay - Основи HTML, CSS, JavaScript, PHP" />
+    <script src="../js/topnav.js"></script>
+    <script src="../js/learn-btn.js"></script>
+</head>
+<body>
+<iframe src="../pages/header.html" style="" class="frame-header"></iframe>
+<main>
+    <div class="left-sidebar">
+        <iframe src="../pages/basichtml.html" class="frame-left-sidebar"></iframe>
+    </div>
+    <!-- CONTENT -->
+    <div class="content">
+        <h1>Урок №25. HTML. Голова веб-сторінки - HEAD</h1>
+        <p class="brief"><strong>Курс по основам HTML | CSS. W3Schools українською. Уроки для початківців</strong></p>
+        <!-- buttons prev - next -->
+        <hr>
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les24.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les26.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <hr>
+        <!-- / buttons prev - next -->
+        <h2>HTML елемент &lt;head&gt;</h2>
+        <p>Елемент <code>&lt;head&gt;</code> є контейнером для метаданих (службових даних) і розміщується між тегом <code>&lt;html&gt;</code> і тегом <code>&lt;body&gt;</code>.</p>
+        <p><strong>Метадані HTML</strong> - це службові дані про <strong>HTML</strong> документ. Метадані не відображаються на веб-сторінці і їх не видно користувачам. Метадані зазвичай визначають назву документа, набір символів, стилі, посилання, скрипти та іншу мета-інформацію.</p>
+        <p>Наступні теги описують метадані: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code> і <code>&lt;base&gt;</code>.</p>
+        <h2>HTML елемент &lt;title&gt;</h2>
+        <p>Елемент <code>&lt;title&gt;</code> визначає назву документа і є обов'язковим для всіх HTML/XHTML документів згідно специфікації <strong>HTML5</strong>.</p>
+        <p>Елемент <code>&lt;title&gt;</code>:</p>
+        <ul class="list-disc">
+            <li>визначає заголовок на вкладці веб-браузера
+            <li>надає назву сторінки, коли вона додана до вибраного
+            <li>відображає назву сторінки в результатах пошуку
+        </ul><br>
+        <p>Простий документ HTML:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br> &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br> <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br>The content of the document......<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_title" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;style&gt;</h2>
+        <p>Елемент <code>&lt;style&gt;</code> використовується для визначення інформації про стиль для однієї сторінки HTML:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br> &nbsp; body <span style="color:black">{</span><span style="color:red">background-color<span style="color:mediumblue"><span style="color:black">:</span> powderblue<span style="color:black">;</span></span></span><span style="color:black">}</span><br>&nbsp; h1 <span style="color:black">{</span><span style="color:red">color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span></span><span style="color:black">}</span><br> &nbsp; p <span style="color:black">{</span><span style="color:red">color<span style="color:mediumblue"><span style="color:black">:</span> blue<span style="color:black">;</span></span></span><span style="color:black">}</span><br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_style" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div><hr>
+        <h2>HTML елемент &lt;link&gt;</h2>
+        <p>HTML елемент <code>&lt;link&gt;</code> використовується для посилання на зовнішні таблиці стилів - файли <strong>CSS</strong>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> href<span style="color:mediumblue">="mystyle.css"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_link" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Щоб дізнатися більше про <strong>CSS</strong>, відвідайте <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">навчальний посібник по <strong>CSS</strong></a>.</p>
+        </div>
+        <hr>
+        <h2>HTML елемент &lt;meta&gt;</h2>
+        <p>Елемент <code>&lt;meta&gt;</code> використовується для визначення того, який набір символів використовується, опис сторінки, ключові слова, автора та інші метадані. Метадані використовуються браузерами (як відображати вміст), пошуковими системами (ключовими словами) та іншими веб-службами.</p>
+        <p>Визначте набір символів, що використовується на веб-сторінці (кодування):</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> charset<span style="color:mediumblue">="UTF-8"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Визначте опис веб-сторінки:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="description"</span> content<span style="color:mediumblue">="Free Web tutorials"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Визначте ключові слова для пошукових систем:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="keywords"</span> content<span style="color:mediumblue">="HTML, CSS, XML, JavaScript"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Визначте автора сторінки:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="author"</span> content<span style="color:mediumblue">="John Doe"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Оновити документ кожні 30 секунд:</p>
+        <div class="w3-example">
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> http-equiv<span style="color:mediumblue">="refresh"</span> content<span style="color:mediumblue">="30"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Приклад <code>&lt;meta&gt;</code> тегів :</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> charset<span style="color:mediumblue">="UTF-8"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="description"</span> content<span style="color:mediumblue">="Free Web tutorials"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="keywords"</span> content<span style="color:mediumblue">="HTML,CSS,XML,JavaScript"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="author"</span> content<span style="color:mediumblue">="John
+  Doe"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_meta" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <h2>Встановлення вікна перегляду - Viewport</h2>
+        <p><strong>HTML5</strong> представив метод, який дозволяє веб-дизайнерам керувати екраном через тег <code>&lt;meta&gt;</code>. Вікно перегляду (viewport) - видима область користувача веб-сторінки. Вона змінюється залежно від пристрою і буде менше на мобільному телефоні, ніж на екрані комп'ютера.</p>
+        <p>Ви повинні включити наступний елемент viewport <code>&lt;meta&gt;</code> у всіх веб-сторінках:</p>
+        <div class="w3-code w3-border">
+            <div>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span> content<span style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <p>Елемент viewport <code>&lt;meta&gt;</code> надає інструкціям браузера, як контролювати розміри та масштабування сторінки. Частина width=device-width встановлює ширину сторінки, щоб вона відповідала ширині екрана пристрою (яка залежить від пристрою). Частина initial-scale=1.0 встановлює початковий рівень масштабування, коли сторінка завантажується браузером.</p>
+        <p>Нижче наведено приклад веб-сторінки без метатега viewport та тієї ж веб-сторінки з метатегом viewport:</p>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Якщо ви переглядаєте цю сторінку за допомогою телефону або планшета, можна натиснути два посилання нижче, щоб побачити різницю (в іншому вікні).</p>
+        </div>
+        <div class="w3-row" style="text-align:center;">
+            <div class="w3-half">
+                <a target="_blank" href="example_withoutviewport.html"><img src="../img/img_viewport1.png" class="w3-hover-shadow viewport" alt=""><br><br><b>Без viewport метатега</b></a>
+                <br>
+                <br>
+            </div>
+            <div class="w3-half">
+                <a target="_blank" href="example_withviewport.html"><img src="../img/img_viewport2.png" class="w3-hover-shadow viewport" alt=""><br><br><b>Із viewport метатегом</b></a>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <h2>HTML елемент &lt;script&gt;</h2>
+        <p>Елемент <code>&lt;script&gt;</code> використовується для визначення <strong>JavaScript</strong> на стороні клієнта.</p>
+        <p>Цей <strong>JavaScript</strong> пише "Hello JavaScript!" в <strong>HTML</strong> елементі з id = "demo":</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br><span style="color:mediumblue">function</span> myFunction {<br><span style="color:red"></span>  &nbsp;<span style="color:red"></span> document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>).<span style="color:black">innerHTML</span> = <span style="color:brown">"Hello JavaScript!"</span>;<br><span style="color:red"></span> }<br></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_script" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Щоб дізнатися більше про <strong>JavaScript</strong>, перейдіть до <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="nofollow">посібника з JavaScript</a>.</p>
+        </div>
+        <hr>
+        <h2>HTML елемент &lt;base&gt;</h2>
+        <p>Елемент <code>&lt;base&gt;</code> вказує базову URL-адресу та базову ціль для всіх відносних URL-адрес сторінки:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>base<span style="color:red"> href<span style="color:mediumblue">="https://www.w3schools.com/images/"</span> target<span style="color:mediumblue">="_blank"</span></span><span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_base" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <hr>
+        <h2>Чи опускати &lt;html&gt;, &lt;head&gt; і &lt;body&gt;?</h2>
+        <p>Відповідно до стандарту <strong>HTML5</strong> теги <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code> і <code>&lt;head&gt;</code> можна опустити.</p>
+        <p>Наступний код пройде валідацію як <strong>HTML5</strong>:</p>
+        <div class="w3-example">
+            <p>Приклад:</p>
+            <div class="w3-border-green w3-code">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>Page Title<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            </div>
+            <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_none" target="_blank" rel="nofollow">Спробуйте самі! »</a>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> W3Schools не рекомендує пропускати теги <code>&lt;html&gt;</code> і <code>&lt;body&gt;</code>. Нехтування цими тегами може призвести до збою програмного забезпечення DOM або XML і виникнення помилок у старих браузерах (IE9). Проте, пропускати тег <code>&lt;head&gt;</code> - це була поширена практика протягом досить тривалого часу.</p>
+        </div>
+        <hr>
+        <h2>HTML елементи голови веб-сторінки - HEAD</h2>
+        <table class="w3-table-all">
+            <tbody><tr>
+                <th>Тег</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank" rel="nofollow">&lt;head&gt;</a></td>
+                <td>Визначає інформацію про документ</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank" rel="nofollow">&lt;title&gt;</a></td>
+                <td>Визначає назву документа</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_base.asp" target="_blank" rel="nofollow">&lt;base&gt;</a></td>
+                <td>Визначає адресу за замовчуванням або типову ціль для всіх посилань на сторінці</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_link.asp" target="_blank" rel="nofollow">&lt;link&gt;</a></td>
+                <td>Визначає взаємозв'язок між документом і зовнішнім ресурсом</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank" rel="nofollow">&lt;meta&gt;</a></td>
+                <td>Визначає метадані про документ HTML</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_script.asp" target="_blank" rel="nofollow">&lt;script&gt;</a></td>
+                <td>Визначає скрипт на стороні клієнта</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3schools.com/tags/tag_style.asp" target="_blank" rel="nofollow">&lt;style&gt;</a></td>
+                <td>Визначає інформацію про стиль для документа</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="w3-panel w3-note">
+            <p><strong>Примітка:</strong> Для отримання повного списку всіх доступних <strong>HTML</strong> тегів, відвідайте <a href="../tags/default.html">довідник <strong>HTML</strong> тегів</a>.</p>
+        </div>
+        <hr>
+        <!-- buttons prev - next -->
+        <div class="w3-clear nextprev">
+            <a class="w3-left w3-btn" href="les24.html" title="Попередня сторінка" rel="prev">❮ Prev</a>
+            <a class="w3-right w3-btn" href="les26.html" title="Наступна сторінка" rel="next">Next ❯</a>
+        </div>
+        <!-- / buttons prev - next -->
+        <hr class="hr-bottom">
+        <img src="../svg/warning_black.svg" alt="warning" width="30" class="img-left"><p class="note-warning"><b>Не викладайте</b> свій код безпосередньо в коментарях, він відображається некоректно. Скористайтесь такими сервісами, як <a href="https://jsfiddle.net/" target="_blank" rel="nofollow">jsfiddle.net</a>, <a href="https://codepen.io/pen/tour/welcome/start" target="_blank" rel="nofollow">codepen.io</a>, <a href="https://liveweave.com/" target="_blank" rel="nofollow">liveweave.com</a>, <a href="https://jsbin.com/?html,css,output" target="_blank" rel="nofollow">jsbin.com</a>, збережіть код на будь-якому з цих сервісів і в коментарях дайте на нього посилання. Так буде видно і код, і результат.</p>
+        <!-- Коментарі від Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = websunsay.github.io;  // канонічний URL сторінки
+                this.page.identifier = websunsay.github.io/html/les25.html; // унікальний ідентифікатор сторінки
+            };
+            (function() { // Не редагувати нижче цієї лінії
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-websunsay-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Будь ласка, увімкніть JavaScript для перегляду <a href="https://disqus.com/?ref_noscript">коментарів на основі Disqus.</a></noscript>
+        <!-- / Коментарі від Disqus -->
+    </div>
+    <!-- / CONTENT -->
+    <div class="right-sidebar">
+        <iframe src="../pages/source.html" class="frame-right-sidebar"></iframe>
+    </div>
+</main>
+<footer>
+    <iframe src="../pages/footer.html" class="frame-footer"></iframe>
+</footer>
+</body>
+</html>
